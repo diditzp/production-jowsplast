@@ -26,7 +26,7 @@
                   <activityDefId>formProduksi</activityDefId>
                   <formId>form_produksi_jsp</formId>
                   <type>SINGLE</type>
-                  <autoContinue>true</autoContinue>
+                  <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>true</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
@@ -148,7 +148,7 @@
                   <formId>form_produksi_jsp</formId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
             <entry>
