@@ -9,38 +9,6 @@
     "rowActions": [],
     "columns": [
         {
-            "filterable": true,
-            "hidden": "false",
-            "renderHtml": "",
-            "format": {
-                "className": "org.joget.plugin.enterprise.ProcessStatusDatalistFormatter",
-                "properties": {
-                    "usernameFormat": "combine",
-                    "viewPermission": "all",
-                    "userviewCacheDuration": "20",
-                    "showSkippedActivities": "",
-                    "eventClick": "",
-                    "userviewCacheScope": "",
-                    "showProcessName": "true",
-                    "showFutureActivities": "true"
-                }
-            },
-            "label": "Prosess",
-            "sortable": "false",
-            "datalist_type": "column",
-            "exclude_export": "",
-            "name": "id",
-            "width": "",
-            "headerAlignment": "",
-            "action": {
-                "className": "",
-                "properties": {}
-            },
-            "style": "",
-            "id": "column_5",
-            "alignment": ""
-        },
-        {
             "hidden": "false",
             "renderHtml": "",
             "format": {
@@ -55,8 +23,14 @@
             "width": "",
             "headerAlignment": "",
             "action": {
-                "className": "",
-                "properties": {}
+                "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+                "properties": {
+                    "hrefColumn": "id_audit_preform",
+                    "hrefParam": "c_id_flow",
+                    "href": "history_preform_detail",
+                    "confirmation": "",
+                    "target": "_self"
+                }
             },
             "style": "",
             "id": "column_1",
@@ -172,6 +146,38 @@
             },
             "style": "",
             "id": "column_3",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "org.joget.plugin.enterprise.ProcessStatusDatalistFormatter",
+                "properties": {
+                    "usernameFormat": "combine",
+                    "viewPermission": "all",
+                    "userviewCacheDuration": "20",
+                    "showSkippedActivities": "",
+                    "eventClick": "",
+                    "userviewCacheScope": "",
+                    "showProcessName": "true",
+                    "showFutureActivities": "true"
+                }
+            },
+            "label": "Prosess",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "id",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_5",
             "alignment": ""
         }
     ],
