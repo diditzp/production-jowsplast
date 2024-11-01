@@ -531,7 +531,7 @@
                         "runProcessSubmitLabel": "",
                         "id": "AB4D226782014EAC8DC9DDF0711CF196",
                         "processDefId": "terima_preform",
-                        "redirectUrlAfterComplete": "",
+                        "redirectUrlAfterComplete": "/jw/web/userview/stok_jsp/jsp_view1/_/list_preform_masuk",
                         "fieldPassover": ""
                     }
                 }
