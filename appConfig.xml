@@ -1,5 +1,4 @@
 <appDefinition>
-   <appId>stok_jsp</appId>
    <id>stok_jsp</id>
    <version></version>
    <name>Stock Product JSP</name>
@@ -29,7 +28,9 @@
    <environmentVariableList>
       <environmentVariable>
          <id>counter</id>
-         <value>236</value>
+         <appId>stok_jsp</appId>
+         <appVersion>2</appVersion>
+         <value>245</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
       </environmentVariable>
    </environmentVariableList>

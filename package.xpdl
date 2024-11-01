@@ -714,7 +714,7 @@
                     <Performer>pengawasKeluarBarang</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="pengawasKeluarBarang"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="431.5,160.796875"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="372.5,185.78750915527343"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="batal" Name="Batal">
@@ -742,7 +742,7 @@
                     <Performer>pengawasKeluarBarang</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="pengawasKeluarBarang"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="566,241"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="607,218.0000030517578"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="updateStokGudang_3_2_2" Name="Update Stok Gudang">
@@ -752,7 +752,7 @@
                     <Performer>pengawasKeluarBarang</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="pengawasKeluarBarang"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="334,32.921875"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="171,57.91250152587891"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="update_sku_master_2" Name="Update SKU Master">
@@ -782,7 +782,7 @@
                     <Performer>pengawasKeluarBarang</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="pengawasKeluarBarang"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="487,36"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="341,60.000003051757815"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="post_data_to_spreadsheet_2" Name="Post Data To SpreadSheet">
@@ -790,14 +790,19 @@
                         <Tool Id="default_application"/>
                     </Implementation>
                     <Performer>pengawasKeluarBarang</Performer>
-                    <TransitionRestrictions>
-                        <TransitionRestriction>
-                            <Join Type="XOR"/>
-                        </TransitionRestriction>
-                    </TransitionRestrictions>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="pengawasKeluarBarang"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="551,420.99999649804687"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="542,464.0000030517578"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="post_data_to_spreadsheet_2_2" Name="Post Data To SpreadSheet">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>pengawasKeluarBarang</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="pengawasKeluarBarang"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="568,359.0000030517578"/>
                     </ExtendedAttributes>
                 </Activity>
             </Activities>
@@ -820,7 +825,7 @@
                         <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
                     </ExtendedAttributes>
                 </Transition>
-                <Transition From="updateStokGudang_3_2" Id="transition_end_updateStokGudang_3_2" To="post_data_to_spreadsheet_2">
+                <Transition From="updateStokGudang_3_2" Id="transition_end_updateStokGudang_3_2" To="post_data_to_spreadsheet_2_2">
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                         <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
@@ -861,7 +866,8 @@
             <ExtendedAttributes>
                 <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="pengawasKeluarBarang"/>
                 <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=pengawasKeluarBarang,CONNECTING_ACTIVITY_ID=tool3,X_OFFSET=102.99999809265137,Y_OFFSET=511.78336471374513,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=pengawasKeluarBarang,CONNECTING_ACTIVITY_ID=post_data_to_spreadsheet_2,X_OFFSET=762.0000591278076,Y_OFFSET=435.36666435058595,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=pengawasKeluarBarang,CONNECTING_ACTIVITY_ID=post_data_to_spreadsheet_2,X_OFFSET=734,Y_OFFSET=485.3625213623047,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=pengawasKeluarBarang,CONNECTING_ACTIVITY_ID=post_data_to_spreadsheet_2_2,X_OFFSET=735,Y_OFFSET=378.07501525878905,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
             </ExtendedAttributes>
         </WorkflowProcess>
         <WorkflowProcess Id="terima_preform" Name="Terima Masuk PreForm">
