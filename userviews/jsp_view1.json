@@ -280,7 +280,7 @@
                         "id": "8D43BBD435FB4EBC3E0206B5F9319B4C",
                         "permissionDeny": "",
                         "processDefId": "produksiBotol",
-                        "redirectUrlAfterComplete": "",
+                        "redirectUrlAfterComplete": "/jw/web/userview/stok_jsp/jsp_view1/_/list_produksi",
                         "fieldPassover": ""
                     }
                 }
