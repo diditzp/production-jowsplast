@@ -577,7 +577,7 @@
                         "runProcessSubmitLabel": "",
                         "id": "15486E22AD304B5039133DCDD8D210DF",
                         "processDefId": "audit_sku_balance",
-                        "redirectUrlAfterComplete": "",
+                        "redirectUrlAfterComplete": "/jw/web/userview/stok_jsp/jsp_view1/_/list_audit_sku",
                         "fieldPassover": ""
                     }
                 },
@@ -629,7 +629,7 @@
                         "runProcessSubmitLabel": "",
                         "id": "12C128BDDCF146D6063645B7A98BE3B5",
                         "processDefId": "audit_preform_balance",
-                        "redirectUrlAfterComplete": "",
+                        "redirectUrlAfterComplete": "/jw/web/userview/stok_jsp/jsp_view1/_/list_audit_preform",
                         "fieldPassover": ""
                     }
                 },
@@ -700,7 +700,7 @@
                         "runProcessSubmitLabel": "",
                         "id": "F95F6EE4AE1849622102E4C5E3C8500E",
                         "processDefId": "create_sku_master",
-                        "redirectUrlAfterComplete": "",
+                        "redirectUrlAfterComplete": "/jw/web/userview/stok_jsp/jsp_view1/_/sku_master_crud",
                         "fieldPassover": ""
                     }
                 },
