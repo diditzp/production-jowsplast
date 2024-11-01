@@ -479,7 +479,7 @@
                         "id": "E7C2A0F15440452C1433E82DF6BB0927",
                         "permissionDeny": "",
                         "processDefId": "terimaBarang",
-                        "redirectUrlAfterComplete": "",
+                        "redirectUrlAfterComplete": "/jw/web/userview/stok_jsp/jsp_view1/_/list_barang_masuk",
                         "fieldPassover": ""
                     }
                 },
