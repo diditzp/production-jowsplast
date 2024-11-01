@@ -231,6 +231,7 @@
                         "className": "org.joget.apps.form.lib.TextField",
                         "properties": {
                             "requiredSanitize": "",
+                            "permissionHidden": "",
                             "maxlength": "",
                             "permission_rules": {
                                 "fecd5d08-1e59-12a0-0e31-f06b6aa68919": {},
@@ -247,7 +248,7 @@
                             },
                             "label": "Request Produksi",
                             "encryption": "",
-                            "readonly": "",
+                            "readonly": "true",
                             "size": "7",
                             "workflowVariable": "requestProduksi",
                             "style": "",
