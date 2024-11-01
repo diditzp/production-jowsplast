@@ -1,5 +1,4 @@
 <appDefinition>
-   <appId>stok_jsp</appId>
    <id>stok_jsp</id>
    <version></version>
    <name>Stock Product JSP</name>
@@ -290,7 +289,7 @@
                   <processDefId>create_sku_master</processDefId>
                   <activityDefId>tool1</activityDefId>
                   <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
-                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.DatabaseUpdateTool&quot;,&quot;properties&quot;:{&quot;query&quot;:&quot;update app_fd_sku_master\nset c_total = &apos;0&apos;\nWHERE id = &apos;#process.recordId#&apos;;&quot;,&quot;jdbcDatasource&quot;:&quot;default&quot;}}]}</pluginProperties>
+                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.DatabaseUpdateTool&quot;,&quot;properties&quot;:{&quot;query&quot;:&quot;update app_fd_sku_master\nset c_total = &apos;0&apos;,\nc_gudang_produksi = &apos;0&apos;,\nc_gudang_packing = &apos;0&apos;\nWHERE id = &apos;#process.recordId#&apos;;&quot;,&quot;jdbcDatasource&quot;:&quot;default&quot;}}]}</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
