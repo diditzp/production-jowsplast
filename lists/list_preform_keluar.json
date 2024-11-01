@@ -13,38 +13,6 @@
             "hidden": "false",
             "renderHtml": "",
             "format": {
-                "className": "org.joget.plugin.enterprise.ProcessStatusDatalistFormatter",
-                "properties": {
-                    "usernameFormat": "combine",
-                    "viewPermission": "all",
-                    "userviewCacheDuration": "20",
-                    "showSkippedActivities": "",
-                    "eventClick": "",
-                    "userviewCacheScope": "",
-                    "showProcessName": "true",
-                    "showFutureActivities": "true"
-                }
-            },
-            "label": "Prosess",
-            "sortable": "false",
-            "datalist_type": "column",
-            "exclude_export": "",
-            "name": "id",
-            "width": "",
-            "headerAlignment": "",
-            "action": {
-                "className": "",
-                "properties": {}
-            },
-            "style": "",
-            "id": "column_5",
-            "alignment": ""
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "renderHtml": "",
-            "format": {
                 "className": "",
                 "properties": {}
             },
@@ -56,8 +24,14 @@
             "width": "",
             "headerAlignment": "",
             "action": {
-                "className": "",
-                "properties": {}
+                "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+                "properties": {
+                    "hrefColumn": "id_preform_masuk",
+                    "hrefParam": "c_id_flow",
+                    "href": "history_detail",
+                    "confirmation": "",
+                    "target": "_self"
+                }
             },
             "style": "",
             "id": "column_7",
@@ -106,6 +80,38 @@
             "name": "jumlah_bal",
             "id": "column_4",
             "label": "Jumlah Bal"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "org.joget.plugin.enterprise.ProcessStatusDatalistFormatter",
+                "properties": {
+                    "usernameFormat": "combine",
+                    "viewPermission": "all",
+                    "userviewCacheDuration": "20",
+                    "showSkippedActivities": "",
+                    "eventClick": "",
+                    "userviewCacheScope": "",
+                    "showProcessName": "true",
+                    "showFutureActivities": "true"
+                }
+            },
+            "label": "Prosess",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "id",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_5",
+            "alignment": ""
         }
     ],
     "cardCollapsible": "",
