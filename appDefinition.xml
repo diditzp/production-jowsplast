@@ -159,7 +159,7 @@
                   <formId>preform_masuk</formId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
             <entry>
@@ -225,7 +225,7 @@
                   <formId>preform_masuk</formId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
             <entry>
@@ -258,7 +258,7 @@
                   <formId>preform_masuk</formId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
             <entry>
