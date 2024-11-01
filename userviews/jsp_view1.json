@@ -403,7 +403,7 @@
                         "runProcessSubmitLabel": "",
                         "id": "55BC3EB659EC4C17EFB69E4752F82DDF",
                         "processDefId": "barangKeluar_2",
-                        "redirectUrlAfterComplete": "",
+                        "redirectUrlAfterComplete": "/jw/web/userview/stok_jsp/jsp_view1/_/list_preform_keluar",
                         "fieldPassover": ""
                     }
                 }
