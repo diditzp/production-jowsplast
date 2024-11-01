@@ -28,7 +28,7 @@
                 "properties": {
                     "hrefColumn": "id_preform_masuk",
                     "hrefParam": "c_id_flow",
-                    "href": "history_detail",
+                    "href": "history_preform_detail",
                     "confirmation": "",
                     "target": "_self"
                 }
