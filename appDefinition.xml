@@ -16,7 +16,7 @@
                   <formId>audit_sku_balance</formId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
             <entry>
@@ -60,7 +60,7 @@
                   <formId>audit_preform</formId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
             <entry>
@@ -82,7 +82,7 @@
                   <formId>audit_preform</formId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
             <entry>
@@ -126,7 +126,7 @@
                   <formId>audit_preform</formId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
             <entry>
