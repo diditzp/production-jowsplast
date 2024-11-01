@@ -1,0 +1,39 @@
+<appDefinition>
+   <appId>stok_jsp</appId>
+   <id>stok_jsp</id>
+   <version></version>
+   <name>Stock Product JSP</name>
+   <packageDefinitionList/>
+   <formDefinitionList/>
+   <userviewDefinitionList/>
+   <datalistDefinitionList/>
+   <builderDefinitionList/>
+   <pluginDefaultPropertiesList>
+      <pluginDefaultProperties>
+         <id>org.joget.apps.app.lib.ProcessDataCollectorAuditTrail</id>
+         <appId>stok_jsp</appId>
+         <appVersion>2</appVersion>
+         <pluginName>Process Data Collector</pluginName>
+         <pluginDescription>Save process data into app_report_* tables for reporting purposes</pluginDescription>
+         <pluginProperties>{}</pluginProperties>
+      </pluginDefaultProperties>
+      <pluginDefaultProperties>
+         <id>org.joget.plugin.enterprise.FormDataAuditTrailPlugin</id>
+         <appId>stok_jsp</appId>
+         <appVersion>2</appVersion>
+         <pluginName>Form Data Audit Trail</pluginName>
+         <pluginDescription>Store audit trail of Form Data to app_form_data_audit_trail table.</pluginDescription>
+         <pluginProperties>{&quot;captureLoad&quot;:&quot;true&quot;,&quot;captureSave&quot;:&quot;true&quot;,&quot;captureSavedDatainJson&quot;:&quot;true&quot;,&quot;captureDelete&quot;:&quot;true&quot;,&quot;captureMode&quot;:&quot;selected&quot;,&quot;formDefIds&quot;:&quot;form_produksi_jsp;masuk_gudang;item_keluar&quot;}</pluginProperties>
+      </pluginDefaultProperties>
+   </pluginDefaultPropertiesList>
+   <environmentVariableList>
+      <environmentVariable>
+         <id>counter</id>
+         <value>236</value>
+         <remarks>Used for plugin: Id Generator Field</remarks>
+      </environmentVariable>
+   </environmentVariableList>
+   <messageList/>
+   <resourceList/>
+   <license>w785BrU9UtVeDFYY24hSiIe90NBCURsq2bw+uUQMmJ+urw7lztf5ztdaDW8h0jjkjQqw3gndDaQJ9PzkoLXgjA==</license>
+</appDefinition>

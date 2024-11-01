@@ -1,0 +1,31 @@
+{
+    "useSession": "false",
+    "showPageSizeSelector": "true",
+    "rowActions": [],
+    "columns": [
+        {
+            "name": "nama",
+            "id": "column_0",
+            "label": "Nama"
+        },
+        {
+            "name": "kode",
+            "id": "column_1",
+            "label": "Kode"
+        }
+    ],
+    "pageSize": 0,
+    "orderBy": "",
+    "filters": [],
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "buttonPosition": "bothLeft",
+    "checkboxPosition": "left",
+    "name": "List - SET SKU Tipe",
+    "id": "list_sku_tipe",
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "sku_tipe"}
+    },
+    "actions": [],
+    "order": ""
+}

@@ -1,0 +1,130 @@
+{
+    "footer": {"elements": []},
+    "header": {"elements": [{
+        "elements": [
+            {
+                "elements": [{
+                    "className": "org.joget.rbuilder.lib.TextReportElement",
+                    "properties": {
+                        "size": "",
+                        "color": "",
+                        "marginBottom": "10px",
+                        "id": "81A6B300-D179-4A8E-2D2E-783A28D6911E",
+                        "text": "Jow\u2019s Plast\nJl. Wirabudi 3, Cipinang Melayu, 13620, \nJakarta Timur, Jakarta\n081280706686\nEmail: jows.plast@gmail.com",
+                        "bold": "true",
+                        "align": "left",
+                        "selectorClass": "",
+                        "italic": "",
+                        "decoration": "",
+                        "height": ""
+                    }
+                }],
+                "className": "org.joget.rbuilder.lib.ColumnReportElement",
+                "properties": {}
+            },
+            {
+                "elements": [{
+                    "className": "org.joget.rbuilder.lib.ImageReportElement",
+                    "properties": {
+                        "path": "#appResource.logo_jsp.png#",
+                        "width": "105px",
+                        "marginBottom": "10px",
+                        "id": "397E716B-D820-4DE7-FBD2-A35B9EBDF3FC",
+                        "halign": "right",
+                        "selectorClass": "",
+                        "height": ""
+                    }
+                }],
+                "className": "org.joget.rbuilder.lib.ColumnReportElement",
+                "properties": {}
+            }
+        ],
+        "className": "org.joget.rbuilder.lib.ColumnsReportElement",
+        "properties": {
+            "gap": "1%",
+            "display_border": "false",
+            "marginBottom": "10px",
+            "id": "E90E7187-F7C1-45F0-5514-406EAF3F9C65",
+            "type": "1"
+        }
+    }]},
+    "body": {"elements": [
+        {
+            "className": "org.joget.rbuilder.lib.HtmlReportElement",
+            "properties": {
+                "html": "<div class=\"top-header\">\n    <div class=\"top-title\">Surat Jalan<\/div>\n    <div class=\"top-detail\" id=\"id_flow\"><\/div> \n<\/div>\n\n<div class=\"list-information\">\n    <div class=\"detail-data\">\n        <div class=\"title\">Kepada Yth<\/div>\n        <div id=\"nama_customer\" class=\"description\"><\/div>\n    <\/div>\n    <div class=\"detail-data\">\n        <div class=\"title\">Alamat<\/div>\n        <div id=\"alamat_customer\" class=\"description\"><\/div>\n    <\/div>\n    <div class=\"detail-data\">\n        <div class=\"title\">Tanggal Keluar<\/div>\n        <div id=\"tanggal_keluar\" class=\"description\"><\/div>\n    <\/div>\n    <div class=\"detail-data\">\n        <div class=\"title\">Kendaraan<\/div>\n        <div id=\"kendaraan\" class=\"description\"><\/div>\n    <\/div>\n<\/div>\n\n<div>Kami kirimkan barang tersebut di bawah ini : <\/div>\n\n<style>\n    .top-header {\n        width: 100%;\n        background: #6b8c95;\n        display: flex;\n        justify-content: space-between;\n        margin-bottom: 20px;\n        font-size: 20px;\n        color: #ffffff;\n    }\n    .top-title, .top-detail {\n        margin: 10px;\n    }\n    .list-information {\n        margin: 0px 0px 20px;\n    }\n    \n    .list-information .detail-data {\n        display: grid;\n        grid-template-columns: 2fr 9fr;\n        padding: 10px 0;\n        font-size: 15px !important;\n    }\n    \n    .list-information .detail-data .title {\n        color: #667085;\n    }\n    \n    .list-information .detail-data .description {\n        color: #1D2939;\n    }\n    #e_D512AA97-6DFC-45CD-9B58-F8A2E1C88057 {\n        margin-top: 10px;\n    }\n    #e_2CF39DBC-AAAA-4B29-36D6-03FBCE132084 {\n        border: 3px solid #6b8c95;\n        border-radius: 3px;\n        padding: 10px;\n    }\n    #e_52B02ADD-B379-4B05-4BFC-F08F21695589 {\n        display: none;\n    }\n<\/style>\n\n<script>\n    $(document).ready(function() {\n        \n        var namaCustomer = $('label[field-tooltip=nama_customer]').closest('.form-cell').find('span').text();\n        var idFlow = $('label[field-tooltip=id_barang_keluar]').closest('.form-cell').find('span').text();\n        var alamat = $('label[field-tooltip=alamat_customer]').closest('.form-cell').find('div').text();\n        var tanggalKeluar = $('label[field-tooltip=tanggal_keluar]').closest('.form-cell').find('span').text();\n        \n        $('#nama_customer').text(namaCustomer);\n        $('#id_flow').text(idFlow);\n        $('#alamat_customer').text(alamat);\n        $('#tanggal_keluar').text(tanggalKeluar);\n        \n        $('.downloadlink').on('click', function(e) {\n            e.preventDefault();\n            printReport();\n        });\n        \n        function printReport() {\n            const printContents = $('.report_page_body').html();\n            \n            const printWindow = window.open('', '', 'height=600,width=800');\n            \n            printWindow.document.write('<html><head><title>Surat Jalan<\/title>');\n            \n            var styles = '';\n            $('link[rel=\"stylesheet\"], style').each(function() {\n                styles += $(this).prop('outerHTML');\n            });\n        \n            styles += `\n                <style>\n                    body {\n                        background-color: white !important;\n                        color: black;\n                    }\n                <\/style>\n            `;\n            \n            printWindow.document.write(styles);\n            \n            printWindow.document.write('<\/head><body>');\n            printWindow.document.write(printContents);\n            printWindow.document.write('<\/body><\/html>');\n            \n            printWindow.document.close();\n            printWindow.focus();\n            printWindow.print();\n            printWindow.close();\n        }\n    });\n<\/script>",
+                "id": "54D308E8-2190-48A9-0A14-DC0032331B31",
+                "selectorClass": ""
+            }
+        },
+        {
+            "className": "org.joget.rbuilder.lib.ListReportElement",
+            "properties": {
+                "headerTextColor": "#FFFFFF",
+                "headerColor": "#6B8C95",
+                "automatedNum": "true",
+                "footer": [],
+                "repeatFooterRowEveryPage": "",
+                "formulaColumns": [],
+                "footerRowlabel": "",
+                "id": "6BDF8A40-B284-4BF4-8F28-3D54174B7AD4",
+                "selectorClass": "",
+                "filterParams": [{
+                    "param": "d-3050393-fn_id_req_item_keluar",
+                    "value": "#reportParam.id_req_item_keluar#"
+                }],
+                "datalistId": "list_item_keluar"
+            }
+        },
+        {
+            "className": "org.joget.rbuilder.lib.TextReportElement",
+            "properties": {
+                "size": "",
+                "color": "",
+                "marginBottom": "10px",
+                "id": "D512AA97-6DFC-45CD-9B58-F8A2E1C88057",
+                "text": "Mohon diterima dengan baik, komplaint max 1x24 jam sebelum invoice kami terbitkan.",
+                "bold": "",
+                "align": "left",
+                "selectorClass": "",
+                "italic": "",
+                "decoration": "",
+                "height": ""
+            }
+        },
+        {
+            "className": "org.joget.rbuilder.lib.HtmlReportElement",
+            "properties": {
+                "html": "<div>\r\n    <div class=\"signature-header\">PT. SIANTARPLAST DWI BUANA<\/div>\r\n    <div class=\"signature-date\">\r\n        <div>Tanggal Terbit<\/div>\r\n        <div>Jakarta, #date.dd-MM-yyyy#<\/div>\r\n    <\/div>\r\n    <div class=\"signature-container\">\r\n        <div class=\"signature-box\">\r\n            <div class=\"signature-label\">GUDANG<\/div>\r\n            <div class=\"signature-line\">YOLANDA<\/div>\r\n        <\/div>\r\n        <!--<div class=\"signature-box\">-->\r\n        <!--    <div class=\"signature-label\">GUDANG<\/div>-->\r\n        <!--    <div class=\"signature-line\">GANDA<\/div>-->\r\n        <!--<\/div>-->\r\n        <div class=\"signature-box\">\r\n            <div class=\"signature-label\">DRIVER<\/div>\r\n            <div class=\"signature-line\">UCUP<\/div>\r\n        <\/div>\r\n        <!--<div class=\"signature-box\">-->\r\n        <!--    <div class=\"signature-label\">SECURITY<\/div>-->\r\n        <!--    <div class=\"signature-line\">SOFYAN<\/div>-->\r\n        <!--<\/div>-->\r\n        <div class=\"signature-box\">\r\n            <div class=\"signature-label\">PENERIMA<\/div>\r\n            <div class=\"signature-line\">CECEP<\/div>\r\n        <\/div>\r\n    <\/div>\r\n<\/div>\r\n\r\n<style>\r\n    .signature-header{\r\n        margin-top: 20px;\r\n        font-weight: bold;\r\n        margin-bottom: 20px;\r\n    }\r\n    .signature-date {\r\n        text-align: right;\r\n        margin-bottom: 50px;\r\n    }\r\n    .signature-container {\r\n        display: flex;\r\n        justify-content: space-between;\r\n    }\r\n    .signature-box {\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n        width: 100px;\r\n    }\r\n    .signature-label {\r\n        margin-bottom: 5px;\r\n        text-align: center;\r\n        margin-bottom: 100px;\r\n    }\r\n<\/style>\r\n",
+                "id": "11AC7C9F-DE03-41AF-A438-5FF091EB05FE",
+                "selectorClass": ""
+            }
+        },
+        {
+            "className": "org.joget.rbuilder.lib.FormReportElement",
+            "properties": {
+                "recordId": "#reportParam.id_req_item_keluar#",
+                "formDefId": "formKeluarBarang",
+                "marginBottom": "",
+                "id": "52B02ADD-B379-4B05-4BFC-F08F21695589",
+                "showNotSelectedOptions": "",
+                "selectorClass": "",
+                "hideEmptyValueField": ""
+            }
+        }
+    ]},
+    "properties": {
+        "margins": "normal",
+        "orientation": "portrait",
+        "leftMargin": "10",
+        "topMargin": "10",
+        "rightMargin": "10",
+        "bottomMargin": "10",
+        "name": "Report Detail Barang Keluar",
+        "description": "",
+        "id": "rp_detail_barang_keluar",
+        "pageHeight": "297",
+        "paperSize": "a4",
+        "pageWidth": "210"
+    }
+}

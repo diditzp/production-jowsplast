@@ -1,0 +1,24 @@
+{
+    "useSession": "false",
+    "showPageSizeSelector": "true",
+    "rowActions": [],
+    "columns": [{
+        "name": "nama_pegawai",
+        "id": "column_0",
+        "label": "Nama Pegawai"
+    }],
+    "pageSize": 0,
+    "orderBy": "",
+    "filters": [],
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "buttonPosition": "bothLeft",
+    "checkboxPosition": "left",
+    "name": "List - Employee Master",
+    "id": "list_employee_master",
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "employee_master"}
+    },
+    "actions": [],
+    "order": ""
+}

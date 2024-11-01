@@ -1,0 +1,297 @@
+{
+    "template": {
+        "className": "",
+        "properties": {}
+    },
+    "considerFilterWhenGetTotal": "",
+    "showPageSizeSelector": "true",
+    "responsiveMode": "",
+    "rowActions": [
+        {
+            "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+            "id": "rowAction_0",
+            "properties": {
+                "hrefColumn": "id",
+                "hrefParam": "id_req_item_keluar",
+                "rules": [],
+                "label": "Surat Jalan",
+                "href": "detail_barang_keluar",
+                "confirmation": "",
+                "link-css-display-type": "btn btn-sm btn-primary",
+                "datalist_type": "row_action",
+                "target": "_self",
+                "header_label": "Surat Jalan"
+            }
+        },
+        {
+            "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+            "id": "rowAction_1",
+            "properties": {
+                "hrefColumn": "id",
+                "hrefParam": "d-3050393-fn_id_req_item_keluar",
+                "rules": [],
+                "label": "Packing",
+                "href": "list_item_keluar",
+                "confirmation": "",
+                "link-css-display-type": "btn btn-sm btn-primary",
+                "datalist_type": "row_action",
+                "target": "_self",
+                "header_label": "Packing"
+            }
+        }
+    ],
+    "columns": [
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "org.joget.plugin.enterprise.ProcessStatusDatalistFormatter",
+                "properties": {
+                    "usernameFormat": "combine",
+                    "viewPermission": "all",
+                    "userviewCacheDuration": "20",
+                    "showSkippedActivities": "",
+                    "eventClick": "",
+                    "userviewCacheScope": "",
+                    "showProcessName": "true",
+                    "showFutureActivities": "true"
+                }
+            },
+            "label": "Prosess",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "id",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_5",
+            "alignment": ""
+        },
+        {
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "ID Gudang",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "id_barang_keluar",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_0",
+            "alignment": ""
+        },
+        {
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "optionsBinder": {
+                        "className": "",
+                        "properties": {}
+                    },
+                    "options": [
+                        {
+                            "label": "Offline",
+                            "value": "offline"
+                        },
+                        {
+                            "label": "Shopee",
+                            "value": "shopee"
+                        },
+                        {
+                            "label": "Tokopedia",
+                            "value": "tokopedia"
+                        },
+                        {
+                            "label": "Tiktok",
+                            "value": "tiktok"
+                        },
+                        {
+                            "label": "Lazada",
+                            "value": "lazada"
+                        }
+                    ]
+                }
+            },
+            "label": "Channel",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "channel",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_2",
+            "alignment": ""
+        },
+        {
+            "name": "tanggal_keluar",
+            "format": {
+                "className": "org.joget.plugin.enterprise.DateFormatter",
+                "properties": {"dataFormat": "yyyy-MM-dd"}
+            },
+            "id": "column_3",
+            "label": "Tanggal Keluar",
+            "datalist_type": "column"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Catatan",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "catatanRequestBarangKeluar",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_1",
+            "alignment": ""
+        }
+    ],
+    "cardCollapsible": "",
+    "pageSize": "0",
+    "orderBy": "tanggal_keluar",
+    "description": "",
+    "showDataWhenFilterSet": "",
+    "disableResponsive": "",
+    "checkboxPosition": "left",
+    "cardCollapseByDefault": "",
+    "id": "list_formKeluarBarang",
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {
+            "joins": [],
+            "aggregateField": [],
+            "formDefId": "formKeluarBarang",
+            "customSelectionValue": "",
+            "extraCondition": "",
+            "filters": [],
+            "groupBy": "",
+            "functionColumns": []
+        }
+    },
+    "order": "1",
+    "useSession": "",
+    "draggabletable": "",
+    "filters": [
+        {
+            "name": "id",
+            "id": "filter_0",
+            "label": "ID",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {}
+            },
+            "datalist_type": "filter",
+            "filterParamName": "d-3413102-fn_id"
+        },
+        {
+            "hidden": "",
+            "name": "channel",
+            "id": "filter_1",
+            "label": "Channel",
+            "type": {
+                "className": "org.joget.plugin.enterprise.SelectBoxDataListFilterType",
+                "properties": {
+                    "controlField": "",
+                    "size": "",
+                    "optionsBinder": {
+                        "className": "",
+                        "properties": {}
+                    },
+                    "defaultValue": "",
+                    "multiple": "",
+                    "options": [
+                        {
+                            "label": "Offline",
+                            "value": "offline",
+                            "grouping": ""
+                        },
+                        {
+                            "label": "Shopee",
+                            "value": "shopee",
+                            "grouping": ""
+                        },
+                        {
+                            "label": "Tokopedia",
+                            "value": "tokopedia",
+                            "grouping": ""
+                        },
+                        {
+                            "label": "Tiktok",
+                            "value": "tiktok",
+                            "grouping": ""
+                        },
+                        {
+                            "label": "Lazada",
+                            "value": "lazada",
+                            "grouping": ""
+                        }
+                    ]
+                }
+            },
+            "datalist_type": "filter",
+            "filterParamName": "d-3413102-fn_channel"
+        },
+        {
+            "hidden": "",
+            "name": "tanggal_keluar",
+            "id": "filter_2",
+            "label": "Tanggal Keluar",
+            "type": {
+                "className": "org.joget.plugin.enterprise.DateRangeDataListFilterType",
+                "properties": {
+                    "fromLabel": "From",
+                    "toLabel": "To",
+                    "dateStoreInUTC": "",
+                    "formatJava": "yyyy-MM-dd",
+                    "fromDefaultValue": "",
+                    "yearRange": "c-10:c+10",
+                    "showFieldLabel": "true",
+                    "format": "mm/dd/yy",
+                    "enableTime": "",
+                    "toDefaultValue": ""
+                }
+            },
+            "datalist_type": "filter",
+            "filterParamName": "d-3413102-fn_tanggal_keluar"
+        }
+    ],
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "buttonPosition": "bothLeft",
+    "hidePageSize": "",
+    "name": "List - 3-Form Keluar Barang",
+    "rowActionsMode": "",
+    "showhidecolumns": "",
+    "actions": []
+}

@@ -1,0 +1,211 @@
+{
+    "template": {
+        "className": "",
+        "properties": {}
+    },
+    "considerFilterWhenGetTotal": "",
+    "showPageSizeSelector": "true",
+    "responsiveMode": "",
+    "rowActions": [],
+    "columns": [
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "org.joget.plugin.enterprise.ProcessStatusDatalistFormatter",
+                "properties": {
+                    "usernameFormat": "combine",
+                    "viewPermission": "all",
+                    "userviewCacheDuration": "20",
+                    "showSkippedActivities": "",
+                    "eventClick": "",
+                    "userviewCacheScope": "",
+                    "showProcessName": "true",
+                    "showFutureActivities": "true"
+                }
+            },
+            "label": "Prosess",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "id",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_7",
+            "alignment": ""
+        },
+        {
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "ID Gudang",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "id_preform_masuk",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_0",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Tanggal",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "tanggal_masuk_aktual",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_6",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "nama_preform",
+            "id": "column_1",
+            "label": "Nama PreForm",
+            "sortable": "false",
+            "datalist_type": "column"
+        },
+        {
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Total",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "jumlah_barang",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_3",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Jumlah Bal",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "jumlah_bal_aktual",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_5",
+            "alignment": ""
+        },
+        {
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Catatan",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "catatan_request_barang_masuk",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_4",
+            "alignment": ""
+        }
+    ],
+    "cardCollapsible": "",
+    "pageSize": "0",
+    "orderBy": "dateCreated",
+    "description": "",
+    "showDataWhenFilterSet": "",
+    "disableResponsive": "",
+    "checkboxPosition": "left",
+    "cardCollapseByDefault": "",
+    "id": "list_preform_masuk",
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "preform_masuk"}
+    },
+    "order": "1",
+    "useSession": "",
+    "draggabletable": "",
+    "filters": [{
+        "hidden": "",
+        "name": "tanggal_masuk_aktual",
+        "id": "filter_0",
+        "label": "Tanggal",
+        "type": {
+            "className": "org.joget.plugin.enterprise.DateRangeDataListFilterType",
+            "properties": {
+                "fromLabel": "From",
+                "toLabel": "To",
+                "dateStoreInUTC": "",
+                "formatJava": "yyyy-MM-dd",
+                "fromDefaultValue": "",
+                "yearRange": "c-10:c+10",
+                "showFieldLabel": "true",
+                "format": "mm/dd/yy",
+                "enableTime": "",
+                "toDefaultValue": ""
+            }
+        },
+        "datalist_type": "filter",
+        "filterParamName": "d-5638502-fn_tanggal_masuk_aktual"
+    }],
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "buttonPosition": "bothLeft",
+    "hidePageSize": "",
+    "name": "List - Form Masuk Preform",
+    "rowActionsMode": "",
+    "showhidecolumns": "",
+    "actions": []
+}

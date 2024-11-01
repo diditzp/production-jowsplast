@@ -1,0 +1,157 @@
+{
+    "template": {
+        "className": "",
+        "properties": {}
+    },
+    "considerFilterWhenGetTotal": "",
+    "showPageSizeSelector": "true",
+    "responsiveMode": "",
+    "rowActions": [],
+    "columns": [
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "org.joget.plugin.enterprise.ProcessStatusDatalistFormatter",
+                "properties": {
+                    "usernameFormat": "combine",
+                    "viewPermission": "all",
+                    "userviewCacheDuration": "20",
+                    "showSkippedActivities": "",
+                    "eventClick": "",
+                    "userviewCacheScope": "",
+                    "showProcessName": "true",
+                    "showFutureActivities": "true"
+                }
+            },
+            "label": "Prosess",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "id",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_5",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "ID Gudang",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "id_preform_masuk",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_7",
+            "alignment": ""
+        },
+        {
+            "name": "nama_preform",
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "optionsBinder": {
+                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "true",
+                            "groupingColumn": "",
+                            "useAjax": "",
+                            "formDefId": "preFrom",
+                            "labelColumn": "nama_pre_form",
+                            "extraCondition": "",
+                            "cacheInterval": "",
+                            "emptyLabel": "",
+                            "idColumn": "nama_pre_form"
+                        }
+                    },
+                    "options": []
+                }
+            },
+            "id": "column_1",
+            "label": "Nama PreForm"
+        },
+        {
+            "name": "tanggal_keluar",
+            "format": {
+                "className": "org.joget.plugin.enterprise.DateFormatter",
+                "properties": {"dataFormat": "yyyy-MM-dd"}
+            },
+            "id": "column_2",
+            "label": "Tanggal Keluar"
+        },
+        {
+            "name": "jumlah_barang",
+            "id": "column_3",
+            "label": "Jumlah Barang"
+        },
+        {
+            "name": "jumlah_bal",
+            "id": "column_4",
+            "label": "Jumlah Bal"
+        }
+    ],
+    "cardCollapsible": "",
+    "pageSize": "0",
+    "orderBy": "dateCreated",
+    "description": "",
+    "showDataWhenFilterSet": "",
+    "disableResponsive": "",
+    "checkboxPosition": "left",
+    "cardCollapseByDefault": "",
+    "id": "list_preform_keluar",
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "preform_keluar"}
+    },
+    "order": "1",
+    "useSession": "",
+    "draggabletable": "",
+    "filters": [{
+        "hidden": "",
+        "name": "tanggal_keluar",
+        "id": "filter_0",
+        "label": "Tanggal Keluar",
+        "type": {
+            "className": "org.joget.plugin.enterprise.DateRangeDataListFilterType",
+            "properties": {
+                "fromLabel": "From",
+                "toLabel": "To",
+                "dateStoreInUTC": "",
+                "formatJava": "yyyy-MM-dd",
+                "fromDefaultValue": "",
+                "yearRange": "c-10:c+10",
+                "showFieldLabel": "true",
+                "format": "mm/dd/yy",
+                "enableTime": "",
+                "toDefaultValue": ""
+            }
+        },
+        "datalist_type": "filter",
+        "filterParamName": "d-138023-fn_tanggal_keluar"
+    }],
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "buttonPosition": "bothLeft",
+    "hidePageSize": "",
+    "name": "List - PreForm Keluar",
+    "rowActionsMode": "",
+    "showhidecolumns": "",
+    "actions": []
+}
