@@ -351,7 +351,7 @@
                         "runProcessSubmitLabel": "",
                         "id": "5C68FC18FE1941B14BF983B98F037C71",
                         "processDefId": "barangKeluar",
-                        "redirectUrlAfterComplete": "",
+                        "redirectUrlAfterComplete": "/jw/web/userview/stok_jsp/jsp_view1/_/list_barang_keluar",
                         "fieldPassover": ""
                     }
                 },
