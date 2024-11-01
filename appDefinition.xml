@@ -246,8 +246,8 @@
                   <activityDefId>approveProduksi</activityDefId>
                   <formId>form_produksi_jsp</formId>
                   <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
+                  <autoContinue>true</autoContinue>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
             <entry>
