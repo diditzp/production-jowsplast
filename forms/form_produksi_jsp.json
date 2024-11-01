@@ -250,7 +250,7 @@
                             "label": "Request Produksi",
                             "encryption": "",
                             "readonly": "",
-                            "size": "7",
+                            "size": "20",
                             "workflowVariable": "requestProduksi",
                             "style": "",
                             "id": "requestProduksi",
