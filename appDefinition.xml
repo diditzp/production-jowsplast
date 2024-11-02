@@ -939,7 +939,7 @@
                   <processDefId>audit_sku_balance</processDefId>
                   <participantId>processStartWhiteList</participantId>
                   <type>user</type>
-                  <value>clark</value>
+                  <value>adminJSP;clark;ownerJSP</value>
                </packageParticipant>
             </entry>
             <entry>
