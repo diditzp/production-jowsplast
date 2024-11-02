@@ -226,8 +226,8 @@
                         "runProcessDirectly": "Yes",
                         "fieldPassoverMethod": "append",
                         "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
-                            "permissionHidden": "true",
-                            "permissionDeny": ""
+                            "permissionHidden": "",
+                            "permissionDeny": "true"
                         }},
                         "keyName": "",
                         "label": "Request Produksi",
@@ -252,7 +252,7 @@
             "properties": {
                 "hide": "",
                 "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
-                    "hide": "yes",
+                    "hide": "",
                     "permissionDeny": ""
                 }},
                 "permission": {
