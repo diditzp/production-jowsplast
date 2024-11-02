@@ -9,7 +9,10 @@
                     "properties": {
                         "userviewCacheDuration": "",
                         "userviewCacheScope": "",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                            "permissionHidden": "true",
+                            "permissionDeny": ""
+                        }},
                         "id": "76996081-ecc7-498a-954e-3871830bebe8",
                         "label": "Welcome",
                         "enableOffline": "",
@@ -22,7 +25,7 @@
                     "properties": {
                         "runProcessDirectly": "Yes",
                         "fieldPassoverMethod": "append",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
                         "keyName": "",
                         "label": "Pindah Barang",
                         "redirectTarget": "",
@@ -49,7 +52,7 @@
                         "cacheAllLinks": "",
                         "permissionHidden": "",
                         "assignment-customHeader": "",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
                         "assignment-customFooter": "",
                         "label": "Inbox",
                         "enableOffline": "",
@@ -66,7 +69,7 @@
                 }
             ],
             "properties": {
-                "permission_rules": {},
+                "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
                 "id": "category-EE74E4F4426241BD9BC3BC73B1D24AC7",
                 "label": "<i class='fa fa-home'><\/i> Home"
             }
@@ -79,7 +82,7 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
                         "keyName": "",
                         "customFooter": "",
                         "label": "History SKU Produk",
@@ -101,7 +104,7 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
                         "keyName": "",
                         "customFooter": "",
                         "label": "History PreForm",
@@ -121,7 +124,7 @@
             ],
             "properties": {
                 "hide": "",
-                "permission_rules": {},
+                "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
                 "permission": {
                     "className": "",
                     "properties": {}
@@ -139,7 +142,7 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
                         "keyName": "",
                         "customFooter": "",
                         "label": "SKU Produk Balance",
@@ -161,7 +164,7 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
                         "keyName": "",
                         "customFooter": "",
                         "label": "PreForm Balance",
@@ -181,7 +184,7 @@
             ],
             "properties": {
                 "hide": "",
-                "permission_rules": {},
+                "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
                 "permission": {
                     "className": "",
                     "properties": {}
@@ -199,7 +202,7 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
                         "keyName": "",
                         "customFooter": "",
                         "label": "List Produksi",
@@ -222,7 +225,10 @@
                         "permissionHidden": "",
                         "runProcessDirectly": "Yes",
                         "fieldPassoverMethod": "append",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                            "permissionHidden": "true",
+                            "permissionDeny": ""
+                        }},
                         "keyName": "",
                         "label": "Request Produksi",
                         "redirectTarget": "",
@@ -245,7 +251,7 @@
             ],
             "properties": {
                 "hide": "",
-                "permission_rules": {},
+                "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
                 "permission": {
                     "className": "",
                     "properties": {}
@@ -263,7 +269,7 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
                         "keyName": "",
                         "customFooter": "",
                         "label": "List Barang Keluar",
@@ -285,7 +291,10 @@
                     "properties": {
                         "runProcessDirectly": "Yes",
                         "fieldPassoverMethod": "append",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                            "permissionHidden": "true",
+                            "permissionDeny": ""
+                        }},
                         "keyName": "",
                         "label": "Request Barang Keluar",
                         "redirectTarget": "",
@@ -309,7 +318,7 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
                         "keyName": "",
                         "customFooter": "",
                         "label": "List Preform Keluar",
@@ -331,7 +340,10 @@
                     "properties": {
                         "runProcessDirectly": "Yes",
                         "fieldPassoverMethod": "append",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                            "permissionHidden": "true",
+                            "permissionDeny": ""
+                        }},
                         "keyName": "",
                         "label": "Request Preform Keluar",
                         "redirectTarget": "",
@@ -353,7 +365,7 @@
             ],
             "properties": {
                 "hide": "",
-                "permission_rules": {},
+                "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
                 "permission": {
                     "className": "",
                     "properties": {}
@@ -371,7 +383,7 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
                         "keyName": "",
                         "customFooter": "",
                         "label": "List Barang Masuk",
@@ -394,7 +406,10 @@
                         "permissionHidden": "",
                         "runProcessDirectly": "Yes",
                         "fieldPassoverMethod": "append",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                            "permissionHidden": "true",
+                            "permissionDeny": ""
+                        }},
                         "keyName": "",
                         "label": "Terima Masuk Barang",
                         "redirectTarget": "",
@@ -419,7 +434,7 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
                         "keyName": "",
                         "customFooter": "",
                         "label": "List Preform Masuk",
@@ -441,7 +456,10 @@
                     "properties": {
                         "runProcessDirectly": "Yes",
                         "fieldPassoverMethod": "append",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                            "permissionHidden": "true",
+                            "permissionDeny": ""
+                        }},
                         "keyName": "",
                         "label": "Terima Masuk PreForm",
                         "redirectTarget": "",
@@ -463,7 +481,7 @@
             ],
             "properties": {
                 "hide": "",
-                "permission_rules": {},
+                "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
                 "permission": {
                     "className": "",
                     "properties": {}
@@ -481,7 +499,10 @@
                     "properties": {
                         "runProcessDirectly": "Yes",
                         "fieldPassoverMethod": "append",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                            "permissionHidden": "true",
+                            "permissionDeny": ""
+                        }},
                         "keyName": "",
                         "label": "Audit SKU Produk",
                         "redirectTarget": "",
@@ -505,7 +526,10 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                            "permissionHidden": "true",
+                            "permissionDeny": ""
+                        }},
                         "keyName": "",
                         "customFooter": "",
                         "label": "List Audit SKU Produk",
@@ -527,7 +551,10 @@
                     "properties": {
                         "runProcessDirectly": "Yes",
                         "fieldPassoverMethod": "append",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                            "permissionHidden": "true",
+                            "permissionDeny": ""
+                        }},
                         "keyName": "",
                         "label": "Audit PreForm",
                         "redirectTarget": "",
@@ -551,7 +578,10 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                            "permissionHidden": "true",
+                            "permissionDeny": ""
+                        }},
                         "keyName": "",
                         "customFooter": "",
                         "label": "List Audit Preform",
@@ -571,7 +601,10 @@
             ],
             "properties": {
                 "hide": "",
-                "permission_rules": {},
+                "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                    "hide": "yes",
+                    "permissionDeny": ""
+                }},
                 "permission": {
                     "className": "",
                     "properties": {}
@@ -589,7 +622,7 @@
                     "properties": {
                         "runProcessDirectly": "Yes",
                         "fieldPassoverMethod": "append",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
                         "keyName": "",
                         "label": "Create SKU Master",
                         "redirectTarget": "",
@@ -641,7 +674,7 @@
                         "edit-customHeader": "",
                         "edit-afterSavedRedirectParamName": "",
                         "list-abortRelatedRunningProcesses": "",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
                         "edit-afterSavedRedirectUrl": "",
                         "edit-prevButtonLabel": "",
                         "customId": "sku_tipe_crud",
@@ -703,7 +736,7 @@
                         "edit-customHeader": "",
                         "edit-afterSavedRedirectParamName": "",
                         "list-abortRelatedRunningProcesses": "",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
                         "edit-afterSavedRedirectUrl": "",
                         "edit-prevButtonLabel": "",
                         "customId": "sku_master_crud",
@@ -765,7 +798,7 @@
                         "edit-customHeader": "",
                         "edit-afterSavedRedirectParamName": "",
                         "list-abortRelatedRunningProcesses": "",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
                         "edit-afterSavedRedirectUrl": "",
                         "edit-prevButtonLabel": "",
                         "customId": "preFrom_crud",
@@ -827,7 +860,7 @@
                         "edit-customHeader": "",
                         "edit-afterSavedRedirectParamName": "",
                         "list-abortRelatedRunningProcesses": "",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
                         "edit-afterSavedRedirectUrl": "",
                         "edit-prevButtonLabel": "",
                         "customId": "employee_master_crud",
@@ -859,7 +892,10 @@
             ],
             "properties": {
                 "hide": "",
-                "permission_rules": {},
+                "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                    "hide": "yes",
+                    "permissionDeny": ""
+                }},
                 "permission": {
                     "className": "",
                     "properties": {}
@@ -885,7 +921,7 @@
                             "param": "id_req_item_keluar",
                             "value": "#requestParam.id_req_item_keluar#"
                         }],
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
                         "customFooter": "",
                         "label": "Detail Barang Keluar",
                         "id": "CE38AE2845CD4E0CF35CBD9DBE5E6629",
@@ -900,7 +936,7 @@
                         "redirectUrlOnCancel": "",
                         "actionOnCancel": "",
                         "redirectTargetOnCancel": "top",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
                         "customFooter": "",
                         "paramName": "",
                         "enableOffline": "",
@@ -932,7 +968,7 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
                         "keyName": "",
                         "customFooter": "",
                         "label": "List Item Keluar",
@@ -956,7 +992,7 @@
                         "redirectUrlOnCancel": "",
                         "actionOnCancel": "",
                         "redirectTargetOnCancel": "top",
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
                         "customFooter": "",
                         "paramName": "",
                         "enableOffline": "",
@@ -991,7 +1027,7 @@
                         "reportId": "rp_label_produksi",
                         "userviewCacheScope": "",
                         "reportParams": [],
-                        "permission_rules": {},
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
                         "customFooter": "",
                         "label": "Label Produksi",
                         "id": "9D3C1B47BC7C4DDC01508CC480BD2762",
@@ -1002,7 +1038,10 @@
             ],
             "properties": {
                 "hide": "yes",
-                "permission_rules": {},
+                "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                    "hide": "yes",
+                    "permissionDeny": ""
+                }},
                 "permission": {
                     "className": "",
                     "properties": {}
@@ -1027,7 +1066,17 @@
         "userviewDescription": "",
         "noPermissionMessage": "",
         "userviewId": "jsp_view1",
-        "permission_rules": [],
+        "permission_rules": [{
+            "permission_key": "02bb9545-dce0-60fc-96dc-34b4aee955c4",
+            "permission": {
+                "className": "org.joget.apps.userview.lib.UserPermission",
+                "properties": {
+                    "allowedUsernames": "cat;pegawaiJSP",
+                    "orgId": "ORG-001"
+                }
+            },
+            "permission_name": "pegawai"
+        }],
         "hideThisUserviewInAppCenter": "",
         "userview_thumbnail": "",
         "userview_category": "",
