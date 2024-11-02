@@ -957,7 +957,7 @@
                   <processDefId>audit_sku_balance</processDefId>
                   <participantId>process7_participant1</participantId>
                   <type>user</type>
-                  <value>admin;clark</value>
+                  <value>admin;adminJSP;clark;ownerJSP</value>
                </packageParticipant>
             </entry>
             <entry>
@@ -966,7 +966,7 @@
                   <processDefId>terima_preform</processDefId>
                   <participantId>terimaBarang_2_pekerja</participantId>
                   <type>user</type>
-                  <value>cat</value>
+                  <value>cat;pegawaiJSP</value>
                </packageParticipant>
             </entry>
             <entry>
@@ -1047,7 +1047,7 @@
                   <processDefId>audit_sku_balance</processDefId>
                   <participantId>process7_participant10</participantId>
                   <type>user</type>
-                  <value>admin</value>
+                  <value>admin;ownerJSP</value>
                </packageParticipant>
             </entry>
             <entry>
@@ -1083,7 +1083,7 @@
                   <processDefId>terima_preform</processDefId>
                   <participantId>terimaBarang_2_pengawas</participantId>
                   <type>user</type>
-                  <value>clark</value>
+                  <value>adminJSP;clark;ownerJSP</value>
                </packageParticipant>
             </entry>
             <entry>
