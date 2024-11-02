@@ -948,7 +948,7 @@
                   <processDefId>terimaBarang</processDefId>
                   <participantId>pekerja</participantId>
                   <type>user</type>
-                  <value>cat;pegawaiJSP</value>
+                  <value>adminJSP;cat;pegawaiJSP</value>
                </packageParticipant>
             </entry>
             <entry>
