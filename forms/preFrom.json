@@ -64,12 +64,8 @@
                         "requiredSanitize": "",
                         "maxlength": "",
                         "validator": {
-                            "className": "org.joget.apps.form.lib.DefaultValidator",
-                            "properties": {
-                                "type": "numeric",
-                                "message": "",
-                                "mandatory": "true"
-                            }
+                            "className": "",
+                            "properties": {}
                         },
                         "label": "Volume (ml)",
                         "encryption": "",
