@@ -975,7 +975,7 @@
                   <processDefId>barangKeluar</processDefId>
                   <participantId>pengawasKeluarBarang</participantId>
                   <type>user</type>
-                  <value>clark</value>
+                  <value>adminJSP;clark;ownerJSP</value>
                </packageParticipant>
             </entry>
             <entry>
