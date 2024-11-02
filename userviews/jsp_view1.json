@@ -227,7 +227,7 @@
                         "fieldPassoverMethod": "append",
                         "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
                             "permissionHidden": "",
-                            "permissionDeny": "true"
+                            "permissionDeny": ""
                         }},
                         "keyName": "",
                         "label": "Request Produksi",
