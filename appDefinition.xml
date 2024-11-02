@@ -993,7 +993,7 @@
                   <processDefId>produksiBotol</processDefId>
                   <participantId>PengawasanProduksi_2_pekerja</participantId>
                   <type>user</type>
-                  <value>cat</value>
+                  <value>cat;pegawaiJSP</value>
                </packageParticipant>
             </entry>
             <entry>
@@ -1101,7 +1101,7 @@
                   <processDefId>produksiBotol</processDefId>
                   <participantId>PengawasanProduksi_2_pengawas</participantId>
                   <type>user</type>
-                  <value>admin;clark</value>
+                  <value>admin;adminJSP;clark;ownerJSP</value>
                </packageParticipant>
             </entry>
             <entry>
