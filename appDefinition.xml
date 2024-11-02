@@ -1065,7 +1065,7 @@
                   <processDefId>create_sku_master</processDefId>
                   <participantId>process9_participant14</participantId>
                   <type>user</type>
-                  <value>admin;clark</value>
+                  <value>admin;adminJSP;clark;ownerJSP</value>
                </packageParticipant>
             </entry>
             <entry>
