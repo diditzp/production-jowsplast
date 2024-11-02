@@ -1029,7 +1029,7 @@
                   <processDefId>audit_preform_balance</processDefId>
                   <participantId>processStartWhiteList</participantId>
                   <type>user</type>
-                  <value>admin</value>
+                  <value>admin;ownerJSP</value>
                </packageParticipant>
             </entry>
             <entry>
