@@ -966,7 +966,7 @@
                   <processDefId>terima_preform</processDefId>
                   <participantId>terimaBarang_2_pekerja</participantId>
                   <type>user</type>
-                  <value>cat</value>
+                  <value>cat;pegawaiJSP</value>
                </packageParticipant>
             </entry>
             <entry>
@@ -1083,7 +1083,7 @@
                   <processDefId>terima_preform</processDefId>
                   <participantId>terimaBarang_2_pengawas</participantId>
                   <type>user</type>
-                  <value>clark</value>
+                  <value>adminJSP;clark;ownerJSP</value>
                </packageParticipant>
             </entry>
             <entry>
