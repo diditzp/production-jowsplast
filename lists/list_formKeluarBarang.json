@@ -12,6 +12,7 @@
             "id": "rowAction_0",
             "properties": {
                 "hrefColumn": "id",
+                "permission_rules": {"bcb45083-3be8-c26a-b1f1-2a6c017b421a": {"hidden": "true"}},
                 "hrefParam": "id_req_item_keluar",
                 "rules": [],
                 "label": "Surat Jalan",
@@ -28,6 +29,7 @@
             "id": "rowAction_1",
             "properties": {
                 "hrefColumn": "id",
+                "permission_rules": {"bcb45083-3be8-c26a-b1f1-2a6c017b421a": {}},
                 "hrefParam": "d-3050393-fn_id_req_item_keluar",
                 "rules": [],
                 "label": "Packing",
@@ -44,6 +46,7 @@
         {
             "hidden": "false",
             "renderHtml": "",
+            "permission_rules": {"bcb45083-3be8-c26a-b1f1-2a6c017b421a": {}},
             "format": {
                 "className": "",
                 "properties": {}
@@ -72,6 +75,7 @@
         {
             "hidden": "false",
             "renderHtml": "",
+            "permission_rules": {"bcb45083-3be8-c26a-b1f1-2a6c017b421a": {}},
             "format": {
                 "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
                 "properties": {
@@ -119,6 +123,7 @@
             "alignment": ""
         },
         {
+            "permission_rules": {"bcb45083-3be8-c26a-b1f1-2a6c017b421a": {}},
             "name": "tanggal_keluar",
             "format": {
                 "className": "org.joget.plugin.enterprise.DateFormatter",
@@ -132,6 +137,7 @@
             "filterable": true,
             "hidden": "false",
             "renderHtml": "",
+            "permission_rules": {"bcb45083-3be8-c26a-b1f1-2a6c017b421a": {}},
             "format": {
                 "className": "",
                 "properties": {}
@@ -155,6 +161,7 @@
             "filterable": true,
             "hidden": "false",
             "renderHtml": "",
+            "permission_rules": {"bcb45083-3be8-c26a-b1f1-2a6c017b421a": {}},
             "format": {
                 "className": "org.joget.plugin.enterprise.ProcessStatusDatalistFormatter",
                 "properties": {
@@ -184,6 +191,17 @@
             "alignment": ""
         }
     ],
+    "permission_rules": [{
+        "permission_key": "bcb45083-3be8-c26a-b1f1-2a6c017b421a",
+        "permission": {
+            "className": "org.joget.apps.userview.lib.UserPermission",
+            "properties": {
+                "allowedUsernames": "cat;pegawaiJSP",
+                "orgId": "ORG-001"
+            }
+        },
+        "permission_name": "Unnamed"
+    }],
     "cardCollapsible": "",
     "pageSize": "0",
     "orderBy": "tanggal_keluar",
@@ -211,6 +229,7 @@
     "draggabletable": "",
     "filters": [
         {
+            "permission_rules": {"bcb45083-3be8-c26a-b1f1-2a6c017b421a": {}},
             "name": "id",
             "id": "filter_0",
             "label": "ID",
@@ -223,6 +242,7 @@
         },
         {
             "hidden": "",
+            "permission_rules": {"bcb45083-3be8-c26a-b1f1-2a6c017b421a": {}},
             "name": "channel",
             "id": "filter_1",
             "label": "Channel",
@@ -271,6 +291,7 @@
         },
         {
             "hidden": "",
+            "permission_rules": {"bcb45083-3be8-c26a-b1f1-2a6c017b421a": {}},
             "name": "tanggal_keluar",
             "id": "filter_2",
             "label": "Tanggal Keluar",
