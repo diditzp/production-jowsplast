@@ -1092,8 +1092,11 @@
             }
         },
         "permission": {
-            "className": "org.joget.apps.userview.lib.LoggedInUserPermission",
-            "properties": {}
+            "className": "org.joget.apps.userview.lib.UserPermission",
+            "properties": {
+                "allowedUsernames": "adminJSP;ownerJSP",
+                "orgId": "ORG-001"
+            }
         },
         "userviewName": "JSP View"
     }}
