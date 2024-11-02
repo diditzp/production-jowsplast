@@ -160,6 +160,14 @@
         {
             "filterable": true,
             "hidden": "false",
+            "name": "pickUp",
+            "id": "column_4",
+            "label": "Pick Up",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
             "renderHtml": "",
             "permission_rules": {"bcb45083-3be8-c26a-b1f1-2a6c017b421a": {}},
             "format": {
