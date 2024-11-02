@@ -255,7 +255,7 @@
                 {
                     "className": "org.joget.apps.userview.lib.RunProcess",
                     "properties": {
-                        "permissionHidden": "true",
+                        "permissionHidden": "",
                         "runProcessDirectly": "Yes",
                         "fieldPassoverMethod": "append",
                         "permission_rules": {
@@ -454,7 +454,7 @@
                 {
                     "className": "org.joget.apps.userview.lib.RunProcess",
                     "properties": {
-                        "permissionHidden": "true",
+                        "permissionHidden": "",
                         "runProcessDirectly": "Yes",
                         "fieldPassoverMethod": "append",
                         "permission_rules": {
@@ -972,7 +972,7 @@
                 }
             ],
             "properties": {
-                "hide": "yes",
+                "hide": "",
                 "permission_rules": {
                     "540c8040-1bd9-9c6e-5e17-a58505dde8db": {
                         "hide": "",
