@@ -984,7 +984,7 @@
                   <processDefId>barangKeluar_2</processDefId>
                   <participantId>barangKeluar_2_pengawasKeluarBarang</participantId>
                   <type>user</type>
-                  <value>clark</value>
+                  <value>adminJSP;clark;ownerJSP</value>
                </packageParticipant>
             </entry>
             <entry>
@@ -1110,7 +1110,7 @@
                   <processDefId>pindah_item</processDefId>
                   <participantId>processStartWhiteList</participantId>
                   <type>user</type>
-                  <value>admin;cat;clark</value>
+                  <value>admin;adminJSP;cat;clark;ownerJSP;pegawaiJSP</value>
                </packageParticipant>
             </entry>
             <entry>
