@@ -1143,7 +1143,7 @@
         "permission": {
             "className": "org.joget.apps.userview.lib.UserPermission",
             "properties": {
-                "allowedUsernames": "adminJSP;ownerJSP",
+                "allowedUsernames": "adminJSP;clark;ownerJSP",
                 "orgId": "ORG-001"
             }
         },
