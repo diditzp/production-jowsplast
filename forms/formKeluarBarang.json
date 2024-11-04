@@ -203,7 +203,7 @@
                             "abortRelatedRunningProcesses": "",
                             "height": "500",
                             "showRowNumber": "",
-                            "disabledDelete": "",
+                            "disabledDelete": "true",
                             "validateMinRow": "",
                             "submit-label-normal": "",
                             "uniqueKey": "",
