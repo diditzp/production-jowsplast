@@ -5,22 +5,6 @@
             "className": "org.joget.apps.userview.model.UserviewCategory",
             "menus": [
                 {
-                    "className": "org.joget.apps.userview.lib.HtmlPage",
-                    "properties": {
-                        "userviewCacheDuration": "",
-                        "userviewCacheScope": "",
-                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
-                            "permissionHidden": "true",
-                            "permissionDeny": ""
-                        }},
-                        "id": "76996081-ecc7-498a-954e-3871830bebe8",
-                        "label": "Welcome",
-                        "enableOffline": "",
-                        "customId": "welcome",
-                        "content": "<p style=\"text-align: center;\"><span style=\"font-size: 12pt;\"><strong>Aplikasi Pengawasan Gudang JSP<\/strong><\/span><\/p>"
-                    }
-                },
-                {
                     "className": "org.joget.apps.userview.lib.RunProcess",
                     "properties": {
                         "runProcessDirectly": "Yes",
@@ -843,6 +827,22 @@
                         "list-moreActions": [],
                         "edit-backButtonLabel": "",
                         "list-editLinkTarget": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.HtmlPage",
+                    "properties": {
+                        "userviewCacheDuration": "",
+                        "userviewCacheScope": "",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                            "permissionHidden": "true",
+                            "permissionDeny": ""
+                        }},
+                        "id": "76996081-ecc7-498a-954e-3871830bebe8",
+                        "label": "Welcome",
+                        "enableOffline": "",
+                        "customId": "welcome",
+                        "content": "<p style=\"text-align: center;\"><span style=\"font-size: 12pt;\"><strong>Aplikasi Pengawasan Gudang JSP<\/strong><\/span><\/p>"
                     }
                 },
                 {
