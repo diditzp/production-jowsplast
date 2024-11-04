@@ -66,6 +66,51 @@
             "label": "Tipe"
         },
         {
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "optionsBinder": {
+                        "className": "",
+                        "properties": {}
+                    },
+                    "options": [
+                        {
+                            "label": "Bulat",
+                            "value": "RND"
+                        },
+                        {
+                            "label": "Kotak",
+                            "value": "RECT"
+                        }
+                    ]
+                }
+            },
+            "label": "Bentuk",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "bentuk",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_4",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "uomBotol",
+            "id": "column_7",
+            "label": "UOM Dimensi",
+            "sortable": "false"
+        },
+        {
             "filterable": true,
             "hidden": "false",
             "name": "dimensi",
@@ -79,15 +124,8 @@
             "name": "ketebalan",
             "id": "column_6",
             "label": "Ketebalan",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "name": "uomBotol",
-            "id": "column_7",
-            "label": "UOM Dimensi",
-            "sortable": "false"
+            "sortable": "false",
+            "datalist_type": "column"
         },
         {
             "filterable": true,
@@ -96,32 +134,6 @@
             "id": "column_8",
             "label": "Berat",
             "sortable": "false"
-        },
-        {
-            "name": "bentuk",
-            "format": {
-                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
-                "properties": {
-                    "optionsBinder": {
-                        "className": "",
-                        "properties": {}
-                    },
-                    "options": [
-                        {
-                            "label": "Bulat",
-                            "value": "RND",
-                            "grouping": ""
-                        },
-                        {
-                            "label": "Kotak",
-                            "value": "RECT",
-                            "grouping": ""
-                        }
-                    ]
-                }
-            },
-            "id": "column_4",
-            "label": "Bentuk"
         }
     ],
     "pageSize": 0,
