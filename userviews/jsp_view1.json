@@ -159,7 +159,7 @@
                         "customId": "preform_balance",
                         "buttonPosition": "bothLeft",
                         "datalistId": "list_sku_preform",
-                        "checkboxPosition": "left",
+                        "checkboxPosition": "no",
                         "selectionType": "multiple",
                         "userviewCacheDuration": "20",
                         "cacheListAction": "",
