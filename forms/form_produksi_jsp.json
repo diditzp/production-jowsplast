@@ -217,7 +217,7 @@
                             },
                             "label": "Sisa Preform",
                             "encryption": "",
-                            "readonly": "true",
+                            "readonly": "",
                             "size": "20",
                             "workflowVariable": "",
                             "style": "",
