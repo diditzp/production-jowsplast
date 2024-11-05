@@ -441,7 +441,7 @@
                         "customId": "list_preform_masuk",
                         "buttonPosition": "bothLeft",
                         "datalistId": "list_preform_masuk",
-                        "checkboxPosition": "left",
+                        "checkboxPosition": "no",
                         "selectionType": "multiple",
                         "userviewCacheDuration": "20",
                         "cacheListAction": "",
