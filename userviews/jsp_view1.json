@@ -137,7 +137,7 @@
                         "customId": "sku_balance",
                         "buttonPosition": "bothLeft",
                         "datalistId": "list_sku_master_1",
-                        "checkboxPosition": "left",
+                        "checkboxPosition": "no",
                         "selectionType": "multiple",
                         "userviewCacheDuration": "20",
                         "cacheListAction": "",
