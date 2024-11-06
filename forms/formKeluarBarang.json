@@ -353,7 +353,7 @@
                             "autoPopulate": "",
                             "label": "",
                             "id": "field11",
-                            "value": "<script>\n    $(document).ready(function() {\n        \n        // $('.grid-checkbox-header, .td-checkbox').remove();\n        \n       // ubah nama customer sesuai dengan channel yang dipilih\n       $('[name=channel]').on('change', function() {\n           var value = $('[name=channel] option:selected').text();\n           \n           if (!(value === 'Offline')) {\n               $('[name=nama_customer]').val(value);\n               $('[name=nama_customer]').css({'pointer-events':'none'});\n           } else {\n               $('[name=nama_customer]').val('');\n               $('[name=nama_customer]').css({'pointer-events':'auto'});\n           }\n       })\n    });\n<\/script>"
+                            "value": "<script>\n    $(document).ready(function() {\n        \n        $('.grid-checkbox-header, .td-checkbox').remove();\n        \n       // ubah nama customer sesuai dengan channel yang dipilih\n       $('[name=channel]').on('change', function() {\n           var value = $('[name=channel] option:selected').text();\n           \n           if (!(value === 'Offline')) {\n               $('[name=nama_customer]').val(value);\n               $('[name=nama_customer]').css({'pointer-events':'none'});\n           } else {\n               $('[name=nama_customer]').val('');\n               $('[name=nama_customer]').css({'pointer-events':'auto'});\n           }\n       })\n    });\n<\/script>"
                         }
                     }
                 ],
