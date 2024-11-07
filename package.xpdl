@@ -1387,26 +1387,6 @@
                         <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="354,36.00000031274414"/>
                     </ExtendedAttributes>
                 </Activity>
-                <Activity Id="post_data_to_spreadsheet" Name="Post Data To SpreadSheet">
-                    <Implementation>
-                        <Tool Id="default_application"/>
-                    </Implementation>
-                    <Performer>process7_participant10</Performer>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process7_participant10"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="579,119.986111"/>
-                    </ExtendedAttributes>
-                </Activity>
-                <Activity Id="post_data_to_spreadsheet_2" Name="Post Data To SpreadSheet">
-                    <Implementation>
-                        <Tool Id="default_application"/>
-                    </Implementation>
-                    <Performer>process7_participant10</Performer>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process7_participant10"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="508,21.986111"/>
-                    </ExtendedAttributes>
-                </Activity>
             </Activities>
             <Transitions>
                 <Transition From="tool1" Id="transition2" To="tool2">
@@ -1440,22 +1420,12 @@
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                     </ExtendedAttributes>
                 </Transition>
-                <Transition From="tool2_2_3" Id="transition_end_tool2_2_3" To="post_data_to_spreadsheet">
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="tool2_2_4" Id="transition_end_tool2_2_4" To="post_data_to_spreadsheet_2">
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                    </ExtendedAttributes>
-                </Transition>
             </Transitions>
             <ExtendedAttributes>
                 <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="process7_participant10;process7_participant1"/>
                 <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=process7_participant1,CONNECTING_ACTIVITY_ID=tool1,X_OFFSET=502,Y_OFFSET=60,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=process7_participant10,CONNECTING_ACTIVITY_ID=post_data_to_spreadsheet,X_OFFSET=753.046875,Y_OFFSET=202,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=process7_participant10,CONNECTING_ACTIVITY_ID=post_data_to_spreadsheet_2,X_OFFSET=688,Y_OFFSET=66.0000041274414,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=process7_participant10,CONNECTING_ACTIVITY_ID=tool2_2_3,X_OFFSET=753.046875,Y_OFFSET=202,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=process7_participant10,CONNECTING_ACTIVITY_ID=tool2_2_4,X_OFFSET=688,Y_OFFSET=66.0000041274414,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
             </ExtendedAttributes>
         </WorkflowProcess>
         <WorkflowProcess Id="audit_preform_balance" Name="Audit Preform Balance">
