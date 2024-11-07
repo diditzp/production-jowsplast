@@ -316,7 +316,7 @@
                   <processDefId>pindah_item</processDefId>
                   <activityDefId>post_data_to_spreadsheet</activityDefId>
                   <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
-                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.tutorial.PurchaseRequestWSAppScript&quot;,&quot;properties&quot;:{&quot;url&quot;:&quot;https://script.google.com/macros/s/AKfycbw4pXN127J0kRqjY5iQKTwBntaKJqmg8jThjgr6Y8Fivyb_9NkHF-rrtTYFw-h9vzW8pA/exec&quot;,&quot;parentId&quot;:&quot;#process.recordId#&quot;}}]}</pluginProperties>
+                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.tutorial.PurchaseRequestWS&quot;,&quot;properties&quot;:{&quot;url&quot;:&quot;https://script.google.com/macros/s/AKfycbw4pXN127J0kRqjY5iQKTwBntaKJqmg8jThjgr6Y8Fivyb_9NkHF-rrtTYFw-h9vzW8pA/exec&quot;,&quot;parentId&quot;:&quot;#process.recordId#&quot;}}]}</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
@@ -757,7 +757,7 @@
                   <processDefId>pindah_item</processDefId>
                   <activityDefId>post_data_to_spreadsheet_2</activityDefId>
                   <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
-                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.tutorial.PurchaseRequestWSAppScript&quot;,&quot;properties&quot;:{&quot;url&quot;:&quot;https://script.google.com/macros/s/AKfycbw4pXN127J0kRqjY5iQKTwBntaKJqmg8jThjgr6Y8Fivyb_9NkHF-rrtTYFw-h9vzW8pA/exec&quot;,&quot;parentId&quot;:&quot;#process.recordId#&quot;}}]}</pluginProperties>
+                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.tutorial.PurchaseRequestWS&quot;,&quot;properties&quot;:{&quot;url&quot;:&quot;https://script.google.com/macros/s/AKfycbw4pXN127J0kRqjY5iQKTwBntaKJqmg8jThjgr6Y8Fivyb_9NkHF-rrtTYFw-h9vzW8pA/exec&quot;,&quot;parentId&quot;:&quot;#process.recordId#&quot;}}]}</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
