@@ -595,7 +595,7 @@
                   <processDefId>produksiBotol</processDefId>
                   <activityDefId>post_data_to_spreadsheet_3</activityDefId>
                   <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
-                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.tutorial.PurchaseRequestWSAppScript&quot;,&quot;properties&quot;:{&quot;url&quot;:&quot;https://script.google.com/macros/s/AKfycbw4pXN127J0kRqjY5iQKTwBntaKJqmg8jThjgr6Y8Fivyb_9NkHF-rrtTYFw-h9vzW8pA/exec&quot;,&quot;parentId&quot;:&quot;#process.recordId#&quot;}}]}</pluginProperties>
+                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.tutorial.PurchaseRequestWS&quot;,&quot;properties&quot;:{&quot;url&quot;:&quot;https://script.google.com/macros/s/AKfycbw4pXN127J0kRqjY5iQKTwBntaKJqmg8jThjgr6Y8Fivyb_9NkHF-rrtTYFw-h9vzW8pA/exec&quot;,&quot;parentId&quot;:&quot;#process.recordId#&quot;}}]}</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
@@ -604,7 +604,7 @@
                   <processDefId>produksiBotol</processDefId>
                   <activityDefId>post_data_to_spreadsheet</activityDefId>
                   <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
-                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.tutorial.PurchaseRequestWSAppScript&quot;,&quot;properties&quot;:{&quot;url&quot;:&quot;https://script.google.com/macros/s/AKfycbw4pXN127J0kRqjY5iQKTwBntaKJqmg8jThjgr6Y8Fivyb_9NkHF-rrtTYFw-h9vzW8pA/exec&quot;,&quot;parentId&quot;:&quot;#process.recordId#&quot;}}]}</pluginProperties>
+                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.tutorial.PurchaseRequestWS&quot;,&quot;properties&quot;:{&quot;url&quot;:&quot;https://script.google.com/macros/s/AKfycbw4pXN127J0kRqjY5iQKTwBntaKJqmg8jThjgr6Y8Fivyb_9NkHF-rrtTYFw-h9vzW8pA/exec&quot;,&quot;parentId&quot;:&quot;#process.recordId#&quot;}}]}</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
@@ -767,6 +767,15 @@
                   <activityDefId>produksi_ke_packing</activityDefId>
                   <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
                   <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.DatabaseUpdateTool&quot;,&quot;properties&quot;:{&quot;query&quot;:&quot;UPDATE app_fd_sku_master a\r\nINNER JOIN app_fd_flow_stock b \r\nON a.id = b.c_skuProduk\r\nSET \r\n    b.c_qty_sebelum = CAST(a.c_total AS SIGNED),\r\n    a.c_total = CAST(a.c_total AS SIGNED),\r\n    b.c_qty_balance = CAST(a.c_total AS SIGNED) ,\r\n    a.c_gudang_produksi = CAST(a.c_gudang_produksi AS SIGNED) - CAST(b.c_kuantitas AS SIGNED),\r\n    a.c_gudang_packing = CAST(a.c_gudang_packing AS SIGNED) + CAST(b.c_kuantitas AS SIGNED)\r\nWHERE \r\n    b.id = &apos;#process.recordId#&apos;;&quot;,&quot;jdbcDatasource&quot;:&quot;default&quot;}}]}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>terima_preform::tool6</string>
+               <packageActivityPlugin>
+                  <processDefId>terima_preform</processDefId>
+                  <activityDefId>tool6</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
+                  <pluginProperties>{}</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
