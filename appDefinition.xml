@@ -1074,7 +1074,7 @@
                   <processDefId>audit_preform_balance</processDefId>
                   <participantId>audit_sku_balance_2_process7_participant10</participantId>
                   <type>user</type>
-                  <value>adminJSP;clark</value>
+                  <value>adminJSP</value>
                </packageParticipant>
             </entry>
             <entry>
