@@ -30,7 +30,7 @@
          <id>counter</id>
          <appId>stok_jsp</appId>
          <appVersion>2</appVersion>
-         <value>269</value>
+         <value>271</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
       </environmentVariable>
    </environmentVariableList>
