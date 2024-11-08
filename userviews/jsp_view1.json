@@ -1109,7 +1109,7 @@
                 "removeAssignmentTitle": "",
                 "shortcutLinkLabel": "",
                 "disableHelpGuide": "",
-                "logo": "",
+                "logo": "#appResource.logo_jsp.png#",
                 "enableResponsiveSwitch": "",
                 "dx8headerFontColor": "",
                 "fav_icon": "",
