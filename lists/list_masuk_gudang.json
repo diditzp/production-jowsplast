@@ -66,7 +66,30 @@
                 "className": "",
                 "properties": {}
             },
-            "label": "Tanggal",
+            "label": "Tanggal Request",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "dateCreated",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_2",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Tanggal Masuk",
             "sortable": "false",
             "datalist_type": "column",
             "exclude_export": "",
