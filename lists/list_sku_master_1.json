@@ -112,7 +112,7 @@
     ],
     "cardCollapsible": "",
     "pageSize": "0",
-    "orderBy": "",
+    "orderBy": "dateModified",
     "description": "",
     "showDataWhenFilterSet": "",
     "disableResponsive": "",
@@ -123,7 +123,7 @@
         "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
         "properties": {"formDefId": "sku_master"}
     },
-    "order": "",
+    "order": "1",
     "useSession": "",
     "draggabletable": "",
     "filters": [{
