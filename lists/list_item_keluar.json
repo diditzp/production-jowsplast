@@ -8,7 +8,8 @@
     "rowActions": [],
     "columns": [
         {
-            "name": "nama_sku",
+            "hidden": "false",
+            "renderHtml": "",
             "format": {
                 "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
                 "properties": {
@@ -29,8 +30,20 @@
                     "options": []
                 }
             },
+            "label": "Nama SKU",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "nama_sku",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
             "id": "column_1",
-            "label": "Nama SKU"
+            "alignment": ""
         },
         {
             "hidden": "false",
@@ -52,7 +65,7 @@
             },
             "style": "",
             "id": "column_3",
-            "alignment": ""
+            "alignment": "dataListAlignRight"
         }
     ],
     "pageSize": 0,
