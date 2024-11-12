@@ -235,7 +235,7 @@
     }],
     "cardCollapsible": "",
     "pageSize": "0",
-    "orderBy": "tanggal_keluar",
+    "orderBy": "dateCreated",
     "description": "",
     "showDataWhenFilterSet": "",
     "disableResponsive": "",
