@@ -58,14 +58,14 @@
             "exclude_export": "",
             "name": "request_packing",
             "width": "",
-            "headerAlignment": "dataListAlignRight",
+            "headerAlignment": "dataListAlignCenter",
             "action": {
                 "className": "",
                 "properties": {}
             },
             "style": "",
             "id": "column_3",
-            "alignment": "dataListAlignRight"
+            "alignment": "dataListAlignCenter"
         }
     ],
     "pageSize": 0,
