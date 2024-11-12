@@ -63,6 +63,29 @@
             "label": "Nama PreForm"
         },
         {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Tanggal Request",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "dateCreated",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_0",
+            "alignment": ""
+        },
+        {
             "name": "tanggal_keluar",
             "format": {
                 "className": "org.joget.plugin.enterprise.DateFormatter",
