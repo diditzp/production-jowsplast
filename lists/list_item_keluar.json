@@ -58,7 +58,7 @@
             "exclude_export": "",
             "name": "request_packing",
             "width": "",
-            "headerAlignment": "",
+            "headerAlignment": "dataListAlignRight",
             "action": {
                 "className": "",
                 "properties": {}
