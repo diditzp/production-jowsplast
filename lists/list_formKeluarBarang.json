@@ -123,6 +123,29 @@
             "alignment": ""
         },
         {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Tanggal Request",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "dateCreated",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_6",
+            "alignment": ""
+        },
+        {
             "permission_rules": {"bcb45083-3be8-c26a-b1f1-2a6c017b421a": {}},
             "name": "tanggal_keluar",
             "format": {
