@@ -586,7 +586,7 @@
                   <processDefId>barangKeluar</processDefId>
                   <activityDefId>updateStokGudang_3_2</activityDefId>
                   <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
-                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.DatabaseUpdateTool&quot;,&quot;properties&quot;:{&quot;query&quot;:&quot;UPDATE app_fd_sku_master a\r\nINNER JOIN app_fd_flow_stock b ON a.id = b.c_skuProduk\r\nSET \r\n    b.c_qty_sebelum = CAST(a.c_total AS SIGNED),\r\n    a.c_total = CAST(a.c_total AS SIGNED) ,\r\n    b.c_qty_balance = CAST(a.c_total AS SIGNED) ,\r\n    a.c_gudang_packing = CAST(a.c_gudang_produksi AS SIGNED) + CASE WHEN b.c_gudang = &apos;gudang_produksi&apos; THEN CAST(b.c_kuantitas AS SIGNED) ELSE 0 END,\r\nWHERE \r\n    b.c_id_req_item_keluar = &apos;#process.recordId#&apos;;&quot;,&quot;jdbcDatasource&quot;:&quot;default&quot;}}]}</pluginProperties>
+                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.DatabaseUpdateTool&quot;,&quot;properties&quot;:{&quot;query&quot;:&quot;UPDATE app_fd_sku_master a\r\nINNER JOIN app_fd_flow_stock b ON a.id = b.c_skuProduk\r\nSET \r\n    b.c_qty_sebelum = CAST(a.c_total AS SIGNED),\r\n    b.c_qty_balance = CAST(a.c_total AS SIGNED) \r\nWHERE \r\n    b.c_id_req_item_keluar = &apos;#process.recordId#&apos;;&quot;,&quot;jdbcDatasource&quot;:&quot;default&quot;}}]}</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
