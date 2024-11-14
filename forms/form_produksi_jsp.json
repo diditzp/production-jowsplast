@@ -279,7 +279,7 @@
                                     "mandatory": "true"
                                 }
                             },
-                            "label": "Isi PerBal Label Produksi",
+                            "label": "Isi Pcs / Bal Label Produksi",
                             "encryption": "",
                             "readonly": "",
                             "size": "20",
