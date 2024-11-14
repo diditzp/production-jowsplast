@@ -43,7 +43,8 @@
             "name": "dateCreated",
             "id": "column_2",
             "label": "Date Created",
-            "sortable": "false"
+            "sortable": "false",
+            "datalist_type": "column"
         },
         {
             "filterable": true,
@@ -182,6 +183,34 @@
             },
             "datalist_type": "filter",
             "filterParamName": "d-5518332-fn_namaProduk"
+        },
+        {
+            "hidden": "",
+            "name": "alur",
+            "id": "filter_2",
+            "label": "Alur",
+            "type": {
+                "className": "",
+                "properties": {}
+            },
+            "datalist_type": "filter",
+            "filterParamName": "d-5518332-fn_alur"
+        },
+        {
+            "hidden": "",
+            "name": "id_flow",
+            "id": "filter_3",
+            "label": "ID Gudang",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {
+                    "defaultValue": "",
+                    "filterSelection": "",
+                    "searchFields": ""
+                }
+            },
+            "datalist_type": "filter",
+            "filterParamName": "d-5518332-fn_id_flow"
         },
         {
             "hidden": "",
