@@ -662,6 +662,13 @@
                                     "label": "Catatan Hasil Produksi",
                                     "formatType": "text",
                                     "value": "noteHasilProduksi"
+                                },
+                                {
+                                    "format": "",
+                                    "width": "",
+                                    "label": "Label PCS / Bal",
+                                    "formatType": "text",
+                                    "value": "isi_per_ball_produksi"
                                 }
                             ],
                             "id": "aktual_produksi",
