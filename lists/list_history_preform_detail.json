@@ -1,0 +1,88 @@
+{
+    "useSession": "false",
+    "showPageSizeSelector": "true",
+    "rowActions": [],
+    "columns": [
+        {
+            "name": "id_produksi_botol",
+            "id": "column_0",
+            "label": "ID Produksi Botol"
+        },
+        {
+            "name": "nama_sku",
+            "id": "column_1",
+            "label": "nama_sku"
+        },
+        {
+            "name": "nama_produk",
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "optionsBinder": {
+                        "className": "org.joget.plugin.enterprise.JdbcOptionsBinder",
+                        "properties": {
+                            "useAjax": "",
+                            "addEmpty": "true",
+                            "jdbcDatasource": "default",
+                            "cacheInterval": "",
+                            "emptyLabel": "",
+                            "sql": "select id, c_namaProduk from app_fd_sku_master;"
+                        }
+                    },
+                    "options": []
+                }
+            },
+            "id": "column_2",
+            "label": "Nama Produk"
+        },
+        {
+            "name": "tanggal_produksi",
+            "format": {
+                "className": "org.joget.plugin.enterprise.DateFormatter",
+                "properties": {"dataFormat": "yyyy-MM-dd"}
+            },
+            "id": "column_3",
+            "label": "Tanggal Produksi"
+        },
+        {
+            "name": "shift",
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "optionsBinder": {
+                        "className": "",
+                        "properties": {}
+                    },
+                    "options": [
+                        {
+                            "label": "Pagi",
+                            "value": "pagi",
+                            "grouping": ""
+                        },
+                        {
+                            "label": "Malam",
+                            "value": "malam",
+                            "grouping": ""
+                        }
+                    ]
+                }
+            },
+            "id": "column_4",
+            "label": "Shift"
+        }
+    ],
+    "pageSize": 0,
+    "orderBy": "",
+    "filters": [],
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "buttonPosition": "bothLeft",
+    "checkboxPosition": "left",
+    "name": "List - Form History Preform Detail",
+    "id": "list_history_preform_detail",
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "history_preform_detail"}
+    },
+    "actions": [],
+    "order": ""
+}
