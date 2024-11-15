@@ -867,7 +867,7 @@
                         "customId": "mesin_produksi_crud",
                         "edit-afterSaved": "list",
                         "list-deleteButtonLabel": "",
-                        "checkboxPosition": "no",
+                        "checkboxPosition": "left",
                         "add-customFooter": "",
                         "list-deleteGridData": "",
                         "edit-allowRecordTraveling": "",
