@@ -437,12 +437,30 @@
                </packageActivityPlugin>
             </entry>
             <entry>
+               <string>terimaBarang::updateStokGudang_2</string>
+               <packageActivityPlugin>
+                  <processDefId>terimaBarang</processDefId>
+                  <activityDefId>updateStokGudang_2</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
+                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.DatabaseUpdateTool&quot;,&quot;properties&quot;:{&quot;query&quot;:&quot;UPDATE app_fd_flow_stock a\r\nINNER JOIN app_fd_masuk_gudang b \r\nON a.id = b.id\r\nSET a.c_kuantitas = CAST(a.c_kuantitas AS SIGNED) + CAST(b.c_jumlah_barang_aktual AS SIGNED)\r\nWHERE b.id = &apos;#process.recordId#&apos;;&quot;,&quot;jdbcDatasource&quot;:&quot;default&quot;}}]}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
                <string>barangKeluar_2::update_sku_master_2</string>
                <packageActivityPlugin>
                   <processDefId>barangKeluar_2</processDefId>
                   <activityDefId>update_sku_master_2</activityDefId>
                   <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
                   <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.DatabaseUpdateTool&quot;,&quot;properties&quot;:{&quot;query&quot;:&quot;UPDATE app_fd_pre_form a\r\nINNER JOIN app_fd_flow_preform b \r\nON a.c_nama_pre_form = b.c_nama_pre_form\r\nSET \r\n       b.c_qty_sebelum = CAST(a.c_total_pre_form AS SIGNED),\r\n       a.c_total_pre_form = CAST(a.c_total_pre_form AS SIGNED) - CAST(b.c_kuantitas AS SIGNED),\r\n       b.c_qty_balance = CAST(a.c_total_pre_form AS SIGNED) - CAST(b.c_kuantitas AS SIGNED)\r\nWHERE \r\n    b.id = &apos;#process.recordId#&apos;;&quot;,&quot;jdbcDatasource&quot;:&quot;default&quot;}}]}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>terimaBarang::update_sku_master_2</string>
+               <packageActivityPlugin>
+                  <processDefId>terimaBarang</processDefId>
+                  <activityDefId>update_sku_master_2</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
+                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.DatabaseUpdateTool&quot;,&quot;properties&quot;:{&quot;query&quot;:&quot;UPDATE app_fd_sku_master a\r\nINNER JOIN app_fd_flow_stock b\r\non a.id = b.c_skuProduk\r\nSET \r\n    b.c_qty_sebelum = CAST(a.c_total AS SIGNED),\r\n    b.c_qty_balance = CAST(a.c_total AS SIGNED) \r\nWHERE \r\n    b.id = &apos;#process.recordId#&apos;;&quot;,&quot;jdbcDatasource&quot;:&quot;default&quot;}}]}</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
@@ -595,7 +613,7 @@
                   <processDefId>terimaBarang</processDefId>
                   <activityDefId>isAchieve</activityDefId>
                   <pluginName>org.joget.apps.app.lib.RulesDecisionPlugin</pluginName>
-                  <pluginProperties>{&quot;rules&quot;:{&quot;ifrules&quot;:[{&quot;andOr&quot;:&quot;and&quot;,&quot;revert&quot;:false,&quot;conditions&quot;:[{&quot;variable&quot;:&quot;approveAktual&quot;,&quot;revert&quot;:false,&quot;operation&quot;:&quot;==&quot;,&quot;value&quot;:&quot;Achieve&quot;}],&quot;actions&quot;:[{&quot;name&quot;:&quot;transition4&quot;,&quot;type&quot;:&quot;transition&quot;,&quot;value&quot;:&quot;&quot;}]}],&quot;else&quot;:[{&quot;name&quot;:&quot;transition9&quot;,&quot;type&quot;:&quot;transition&quot;,&quot;value&quot;:&quot;&quot;}]}}</pluginProperties>
+                  <pluginProperties>{&quot;rules&quot;:{&quot;ifrules&quot;:[{&quot;andOr&quot;:&quot;and&quot;,&quot;revert&quot;:false,&quot;conditions&quot;:[{&quot;variable&quot;:&quot;approveAktual&quot;,&quot;revert&quot;:false,&quot;operation&quot;:&quot;==&quot;,&quot;value&quot;:&quot;Achieve&quot;}],&quot;actions&quot;:[{&quot;name&quot;:&quot;transition4&quot;,&quot;type&quot;:&quot;transition&quot;,&quot;value&quot;:&quot;&quot;}]},{&quot;andOr&quot;:&quot;and&quot;,&quot;revert&quot;:false,&quot;conditions&quot;:[{&quot;variable&quot;:&quot;approveAktual&quot;,&quot;revert&quot;:false,&quot;operation&quot;:&quot;==&quot;,&quot;value&quot;:&quot;cancel&quot;}],&quot;actions&quot;:[{&quot;name&quot;:&quot;transition13&quot;,&quot;type&quot;:&quot;transition&quot;,&quot;value&quot;:&quot;&quot;}]},{&quot;andOr&quot;:&quot;and&quot;,&quot;revert&quot;:false,&quot;conditions&quot;:[{&quot;variable&quot;:&quot;approveAktual&quot;,&quot;revert&quot;:false,&quot;operation&quot;:&quot;==&quot;,&quot;value&quot;:&quot;notAchieve&quot;}],&quot;actions&quot;:[{&quot;name&quot;:&quot;transition9&quot;,&quot;type&quot;:&quot;transition&quot;,&quot;value&quot;:&quot;&quot;}]}],&quot;else&quot;:[]}}</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
@@ -785,6 +803,15 @@
                   <activityDefId>produksi_ke_packing</activityDefId>
                   <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
                   <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.DatabaseUpdateTool&quot;,&quot;properties&quot;:{&quot;query&quot;:&quot;UPDATE app_fd_sku_master a\r\nINNER JOIN app_fd_flow_stock b \r\nON a.id = b.c_skuProduk\r\nSET \r\n    b.c_qty_sebelum = CAST(a.c_total AS SIGNED),\r\n    a.c_total = CAST(a.c_total AS SIGNED),\r\n    b.c_qty_balance = CAST(a.c_total AS SIGNED) ,\r\n    a.c_gudang_produksi = CAST(a.c_gudang_produksi AS SIGNED) - CAST(b.c_kuantitas AS SIGNED),\r\n    a.c_gudang_packing = CAST(a.c_gudang_packing AS SIGNED) + CAST(b.c_kuantitas AS SIGNED)\r\nWHERE \r\n    b.id = &apos;#process.recordId#&apos;;&quot;,&quot;jdbcDatasource&quot;:&quot;default&quot;}}]}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>terima_preform::tool6</string>
+               <packageActivityPlugin>
+                  <processDefId>terima_preform</processDefId>
+                  <activityDefId>tool6</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
+                  <pluginProperties>{}</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
