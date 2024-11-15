@@ -97,7 +97,7 @@
                                 }
                             },
                             "format": "",
-                            "label": "Tanggal Produksi",
+                            "label": "Tanggal Mulai Produksi",
                             "datePickerType": "",
                             "currentDateAs": "",
                             "endDateFieldId": "",
@@ -105,6 +105,40 @@
                             "allowManual": "",
                             "workflowVariable": "",
                             "id": "tanggal_produksi",
+                            "placeholder": "",
+                            "disableWeekends": "",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.DatePicker",
+                        "properties": {
+                            "yearRange": "c-10:c+10",
+                            "dataFormat": "yyyy-MM-dd",
+                            "startDateFieldId": "",
+                            "permission_rules": {
+                                "fecd5d08-1e59-12a0-0e31-f06b6aa68919": {},
+                                "f16e031c-1fbd-7bae-8418-5847efb12979": {},
+                                "aa1fac9e-2954-eadb-f641-eee606d57fb6": {}
+                            },
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "type": "",
+                                    "message": "",
+                                    "mandatory": "true"
+                                }
+                            },
+                            "format": "",
+                            "label": "Tanggal Selesai Produksi",
+                            "datePickerType": "",
+                            "currentDateAs": "",
+                            "endDateFieldId": "",
+                            "readonly": "",
+                            "allowManual": "",
+                            "workflowVariable": "",
+                            "id": "tanggal_selesai_produksi",
                             "placeholder": "",
                             "disableWeekends": "",
                             "value": "",
@@ -632,6 +666,13 @@
                                     "label": "Waktu Masuk",
                                     "formatType": "date",
                                     "value": "tanggalMasukGudang"
+                                },
+                                {
+                                    "format": "",
+                                    "width": "",
+                                    "label": "Shift",
+                                    "formatType": "text",
+                                    "value": "shift"
                                 },
                                 {
                                     "format": "",
