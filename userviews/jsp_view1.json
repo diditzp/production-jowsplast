@@ -713,7 +713,7 @@
                         "editFormId": "sku_master",
                         "cacheAllLinks": "",
                         "edit-saveButtonLabel": "",
-                        "list-showDeleteButton": "",
+                        "list-showDeleteButton": "yes",
                         "list-newButtonLabel": "",
                         "add-afterSavedRedirectParamName": "",
                         "list-deleteSubformData": "",
@@ -744,7 +744,7 @@
                         "customId": "sku_master_crud",
                         "edit-afterSaved": "list",
                         "list-deleteButtonLabel": "",
-                        "checkboxPosition": "no",
+                        "checkboxPosition": "left",
                         "add-customFooter": "",
                         "list-deleteGridData": "",
                         "edit-allowRecordTraveling": "",
@@ -973,22 +973,6 @@
             "className": "org.joget.apps.userview.model.UserviewCategory",
             "menus": [
                 {
-                    "referencePage": {
-                        "elements": [
-                            {"className": "menu-component"},
-                            {
-                                "className": "org.joget.plugin.enterprise.HtmlCodeComponent",
-                                "properties": {
-                                    "attr-data-events-listening": [],
-                                    "textContent": "<iframe width=\"1030\" height=\"450\" src=\"https://lookerstudio.google.com/embed/reporting/604c2383-250d-47bd-8b2a-d6ac5f3becf7/page/I8pIE\" frameborder=\"0\" style=\"border:0;width: 100%;\" allowfullscreen=\"\" sandbox=\"allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox\"><\/iframe>",
-                                    "id": "B1E59EA907764327A6B7B2C656128D46",
-                                    "customId": "id"
-                                }
-                            }
-                        ],
-                        "className": "org.joget.apps.userview.model.UserviewPage",
-                        "properties": {"id": "up-76996081-ecc7-498a-954e-3871830bebe8"}
-                    },
                     "className": "org.joget.apps.userview.lib.HtmlPage",
                     "properties": {
                         "userviewCacheDuration": "",
@@ -1005,11 +989,6 @@
                     }
                 },
                 {
-                    "referencePage": {
-                        "elements": [{"className": "menu-component"}],
-                        "className": "org.joget.apps.userview.model.UserviewPage",
-                        "properties": {"id": "up-CE38AE2845CD4E0CF35CBD9DBE5E6629"}
-                    },
                     "className": "org.joget.rbuilder.lib.ReportUserviewMenu",
                     "properties": {
                         "userviewCacheDuration": "20",
@@ -1598,6 +1577,62 @@
             "properties": {
                 "id": "category-c9dfad92-2355-44dd-be1b-5b56bee3c5ba",
                 "label": "<i class='fa fa-tasks'><\/i>Manage Audit SKU Balance"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.plugin.enterprise.CrudMenu",
+                "properties": {
+                    "list-customFooter": "",
+                    "add-afterSavedRedirectUrl": "",
+                    "edit-customHeader": "",
+                    "editFormId": "flow_preform",
+                    "edit-afterSavedRedirectParamName": "",
+                    "edit-saveButtonLabel": "",
+                    "list-showDeleteButton": "yes",
+                    "list-newButtonLabel": "",
+                    "edit-afterSavedRedirectUrl": "",
+                    "edit-prevButtonLabel": "",
+                    "add-afterSavedRedirectParamName": "",
+                    "customId": "flow_preform_crud",
+                    "edit-afterSaved": "list",
+                    "list-deleteButtonLabel": "",
+                    "checkboxPosition": "left",
+                    "selectionType": "multiple",
+                    "add-customFooter": "",
+                    "addFormId": "flow_preform",
+                    "edit-allowRecordTraveling": "",
+                    "id": "29e4a879-3cbe-4daf-9ee3-6c3a00972607",
+                    "rowCount": "true",
+                    "add-messageShowAfterComplete": "",
+                    "edit-readonlyLabel": "",
+                    "list-editLinkLabel": "",
+                    "add-cancelButtonLabel": "",
+                    "edit-afterSavedRedirectParamvalue": "",
+                    "edit-customFooter": "",
+                    "keyName": "",
+                    "label": "Manage Flow Pre Form",
+                    "add-customHeader": "",
+                    "edit-lastButtonLabel": "",
+                    "edit-readonly": "",
+                    "buttonPosition": "bothLeft",
+                    "edit-firstButtonLabel": "",
+                    "datalistId": "flow_preform",
+                    "add-saveButtonLabel": "",
+                    "edit-nextButtonLabel": "",
+                    "edit-messageShowAfterComplete": "",
+                    "edit-moreActions": [],
+                    "list-moreActions": [],
+                    "add-afterSaved": "list",
+                    "edit-backButtonLabel": "",
+                    "add-afterSavedRedirectParamvalue": "",
+                    "list-customHeader": ""
+                }
+            }],
+            "properties": {
+                "id": "category-2b5efe3a-0ec8-4845-8483-3dc8e1fbc4e8",
+                "label": "<i class='fa fa-tasks'><\/i>Manage Flow Pre Form"
             }
         }
     ],
