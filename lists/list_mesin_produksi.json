@@ -1,4 +1,8 @@
 {
+    "template": {
+        "className": "",
+        "properties": {}
+    },
     "useSession": "false",
     "showPageSizeSelector": "true",
     "rowActions": [],
@@ -19,14 +23,22 @@
             "label": "Pemilik Mesin"
         },
         {
-            "name": "catatan_mesin_produksi",
-            "id": "column_3",
-            "label": "Catatan Mesin Produksi"
-        },
-        {
             "name": "serial_number_mesin",
             "id": "column_4",
             "label": "Serial Number Mesin"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "aktif_oprasional",
+            "id": "column_5",
+            "label": "Aktif Oprasional",
+            "sortable": "false"
+        },
+        {
+            "name": "catatan_mesin_produksi",
+            "id": "column_3",
+            "label": "Catatan Mesin Produksi"
         }
     ],
     "pageSize": 0,
