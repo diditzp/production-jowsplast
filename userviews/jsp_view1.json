@@ -1130,62 +1130,6 @@
                 "label": "<i class=\"fas fa-adjust\"><\/i> Hidden Category",
                 "permissionDeny": ""
             }
-        },
-        {
-            "className": "org.joget.apps.userview.model.UserviewCategory",
-            "menus": [{
-                "className": "org.joget.plugin.enterprise.CrudMenu",
-                "properties": {
-                    "list-customFooter": "",
-                    "add-afterSavedRedirectUrl": "",
-                    "edit-customHeader": "",
-                    "editFormId": "form_produksi_jsp",
-                    "edit-afterSavedRedirectParamName": "",
-                    "edit-saveButtonLabel": "",
-                    "list-showDeleteButton": "yes",
-                    "list-newButtonLabel": "",
-                    "edit-afterSavedRedirectUrl": "",
-                    "edit-prevButtonLabel": "",
-                    "add-afterSavedRedirectParamName": "",
-                    "customId": "form_produksi_jsp_crud",
-                    "edit-afterSaved": "list",
-                    "list-deleteButtonLabel": "",
-                    "checkboxPosition": "left",
-                    "selectionType": "multiple",
-                    "add-customFooter": "",
-                    "addFormId": "form_produksi_jsp",
-                    "edit-allowRecordTraveling": "",
-                    "id": "3cdf2d25-b8e3-4154-889e-c382d14d8d27",
-                    "rowCount": "true",
-                    "add-messageShowAfterComplete": "",
-                    "edit-readonlyLabel": "",
-                    "list-editLinkLabel": "",
-                    "add-cancelButtonLabel": "",
-                    "edit-afterSavedRedirectParamvalue": "",
-                    "edit-customFooter": "",
-                    "keyName": "",
-                    "label": "Manage 1-Form Produksi JSP",
-                    "add-customHeader": "",
-                    "edit-lastButtonLabel": "",
-                    "edit-readonly": "",
-                    "buttonPosition": "bothLeft",
-                    "edit-firstButtonLabel": "",
-                    "datalistId": "list_form_produksi_jsp",
-                    "add-saveButtonLabel": "",
-                    "edit-nextButtonLabel": "",
-                    "edit-messageShowAfterComplete": "",
-                    "edit-moreActions": [],
-                    "list-moreActions": [],
-                    "add-afterSaved": "list",
-                    "edit-backButtonLabel": "",
-                    "add-afterSavedRedirectParamvalue": "",
-                    "list-customHeader": ""
-                }
-            }],
-            "properties": {
-                "id": "category-c9bd626b-92c3-4372-be18-356e43924e84",
-                "label": "<i class='fa fa-tasks'><\/i>Manage 1-Form Produksi JSP"
-            }
         }
     ],
     "properties": {
