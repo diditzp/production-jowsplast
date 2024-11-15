@@ -713,7 +713,7 @@
                         "editFormId": "sku_master",
                         "cacheAllLinks": "",
                         "edit-saveButtonLabel": "",
-                        "list-showDeleteButton": "yes",
+                        "list-showDeleteButton": "",
                         "list-newButtonLabel": "",
                         "add-afterSavedRedirectParamName": "",
                         "list-deleteSubformData": "",
@@ -744,7 +744,7 @@
                         "customId": "sku_master_crud",
                         "edit-afterSaved": "list",
                         "list-deleteButtonLabel": "",
-                        "checkboxPosition": "left",
+                        "checkboxPosition": "no",
                         "add-customFooter": "",
                         "list-deleteGridData": "",
                         "edit-allowRecordTraveling": "",
@@ -973,6 +973,22 @@
             "className": "org.joget.apps.userview.model.UserviewCategory",
             "menus": [
                 {
+                    "referencePage": {
+                        "elements": [
+                            {"className": "menu-component"},
+                            {
+                                "className": "org.joget.plugin.enterprise.HtmlCodeComponent",
+                                "properties": {
+                                    "attr-data-events-listening": [],
+                                    "textContent": "<iframe width=\"1030\" height=\"450\" src=\"https://lookerstudio.google.com/embed/reporting/604c2383-250d-47bd-8b2a-d6ac5f3becf7/page/I8pIE\" frameborder=\"0\" style=\"border:0;width: 100%;\" allowfullscreen=\"\" sandbox=\"allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox\"><\/iframe>",
+                                    "id": "B1E59EA907764327A6B7B2C656128D46",
+                                    "customId": "id"
+                                }
+                            }
+                        ],
+                        "className": "org.joget.apps.userview.model.UserviewPage",
+                        "properties": {"id": "up-76996081-ecc7-498a-954e-3871830bebe8"}
+                    },
                     "className": "org.joget.apps.userview.lib.HtmlPage",
                     "properties": {
                         "userviewCacheDuration": "",
@@ -989,6 +1005,11 @@
                     }
                 },
                 {
+                    "referencePage": {
+                        "elements": [{"className": "menu-component"}],
+                        "className": "org.joget.apps.userview.model.UserviewPage",
+                        "properties": {"id": "up-CE38AE2845CD4E0CF35CBD9DBE5E6629"}
+                    },
                     "className": "org.joget.rbuilder.lib.ReportUserviewMenu",
                     "properties": {
                         "userviewCacheDuration": "20",
