@@ -1375,62 +1375,6 @@
                 "id": "category-abbb5607-f9e8-4a4a-8b3d-478f2f956609",
                 "label": "<i class='fa fa-tasks'><\/i>Manage Aktual Produksi"
             }
-        },
-        {
-            "className": "org.joget.apps.userview.model.UserviewCategory",
-            "menus": [{
-                "className": "org.joget.plugin.enterprise.CrudMenu",
-                "properties": {
-                    "list-customFooter": "",
-                    "add-afterSavedRedirectUrl": "",
-                    "edit-customHeader": "",
-                    "editFormId": "flow_stock",
-                    "edit-afterSavedRedirectParamName": "",
-                    "edit-saveButtonLabel": "",
-                    "list-showDeleteButton": "yes",
-                    "list-newButtonLabel": "",
-                    "edit-afterSavedRedirectUrl": "",
-                    "edit-prevButtonLabel": "",
-                    "add-afterSavedRedirectParamName": "",
-                    "customId": "flow_stock_crud",
-                    "edit-afterSaved": "list",
-                    "list-deleteButtonLabel": "",
-                    "checkboxPosition": "left",
-                    "selectionType": "multiple",
-                    "add-customFooter": "",
-                    "addFormId": "flow_stock",
-                    "edit-allowRecordTraveling": "",
-                    "id": "2c394375-21c7-4374-b235-b20508b0a774",
-                    "rowCount": "true",
-                    "add-messageShowAfterComplete": "",
-                    "edit-readonlyLabel": "",
-                    "list-editLinkLabel": "",
-                    "add-cancelButtonLabel": "",
-                    "edit-afterSavedRedirectParamvalue": "",
-                    "edit-customFooter": "",
-                    "keyName": "",
-                    "label": "Manage Alur Barang Gudang",
-                    "add-customHeader": "",
-                    "edit-lastButtonLabel": "",
-                    "edit-readonly": "",
-                    "buttonPosition": "bothLeft",
-                    "edit-firstButtonLabel": "",
-                    "datalistId": "list_flow_stock",
-                    "add-saveButtonLabel": "",
-                    "edit-nextButtonLabel": "",
-                    "edit-messageShowAfterComplete": "",
-                    "edit-moreActions": [],
-                    "list-moreActions": [],
-                    "add-afterSaved": "list",
-                    "edit-backButtonLabel": "",
-                    "add-afterSavedRedirectParamvalue": "",
-                    "list-customHeader": ""
-                }
-            }],
-            "properties": {
-                "id": "category-6cff5df4-d6d7-4a6e-941b-f22227e0fc86",
-                "label": "<i class='fa fa-tasks'><\/i>Manage Alur Barang Gudang"
-            }
         }
     ],
     "properties": {
