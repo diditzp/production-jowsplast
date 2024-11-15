@@ -112,48 +112,6 @@
                         }
                     },
                     {
-                        "className": "org.joget.apps.form.lib.Radio",
-                        "properties": {
-                            "fullWidth": "",
-                            "controlField": "",
-                            "readonly": "",
-                            "optionsBinder": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "permission_rules": {
-                                "fecd5d08-1e59-12a0-0e31-f06b6aa68919": {},
-                                "f16e031c-1fbd-7bae-8418-5847efb12979": {},
-                                "aa1fac9e-2954-eadb-f641-eee606d57fb6": {}
-                            },
-                            "options": [
-                                {
-                                    "label": "Pagi",
-                                    "value": "pagi",
-                                    "grouping": ""
-                                },
-                                {
-                                    "label": "Malam",
-                                    "value": "malam",
-                                    "grouping": ""
-                                }
-                            ],
-                            "validator": {
-                                "className": "org.joget.apps.form.lib.DefaultValidator",
-                                "properties": {
-                                    "type": "",
-                                    "message": "",
-                                    "mandatory": "true"
-                                }
-                            },
-                            "workflowVariable": "",
-                            "label": "Shift",
-                            "id": "shift",
-                            "value": "",
-                            "readonlyLabel": ""
-                        }
-                    },
-                    {
                         "className": "org.joget.apps.form.lib.SelectBox",
                         "properties": {
                             "controlField": "",
@@ -191,6 +149,39 @@
                             "options": [],
                             "workflowVariable": "",
                             "id": "nama_preform",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.SelectBox",
+                        "properties": {
+                            "controlField": "",
+                            "readonly": "",
+                            "size": "",
+                            "optionsBinder": {
+                                "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                                "properties": {
+                                    "addEmptyOption": "true",
+                                    "groupingColumn": "",
+                                    "useAjax": "",
+                                    "formDefId": "mesin_produksi",
+                                    "labelColumn": "nama_mesin",
+                                    "extraCondition": "",
+                                    "cacheInterval": "",
+                                    "emptyLabel": "",
+                                    "idColumn": "nama_mesin"
+                                }
+                            },
+                            "multiple": "",
+                            "options": [],
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "",
+                            "label": "Mesin Produksi",
+                            "id": "mesin_produksi",
                             "value": "",
                             "readonlyLabel": ""
                         }
