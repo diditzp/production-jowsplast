@@ -1,0 +1,46 @@
+{
+    "useSession": "false",
+    "showPageSizeSelector": "true",
+    "rowActions": [],
+    "columns": [
+        {
+            "name": "nama_mesin",
+            "id": "column_0",
+            "label": "Nama Mesin"
+        },
+        {
+            "name": "id_mesin_produksi",
+            "id": "column_1",
+            "label": "ID Mesin Produksi"
+        },
+        {
+            "name": "pemilik_mesin",
+            "id": "column_2",
+            "label": "Pemilik Mesin"
+        },
+        {
+            "name": "catatan_mesin_produksi",
+            "id": "column_3",
+            "label": "Catatan Mesin Produksi"
+        },
+        {
+            "name": "serial_number_mesin",
+            "id": "column_4",
+            "label": "Serial Number Mesin"
+        }
+    ],
+    "pageSize": 0,
+    "orderBy": "",
+    "filters": [],
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "buttonPosition": "bothLeft",
+    "checkboxPosition": "left",
+    "name": "List - Mesin Produksi",
+    "id": "list_mesin_produksi",
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "mesin_produksi"}
+    },
+    "actions": [],
+    "order": ""
+}
