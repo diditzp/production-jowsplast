@@ -1543,62 +1543,6 @@
                 "id": "category-b18954c6-3503-45ea-a2d3-60f0f804eada",
                 "label": "<i class='fa fa-tasks'><\/i>Manage Audit Preform Balance"
             }
-        },
-        {
-            "className": "org.joget.apps.userview.model.UserviewCategory",
-            "menus": [{
-                "className": "org.joget.plugin.enterprise.CrudMenu",
-                "properties": {
-                    "list-customFooter": "",
-                    "add-afterSavedRedirectUrl": "",
-                    "edit-customHeader": "",
-                    "editFormId": "audit_sku_balance",
-                    "edit-afterSavedRedirectParamName": "",
-                    "edit-saveButtonLabel": "",
-                    "list-showDeleteButton": "yes",
-                    "list-newButtonLabel": "",
-                    "edit-afterSavedRedirectUrl": "",
-                    "edit-prevButtonLabel": "",
-                    "add-afterSavedRedirectParamName": "",
-                    "customId": "audit_sku_balance_crud",
-                    "edit-afterSaved": "list",
-                    "list-deleteButtonLabel": "",
-                    "checkboxPosition": "left",
-                    "selectionType": "multiple",
-                    "add-customFooter": "",
-                    "addFormId": "audit_sku_balance",
-                    "edit-allowRecordTraveling": "",
-                    "id": "955932ce-fee4-4bd5-8eb6-c68e7ea69933",
-                    "rowCount": "true",
-                    "add-messageShowAfterComplete": "",
-                    "edit-readonlyLabel": "",
-                    "list-editLinkLabel": "",
-                    "add-cancelButtonLabel": "",
-                    "edit-afterSavedRedirectParamvalue": "",
-                    "edit-customFooter": "",
-                    "keyName": "",
-                    "label": "Manage Audit SKU Balance",
-                    "add-customHeader": "",
-                    "edit-lastButtonLabel": "",
-                    "edit-readonly": "",
-                    "buttonPosition": "bothLeft",
-                    "edit-firstButtonLabel": "",
-                    "datalistId": "list_audit_sku_balance",
-                    "add-saveButtonLabel": "",
-                    "edit-nextButtonLabel": "",
-                    "edit-messageShowAfterComplete": "",
-                    "edit-moreActions": [],
-                    "list-moreActions": [],
-                    "add-afterSaved": "list",
-                    "edit-backButtonLabel": "",
-                    "add-afterSavedRedirectParamvalue": "",
-                    "list-customHeader": ""
-                }
-            }],
-            "properties": {
-                "id": "category-c9dfad92-2355-44dd-be1b-5b56bee3c5ba",
-                "label": "<i class='fa fa-tasks'><\/i>Manage Audit SKU Balance"
-            }
         }
     ],
     "properties": {
