@@ -72,17 +72,14 @@
             "alignment": ""
         },
         {
+            "filterable": true,
             "hidden": "false",
             "renderHtml": "",
             "format": {
-                "className": "org.joget.plugin.enterprise.DateFormatter",
-                "properties": {
-                    "dateStoreInUTC": "",
-                    "dataFormat": "yyyy-MM-dd",
-                    "displayFormat": ""
-                }
+                "className": "",
+                "properties": {}
             },
-            "label": "Tanggal",
+            "label": "Tanggal Mulai",
             "sortable": "false",
             "datalist_type": "column",
             "exclude_export": "",
@@ -94,7 +91,30 @@
                 "properties": {}
             },
             "style": "",
-            "id": "column_3",
+            "id": "column_1",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Tanggal Selesai",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "tanggal_selesai_produksi",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_4",
             "alignment": ""
         },
         {
@@ -119,33 +139,6 @@
             "style": "",
             "id": "column_10",
             "alignment": ""
-        },
-        {
-            "name": "shift",
-            "format": {
-                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
-                "properties": {
-                    "optionsBinder": {
-                        "className": "",
-                        "properties": {}
-                    },
-                    "options": [
-                        {
-                            "label": "Pagi",
-                            "value": "pagi",
-                            "grouping": ""
-                        },
-                        {
-                            "label": "Malam",
-                            "value": "malam",
-                            "grouping": ""
-                        }
-                    ]
-                }
-            },
-            "id": "column_4",
-            "label": "Shift",
-            "datalist_type": "column"
         },
         {
             "filterable": true,
