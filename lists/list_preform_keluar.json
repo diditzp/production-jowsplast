@@ -71,7 +71,7 @@
                 "properties": {}
             },
             "label": "Tanggal Request",
-            "sortable": "false",
+            "sortable": "true",
             "datalist_type": "column",
             "exclude_export": "",
             "name": "dateCreated",
@@ -86,13 +86,30 @@
             "alignment": ""
         },
         {
-            "name": "tanggal_keluar",
+            "hidden": "false",
+            "renderHtml": "",
             "format": {
                 "className": "org.joget.plugin.enterprise.DateFormatter",
-                "properties": {"dataFormat": "yyyy-MM-dd"}
+                "properties": {
+                    "dateStoreInUTC": "",
+                    "dataFormat": "yyyy-MM-dd",
+                    "displayFormat": ""
+                }
             },
+            "label": "Tanggal Keluar",
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "tanggal_keluar",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
             "id": "column_2",
-            "label": "Tanggal Keluar"
+            "alignment": ""
         },
         {
             "name": "jumlah_barang",
