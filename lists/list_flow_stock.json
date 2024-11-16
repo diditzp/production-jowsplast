@@ -45,7 +45,7 @@
                 "properties": {}
             },
             "label": "Tanggal",
-            "sortable": "false",
+            "sortable": "true",
             "datalist_type": "column",
             "exclude_export": "",
             "name": "dateCreated",
