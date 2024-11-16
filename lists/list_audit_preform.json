@@ -121,10 +121,25 @@
         {
             "filterable": true,
             "hidden": "false",
-            "name": "dateModified",
-            "id": "column_8",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
             "label": "Date Modified",
-            "sortable": "false"
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "dateModified",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_8",
+            "alignment": ""
         },
         {
             "hidden": "false",
