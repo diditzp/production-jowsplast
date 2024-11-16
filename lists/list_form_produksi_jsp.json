@@ -80,7 +80,7 @@
                 "properties": {}
             },
             "label": "Tanggal Mulai",
-            "sortable": "false",
+            "sortable": "true",
             "datalist_type": "column",
             "exclude_export": "",
             "name": "tanggal_produksi",
@@ -103,7 +103,7 @@
                 "properties": {}
             },
             "label": "Tanggal Selesai",
-            "sortable": "false",
+            "sortable": "true",
             "datalist_type": "column",
             "exclude_export": "",
             "name": "tanggal_selesai_produksi",
