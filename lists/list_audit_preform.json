@@ -104,7 +104,7 @@
                 }
             },
             "label": "Tanggal Request",
-            "sortable": "false",
+            "sortable": "true",
             "datalist_type": "column",
             "exclude_export": "",
             "name": "tanggal_audit",
