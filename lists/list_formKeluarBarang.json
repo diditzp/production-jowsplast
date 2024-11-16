@@ -131,7 +131,7 @@
                 "properties": {}
             },
             "label": "Tanggal Request",
-            "sortable": "false",
+            "sortable": "true",
             "datalist_type": "column",
             "exclude_export": "",
             "name": "dateCreated",
@@ -146,15 +146,31 @@
             "alignment": ""
         },
         {
+            "hidden": "false",
             "permission_rules": {"bcb45083-3be8-c26a-b1f1-2a6c017b421a": {}},
-            "name": "tanggal_keluar",
+            "renderHtml": "",
             "format": {
                 "className": "org.joget.plugin.enterprise.DateFormatter",
-                "properties": {"dataFormat": "yyyy-MM-dd"}
+                "properties": {
+                    "dateStoreInUTC": "",
+                    "dataFormat": "yyyy-MM-dd",
+                    "displayFormat": ""
+                }
             },
-            "id": "column_3",
             "label": "Tanggal Keluar",
-            "datalist_type": "column"
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "tanggal_keluar",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_3",
+            "alignment": ""
         },
         {
             "filterable": true,
@@ -235,7 +251,7 @@
     }],
     "cardCollapsible": "",
     "pageSize": "0",
-    "orderBy": "tanggal_keluar",
+    "orderBy": "dateCreated",
     "description": "",
     "showDataWhenFilterSet": "",
     "disableResponsive": "",
