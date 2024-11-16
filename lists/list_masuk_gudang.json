@@ -67,7 +67,7 @@
                 "properties": {}
             },
             "label": "Tanggal Request",
-            "sortable": "true",
+            "sortable": "false",
             "datalist_type": "column",
             "exclude_export": "",
             "name": "dateCreated",
@@ -90,7 +90,7 @@
                 "properties": {}
             },
             "label": "Tanggal Masuk",
-            "sortable": "true",
+            "sortable": "false",
             "datalist_type": "column",
             "exclude_export": "",
             "name": "tanggal_masuk_aktual",
