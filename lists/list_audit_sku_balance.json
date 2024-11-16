@@ -38,14 +38,6 @@
             "alignment": ""
         },
         {
-            "filterable": true,
-            "hidden": "false",
-            "name": "nama_sku",
-            "id": "column_8",
-            "label": "Nama SKU",
-            "sortable": "false"
-        },
-        {
             "name": "namaProduk",
             "format": {
                 "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
@@ -137,7 +129,7 @@
                 "properties": {}
             },
             "label": "Tanggal",
-            "sortable": "false",
+            "sortable": "true",
             "datalist_type": "column",
             "exclude_export": "",
             "name": "dateModified",
