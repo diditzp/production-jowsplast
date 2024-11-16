@@ -45,7 +45,7 @@
                 "properties": {}
             },
             "label": "Tanggal Request",
-            "sortable": "false",
+            "sortable": "true",
             "datalist_type": "column",
             "exclude_export": "",
             "name": "dateCreated",
@@ -68,7 +68,7 @@
                 "properties": {}
             },
             "label": "Tanggal Masuk",
-            "sortable": "false",
+            "sortable": "true",
             "datalist_type": "column",
             "exclude_export": "",
             "name": "tanggal_masuk_aktual",
@@ -99,7 +99,7 @@
                 "properties": {}
             },
             "label": "Total",
-            "sortable": "false",
+            "sortable": "true",
             "datalist_type": "column",
             "exclude_export": "",
             "name": "jumlah_barang",
