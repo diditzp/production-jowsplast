@@ -1,0 +1,98 @@
+{
+    "elements": [{
+        "elements": [{
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.lib.CustomHTML",
+                    "properties": {
+                        "requiredSanitize": "",
+                        "autoPopulate": "",
+                        "label": "",
+                        "id": "field1",
+                        "value": "<div id=\"scannerCam\" style=\"display: inline;\"><\/div>\n<script type=\"text/javascript\" src=\"#appResource.jsqrscanner.nocache.js#\"><\/script>\n\n<style>\ndiv#scannerCam video.qrPreviewVideo {\n    width: 100%;\n    max-width: 600px;\n}\n    \ninput#submit {\n    display: none;\n}\n<\/style>\n<script type=\"text/javascript\">\n    function onQRCodeScanned(scannedText)\n    {\n    \t$(FormUtil.getField(\"record\")).val(scannedText).trigger(\"change\");\n    }\n  \n    //this function will be called when JsQRScanner is ready to use\n    function JsQRScannerReady()\n    {\n        //create a new scanner passing to it a callback function that will be invoked when\n        //the scanner succesfully scan a QR code\n        var jbScanner = new JsQRScanner(onQRCodeScanned);\n        //reduce the size of analyzed images to increase performance on mobile devices\n        jbScanner.setSnapImageMaxSize(600);\n    \tvar scannerParentElement = document.getElementById(\"scannerCam\");\n    \tif(scannerParentElement)\n    \t{\n    \t    //append the jbScanner to an existing DOM element\n    \t\tjbScanner.appendTo(scannerParentElement);\n    \t}\n    }\n  <\/script> \n  \n  \n  "
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "requiredSanitize": "",
+                        "maxlength": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "label": "Record",
+                        "encryption": "",
+                        "readonly": "",
+                        "size": "",
+                        "workflowVariable": "",
+                        "style": "",
+                        "id": "record",
+                        "placeholder": "",
+                        "value": "",
+                        "readonlyLabel": "",
+                        "storeNumeric": ""
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.FormGrid",
+                    "properties": {
+                        "validateMaxRow": "",
+                        "formDefId": "item_keluar",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "pageSize": "20",
+                        "requestParams": [],
+                        "enableSorting": "",
+                        "storeBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "readonly": "",
+                        "deleteGridData": "",
+                        "options": [],
+                        "id": "field3",
+                        "abortRelatedRunningProcesses": "",
+                        "height": "500",
+                        "showRowNumber": "",
+                        "disabledDelete": "",
+                        "validateMinRow": "",
+                        "submit-label-normal": "",
+                        "uniqueKey": "",
+                        "errorMessage": "Invalid number of rows",
+                        "deleteSubformData": "",
+                        "deleteMessage": "",
+                        "label": "Form Grid",
+                        "deleteFiles": "",
+                        "loadBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "disabledAdd": "",
+                        "submit-label-readonly": "",
+                        "width": "900",
+                        "readonlyLabel": ""
+                    }
+                }
+            ],
+            "className": "org.joget.apps.form.model.Column",
+            "properties": {"width": "100%"}
+        }],
+        "className": "org.joget.apps.form.model.Section",
+        "properties": {
+            "label": "Section",
+            "id": "section1"
+        }
+    }],
+    "className": "org.joget.apps.form.model.Form",
+    "properties": {
+        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "name": "Scanner",
+        "description": "",
+        "id": "scanner",
+        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "tableName": "contact"
+    }
+}

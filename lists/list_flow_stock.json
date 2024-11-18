@@ -1,0 +1,331 @@
+{
+    "template": {
+        "className": "",
+        "properties": {}
+    },
+    "considerFilterWhenGetTotal": "",
+    "showPageSizeSelector": "true",
+    "responsiveMode": "",
+    "rowActions": [],
+    "columns": [
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "org.joget.plugin.enterprise.ProcessStatusDatalistFormatter",
+                "properties": {
+                    "usernameFormat": "combine",
+                    "viewPermission": "all",
+                    "userviewCacheDuration": "20",
+                    "showSkippedActivities": "",
+                    "eventClick": "",
+                    "userviewCacheScope": "",
+                    "showProcessName": "true",
+                    "showFutureActivities": "true"
+                }
+            },
+            "label": "Prosess",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "id",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_0",
+            "alignment": ""
+        },
+        {
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "ID Gudang",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "id_flow",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+                "properties": {
+                    "hrefColumn": "id_flow",
+                    "hrefParam": "c_id_flow",
+                    "href": "history_detail",
+                    "confirmation": "",
+                    "target": "_self"
+                }
+            },
+            "style": "",
+            "id": "column_9",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Tanggal",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "dateCreated",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_5",
+            "alignment": ""
+        },
+        {
+            "name": "namaProduk",
+            "id": "column_2",
+            "label": "Nama Produk",
+            "datalist_type": "column"
+        },
+        {
+            "name": "alur",
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "optionsBinder": {
+                        "className": "",
+                        "properties": {}
+                    },
+                    "options": [
+                        {
+                            "label": "Masuk",
+                            "value": "masuk",
+                            "grouping": ""
+                        },
+                        {
+                            "label": "Keluar",
+                            "value": "keluar",
+                            "grouping": ""
+                        }
+                    ]
+                }
+            },
+            "id": "column_3",
+            "label": "Alur"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "qty_sebelum",
+            "id": "column_7",
+            "label": "Qty Sebelum",
+            "sortable": "false"
+        },
+        {
+            "name": "kuantitas",
+            "id": "column_4",
+            "label": "Kuantitas"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "qty_balance",
+            "id": "column_8",
+            "label": "Qty Balance",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "gudang",
+            "id": "column_6",
+            "label": "Gudang",
+            "sortable": "false"
+        }
+    ],
+    "cardCollapsible": "",
+    "pageSize": "0",
+    "orderBy": "dateCreated",
+    "description": "",
+    "showDataWhenFilterSet": "",
+    "disableResponsive": "",
+    "checkboxPosition": "left",
+    "cardCollapseByDefault": "",
+    "id": "list_flow_stock",
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {
+            "joins": [],
+            "aggregateField": [],
+            "formDefId": "flow_stock",
+            "customSelectionValue": "",
+            "extraCondition": "",
+            "filters": [],
+            "groupBy": "",
+            "functionColumns": []
+        }
+    },
+    "order": "1",
+    "useSession": "",
+    "draggabletable": "",
+    "filters": [
+        {
+            "hidden": "",
+            "name": "dateCreated",
+            "id": "filter_4",
+            "label": "Date Created",
+            "type": {
+                "className": "org.joget.plugin.enterprise.DateRangeDataListFilterType",
+                "properties": {
+                    "fromLabel": "From",
+                    "toLabel": "To",
+                    "dateStoreInUTC": "",
+                    "formatJava": "yyyy-MM-dd",
+                    "fromDefaultValue": "",
+                    "yearRange": "c-10:c+10",
+                    "showFieldLabel": "true",
+                    "format": "mm/dd/yy",
+                    "enableTime": "",
+                    "toDefaultValue": ""
+                }
+            },
+            "datalist_type": "filter",
+            "filterParamName": "d-6527824-fn_dateCreated"
+        },
+        {
+            "hidden": "",
+            "name": "namaProduk",
+            "id": "filter_2",
+            "label": "Nama Produk",
+            "type": {
+                "className": "org.joget.plugin.enterprise.SelectBoxDataListFilterType",
+                "properties": {
+                    "controlField": "",
+                    "size": "",
+                    "optionsBinder": {
+                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "true",
+                            "groupingColumn": "",
+                            "useAjax": "",
+                            "formDefId": "sku_master",
+                            "labelColumn": "namaProduk",
+                            "extraCondition": "",
+                            "cacheInterval": "",
+                            "emptyLabel": "",
+                            "idColumn": "id"
+                        }
+                    },
+                    "defaultValue": "",
+                    "multiple": "",
+                    "options": []
+                }
+            },
+            "datalist_type": "filter",
+            "filterParamName": "d-6527824-fn_namaProduk"
+        },
+        {
+            "hidden": "",
+            "name": "alur",
+            "id": "filter_0",
+            "label": "Alur",
+            "type": {
+                "className": "org.joget.plugin.enterprise.SelectBoxDataListFilterType",
+                "properties": {
+                    "controlField": "",
+                    "size": "",
+                    "optionsBinder": {
+                        "className": "",
+                        "properties": {}
+                    },
+                    "defaultValue": "",
+                    "multiple": "",
+                    "options": [
+                        {
+                            "label": "Keluar",
+                            "value": "Keluar",
+                            "grouping": ""
+                        },
+                        {
+                            "label": "Masuk",
+                            "value": "Masuk",
+                            "grouping": ""
+                        },
+                        {
+                            "label": "Audit",
+                            "value": "audit",
+                            "grouping": ""
+                        },
+                        {
+                            "label": "Pindah",
+                            "value": "pindah",
+                            "grouping": ""
+                        }
+                    ]
+                }
+            },
+            "datalist_type": "filter",
+            "filterParamName": "d-6527824-fn_alur"
+        },
+        {
+            "hidden": "",
+            "name": "gudang",
+            "id": "filter_1",
+            "label": "Gudang",
+            "type": {
+                "className": "org.joget.plugin.enterprise.SelectBoxDataListFilterType",
+                "properties": {
+                    "controlField": "",
+                    "size": "",
+                    "optionsBinder": {
+                        "className": "",
+                        "properties": {}
+                    },
+                    "defaultValue": "",
+                    "multiple": "",
+                    "options": [
+                        {
+                            "label": "Gudang Produksi",
+                            "value": "gudang_produksi",
+                            "grouping": ""
+                        },
+                        {
+                            "label": "Gudang Packing",
+                            "value": "gudang_packing",
+                            "grouping": ""
+                        }
+                    ]
+                }
+            },
+            "datalist_type": "filter",
+            "filterParamName": "d-6527824-fn_gudang"
+        },
+        {
+            "name": "id_flow",
+            "id": "filter_3",
+            "label": "ID Flow",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {}
+            },
+            "filterParamName": "d-6527824-fn_id_flow"
+        }
+    ],
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "buttonPosition": "bothLeft",
+    "hidePageSize": "",
+    "name": "List - Alur Barang Gudang",
+    "rowActionsMode": "",
+    "showhidecolumns": "",
+    "actions": []
+}
