@@ -317,7 +317,7 @@
                             "style": "",
                             "id": "gudang_packing",
                             "placeholder": "",
-                            "value": "",
+                            "value": "0",
                             "readonlyLabel": "",
                             "storeNumeric": ""
                         }
@@ -345,7 +345,7 @@
                             "style": "",
                             "id": "gudang_produksi",
                             "placeholder": "",
-                            "value": "",
+                            "value": "0",
                             "readonlyLabel": "",
                             "storeNumeric": ""
                         }
@@ -450,40 +450,61 @@
         },
         {
             "elements": [{
-                "elements": [{
-                    "className": "org.joget.apps.form.lib.Radio",
-                    "properties": {
-                        "fullWidth": "",
-                        "controlField": "",
-                        "readonly": "",
-                        "optionsBinder": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "permission_rules": {"19470869-94b0-01fc-a5c0-5785e12f72b4": {}},
-                        "options": [
-                            {
-                                "label": "Approve",
-                                "value": "approve",
-                                "grouping": ""
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.Radio",
+                        "properties": {
+                            "fullWidth": "",
+                            "controlField": "",
+                            "readonly": "",
+                            "optionsBinder": {
+                                "className": "",
+                                "properties": {}
                             },
-                            {
-                                "label": "Not Approve",
-                                "value": "notApprove",
-                                "grouping": ""
-                            }
-                        ],
-                        "validator": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "workflowVariable": "status",
-                        "label": "Approval",
-                        "id": "status",
-                        "value": "",
-                        "readonlyLabel": ""
+                            "permission_rules": {"19470869-94b0-01fc-a5c0-5785e12f72b4": {}},
+                            "options": [
+                                {
+                                    "label": "Approve",
+                                    "value": "approve",
+                                    "grouping": ""
+                                },
+                                {
+                                    "label": "Not Approve",
+                                    "value": "notApprove",
+                                    "grouping": ""
+                                }
+                            ],
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "status",
+                            "label": "Approval",
+                            "id": "status",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextArea",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "readonly": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "",
+                            "label": "Catatan Hasil Audit",
+                            "id": "catatan_hasil_audit",
+                            "placeholder": "",
+                            "rows": "5",
+                            "cols": "20",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
                     }
-                }],
+                ],
                 "className": "org.joget.apps.form.model.Column",
                 "properties": {"width": "100%"}
             }],
