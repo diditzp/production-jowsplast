@@ -279,7 +279,7 @@
                                 "properties": {}
                             },
                             "format": "",
-                            "label": "Tanggal Masuk",
+                            "label": "Tanggal Audit",
                             "datePickerType": "dateTime",
                             "currentDateAs": "",
                             "endDateFieldId": "",
