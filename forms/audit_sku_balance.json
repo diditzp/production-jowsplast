@@ -384,6 +384,25 @@
                         }
                     },
                     {
+                        "className": "org.joget.apps.form.lib.TextArea",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "readonly": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "",
+                            "label": "Catatan Audit",
+                            "id": "catatan_audit",
+                            "placeholder": "",
+                            "rows": "5",
+                            "cols": "20",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    },
+                    {
                         "className": "org.joget.apps.form.lib.CustomHTML",
                         "properties": {
                             "requiredSanitize": "true",
