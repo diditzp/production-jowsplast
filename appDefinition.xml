@@ -1,5 +1,4 @@
 <appDefinition>
-   <appId>stok_jsp</appId>
    <id>stok_jsp</id>
    <version></version>
    <name>Stock Product JSP</name>
@@ -1137,63 +1136,63 @@
       <appResource>
          <id>21FCD138CF06B5B490DA7F14DD306C4A.cache.js</id>
          <appId>stok_jsp</appId>
-         <appVersion>2</appVersion>
+         <appVersion>5</appVersion>
          <filesize>103122</filesize>
          <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.21FCD138CF06B5B490DA7F14DD306C4A.cache.js#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>26096D5C9D4499FC412DE6D557CF4723.cache.js</id>
          <appId>stok_jsp</appId>
-         <appVersion>2</appVersion>
+         <appVersion>5</appVersion>
          <filesize>104921</filesize>
          <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.26096D5C9D4499FC412DE6D557CF4723.cache.js#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>85EFE2E37A204EA7850A307AF743069B.cache.js</id>
          <appId>stok_jsp</appId>
-         <appVersion>2</appVersion>
+         <appVersion>5</appVersion>
          <filesize>105085</filesize>
          <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.85EFE2E37A204EA7850A307AF743069B.cache.js#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>compilation-mappings.txt</id>
          <appId>stok_jsp</appId>
-         <appVersion>2</appVersion>
+         <appVersion>5</appVersion>
          <filesize>317</filesize>
          <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.compilation-mappings.txt#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>EC0F7217F4BCEF91396A176763786FF0.cache.js</id>
          <appId>stok_jsp</appId>
-         <appVersion>2</appVersion>
+         <appVersion>5</appVersion>
          <filesize>105088</filesize>
          <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.EC0F7217F4BCEF91396A176763786FF0.cache.js#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>F18D8F202F2722AE74CE31DB0E4D35D5.cache.js</id>
          <appId>stok_jsp</appId>
-         <appVersion>2</appVersion>
+         <appVersion>5</appVersion>
          <filesize>105563</filesize>
          <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.F18D8F202F2722AE74CE31DB0E4D35D5.cache.js#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>jsqrscanner.nocache.js</id>
          <appId>stok_jsp</appId>
-         <appVersion>2</appVersion>
+         <appVersion>5</appVersion>
          <filesize>7599</filesize>
          <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.jsqrscanner.nocache.js#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>logo_jsp.png</id>
          <appId>stok_jsp</appId>
-         <appVersion>2</appVersion>
+         <appVersion>5</appVersion>
          <filesize>3432</filesize>
          <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.logo_jsp.png#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>qrcode.min.js</id>
          <appId>stok_jsp</appId>
-         <appVersion>2</appVersion>
+         <appVersion>5</appVersion>
          <filesize>18683</filesize>
          <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.qrcode.min.js#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}}</permissionProperties>
       </appResource>
