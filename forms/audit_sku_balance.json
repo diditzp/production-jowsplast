@@ -317,7 +317,7 @@
                             "style": "",
                             "id": "gudang_packing",
                             "placeholder": "",
-                            "value": "0",
+                            "value": "",
                             "readonlyLabel": "",
                             "storeNumeric": ""
                         }
@@ -345,7 +345,7 @@
                             "style": "",
                             "id": "gudang_produksi",
                             "placeholder": "",
-                            "value": "0",
+                            "value": "",
                             "readonlyLabel": "",
                             "storeNumeric": ""
                         }
