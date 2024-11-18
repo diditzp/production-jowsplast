@@ -66,18 +66,48 @@
         {
             "filterable": true,
             "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Catatan Request",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
             "name": "catatan_audit",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
             "id": "column_8",
-            "label": "Catatan Audit",
-            "sortable": "false"
+            "alignment": ""
         },
         {
             "filterable": true,
             "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Catatan Hasil",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
             "name": "catatan_hasil_audit",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
             "id": "column_9",
-            "label": "Catatan Hasil Audit",
-            "sortable": "false"
+            "alignment": ""
         },
         {
             "filterable": true,
