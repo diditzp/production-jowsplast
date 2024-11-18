@@ -223,7 +223,7 @@
                             "extraCondition": "",
                             "cacheInterval": "",
                             "emptyLabel": "",
-                            "idColumn": "id"
+                            "idColumn": "namaProduk"
                         }
                     },
                     "defaultValue": "",
