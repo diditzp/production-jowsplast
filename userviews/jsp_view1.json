@@ -5,6 +5,35 @@
             "className": "org.joget.apps.userview.model.UserviewCategory",
             "menus": [
                 {
+                    "className": "org.joget.apps.userview.lib.InboxMenu",
+                    "properties": {
+                        "appFilter": "all",
+                        "list-customFooter": "",
+                        "cacheAllLinks": "",
+                        "permissionHidden": "",
+                        "assignment-customHeader": "",
+                        "permission_rules": {
+                            "540c8040-1bd9-9c6e-5e17-a58505dde8db": {
+                                "permissionHidden": "true",
+                                "permissionDeny": ""
+                            },
+                            "4beb7f52-a03d-7b36-dfe0-7cbebf35daa9": {}
+                        },
+                        "assignment-customFooter": "",
+                        "label": "Inbox",
+                        "enableOffline": "",
+                        "customId": "",
+                        "buttonPosition": "bothLeft",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": "",
+                        "showPopup": "",
+                        "rowCount": "true",
+                        "id": "DF9061672F414ED539D2BE67B7A2D01F",
+                        "permissionDeny": "",
+                        "list-customHeader": ""
+                    }
+                },
+                {
                     "className": "org.joget.apps.userview.lib.RunProcess",
                     "properties": {
                         "runProcessDirectly": "Yes",
@@ -45,35 +74,6 @@
                         "enableOffline": "",
                         "customId": "welcome",
                         "content": "<p style=\"text-align: center;\"><span style=\"font-size: 12pt;\"><strong>Aplikasi Pengawasan Gudang JSP<\/strong><\/span><\/p>"
-                    }
-                },
-                {
-                    "className": "org.joget.apps.userview.lib.InboxMenu",
-                    "properties": {
-                        "appFilter": "all",
-                        "list-customFooter": "",
-                        "cacheAllLinks": "",
-                        "permissionHidden": "",
-                        "assignment-customHeader": "",
-                        "permission_rules": {
-                            "540c8040-1bd9-9c6e-5e17-a58505dde8db": {
-                                "permissionHidden": "true",
-                                "permissionDeny": ""
-                            },
-                            "4beb7f52-a03d-7b36-dfe0-7cbebf35daa9": {}
-                        },
-                        "assignment-customFooter": "",
-                        "label": "Inbox",
-                        "enableOffline": "",
-                        "customId": "",
-                        "buttonPosition": "bothLeft",
-                        "userviewCacheDuration": "20",
-                        "userviewCacheScope": "",
-                        "showPopup": "",
-                        "rowCount": "true",
-                        "id": "DF9061672F414ED539D2BE67B7A2D01F",
-                        "permissionDeny": "",
-                        "list-customHeader": ""
                     }
                 }
             ],
