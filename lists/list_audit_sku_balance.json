@@ -66,6 +66,22 @@
         {
             "filterable": true,
             "hidden": "false",
+            "name": "catatan_audit",
+            "id": "column_8",
+            "label": "Catatan Audit",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "catatan_hasil_audit",
+            "id": "column_9",
+            "label": "Catatan Hasil Audit",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
             "name": "status",
             "id": "column_6",
             "label": "Approval",
