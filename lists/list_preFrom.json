@@ -1,0 +1,46 @@
+{
+    "useSession": "false",
+    "showPageSizeSelector": "true",
+    "rowActions": [],
+    "columns": [
+        {
+            "name": "nama_pre_form",
+            "id": "column_0",
+            "label": "Nama Pre Form"
+        },
+        {
+            "name": "type_pre_form",
+            "id": "column_1",
+            "label": "Type Pre Form"
+        },
+        {
+            "name": "volume_ml",
+            "id": "column_2",
+            "label": "Volume (ml)"
+        },
+        {
+            "name": "berat_gr",
+            "id": "column_3",
+            "label": "Berat (gr)"
+        },
+        {
+            "name": "diameter_tutup_mm",
+            "id": "column_4",
+            "label": "Diameter Tutup (mm)"
+        }
+    ],
+    "pageSize": 0,
+    "orderBy": "",
+    "filters": [],
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "buttonPosition": "bothLeft",
+    "checkboxPosition": "left",
+    "name": "List - Pre Form",
+    "id": "list_preFrom",
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "preFrom"}
+    },
+    "actions": [],
+    "order": ""
+}

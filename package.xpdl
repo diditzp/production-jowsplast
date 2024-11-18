@@ -1,0 +1,1629 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Package xmlns="http://www.wfmc.org/2002/XPDL1.0" xmlns:xpdl="http://www.wfmc.org/2002/XPDL1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="stok_jsp" Name="Stock Product JSP" xsi:schemaLocation="http://www.wfmc.org/2002/XPDL1.0 http://wfmc.org/standards/docs/TC-1025_schema_10_xpdl.xsd">
+    <PackageHeader>
+        <XPDLVersion>1.0</XPDLVersion>
+        <Vendor/>
+        <Created/>
+    </PackageHeader>
+    <Script Type="text/javascript"/>
+    <Participants>
+        <Participant Id="pekerja" Name="Pekerja">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="pengawas" Name="Pengawas">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="PengawasanProduksi_2_pekerja" Name="Pekerja">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="PengawasanProduksi_2_pengawas" Name="Pengawas">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="pengawasKeluarBarang" Name="Pengawas">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="terimaBarang_2_pekerja" Name="Pekerja">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="terimaBarang_2_pengawas" Name="Pengawas">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="barangKeluar_2_pengawasKeluarBarang" Name="Pengawas">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="process6_participant9" Name="Participant">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="process7_participant10" Name="Owner">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="process7_participant1" Name="Pengawas">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="audit_sku_balance_2_process7_participant10" Name="Pengawas">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="audit_sku_balance_2_process7_participant1" Name="Owner">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="process9_participant14" Name="Participant">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+    </Participants>
+    <Applications>
+        <Application Id="default_application"/>
+    </Applications>
+    <WorkflowProcesses>
+        <WorkflowProcess Id="terimaBarang" Name="Terima Masuk Barang">
+            <ProcessHeader DurationUnit="h"/>
+            <DataFields>
+                <DataField Id="approveAktual" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+            </DataFields>
+            <Activities>
+                <Activity Id="formMasukBarang" Name="Form Masuk Barang">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>pekerja</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="pekerja"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="200,70.08333237451171"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="approveMasukBarang" Name="Approve Masuk Barang">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>pengawas</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="368.0833435058594,35.55555374902343"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="updateStokGudang" Name="Update Stok Gudang">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>pengawas</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="431.8611145019531,173.0138972548828"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="isAchieve" Name="isAchieve">
+                    <Route/>
+                    <Performer>pengawas</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition4"/>
+                                    <TransitionRef Id="transition9"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="622,41.44443924707031"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="checkBarangMasuk" Name="Check Ulang Barang Masuk">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>pekerja</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="pekerja"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="467,44.986111"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="tool3" Name="init transaction">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>pengawas</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="76,283.35227106738284"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="set_meta_data" Name="SET Meta Data">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>pengawas</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="270,290.5227498881836"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="set_sku_name" Name="SET SKU Name">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>pengawas</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="228,87.48609574121093"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="update_sku_master" Name="Update SKU Master">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>pengawas</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="426,301.5833247451172"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="post_data_to_spreadsheet" Name="Post Data To SpreadSheet">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>pengawas</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="598,301.56945450585937"/>
+                    </ExtendedAttributes>
+                </Activity>
+            </Activities>
+            <Transitions>
+                <Transition From="formMasukBarang" Id="transition2" To="approveMasukBarang">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="isAchieve" Id="transition4" Name="achieve" To="updateStokGudang">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="checkBarangMasuk" Id="transition7" To="approveMasukBarang">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="approveMasukBarang" Id="transition8" To="isAchieve">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="tool3" Id="transition10" To="set_meta_data">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="set_meta_data" Id="transition11" To="set_sku_name">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="set_sku_name" Id="transition12" To="formMasukBarang">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="isAchieve" Id="transition9" Name="notAchieve" To="checkBarangMasuk">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="updateStokGudang" Id="transition_end_updateStokGudang" To="update_sku_master">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="update_sku_master" Id="transition_end_update_sku_master" To="post_data_to_spreadsheet">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+            </Transitions>
+            <ExtendedAttributes>
+                <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="pekerja;pengawas"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=pengawas,CONNECTING_ACTIVITY_ID=tool3,X_OFFSET=116,Y_OFFSET=86.80555374902343,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=pengawas,CONNECTING_ACTIVITY_ID=post_data_to_spreadsheet,X_OFFSET=794.0833129882812,Y_OFFSET=307.5277674941406,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+            </ExtendedAttributes>
+        </WorkflowProcess>
+        <WorkflowProcess Id="produksiBotol" Name="Produksi Botol">
+            <ProcessHeader DurationUnit="h"/>
+            <DataFields>
+                <DataField Id="sisa_target_produksi" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="totalAktual" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="requestProduksi" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="approveAktual" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+            </DataFields>
+            <Activities>
+                <Activity Id="formProduksi" Name="Form Produksi">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>PengawasanProduksi_2_pekerja</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pekerja"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="190,137.1625015258789"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="approveProduksi" Name="Approve Produksi">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>PengawasanProduksi_2_pengawas</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="406.078125,42.578125"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="updateStokGudang" Name="Update Stok Gudang">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>PengawasanProduksi_2_pengawas</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="460.8500061035156,136.01249237060546"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="isAchieve" Name="isAchieve">
+                    <Route/>
+                    <Performer>PengawasanProduksi_2_pengawas</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition4"/>
+                                    <TransitionRef Id="transition5"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="639.0000591278076,70.46665519531251"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="updateStokGudang_2" Name="Update Stok Gudang Ulang">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>PengawasanProduksi_2_pekerja</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pekerja"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="480,156.60000915527343"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="formProduksi_2" Name="Form Produksi">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>PengawasanProduksi_2_pekerja</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pekerja"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="362,202.0000030517578"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="tool3" Name="init transaction barang">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>PengawasanProduksi_2_pengawas</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="39,263.75"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="set_meta_data" Name="SET Meta Data Barang">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>PengawasanProduksi_2_pengawas</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="36,140.75"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="set_sku_name" Name="SET SKU Name">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>PengawasanProduksi_2_pengawas</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="43,7.6875"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="tool6" Name="Update Master SKU">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>PengawasanProduksi_2_pekerja</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pekerja"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="657,217.0625"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="tool6_2" Name="Update Master SKU">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>PengawasanProduksi_2_pengawas</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="472,284.90625"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="init_transaction_preform" Name="init transaction preform">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>PengawasanProduksi_2_pengawas</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="243,375.984375"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="set_meta_data_preform" Name="SET Produksi to PreForm">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>PengawasanProduksi_2_pengawas</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="298,237.984375"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="set_sku_name_2" Name="SET history to preform">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>PengawasanProduksi_2_pengawas</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="256,133"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="update_cacat_preform" Name="Update Cacat PreForm">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>PengawasanProduksi_2_pekerja</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pekerja"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="822,94.96875"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="update_master_preform" Name="Update Pemakaian PreForm">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>PengawasanProduksi_2_pekerja</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pekerja"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="678,14.984375"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="update_master_preform_3" Name="Update Master PreForm">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>PengawasanProduksi_2_pekerja</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pekerja"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="342,12"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="set_qty_preform_sebelum" Name="SET qty preform sebelum">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>PengawasanProduksi_2_pengawas</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="209,30"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="update_pemakaian_preform_mst" Name="Update Pemakaian PreForm Mst">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>PengawasanProduksi_2_pekerja</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pekerja"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="498,21"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="update_cacat_preform_2" Name="Update Cacat PreForm">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>PengawasanProduksi_2_pengawas</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="615,218.9375"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="update_master_preform_2" Name="Update Pemakaian PreForm">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>PengawasanProduksi_2_pengawas</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="713,20.9375"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="update_pemakaian_preform_mst_2" Name="Update Pemakaian PreForm Mst">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>PengawasanProduksi_2_pengawas</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="749,252.9375"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="update_master_preform_3_2" Name="Update Master PreForm">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>PengawasanProduksi_2_pengawas</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="851,12.9375"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="set_sku_name_3" Name="SET SKU Name Produksi">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>PengawasanProduksi_2_pengawas</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="157,219"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="post_data_to_spreadsheet_3" Name="Post Data To SpreadSheet">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>PengawasanProduksi_2_pengawas</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="926,172.99999649804687"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="post_data_to_spreadsheet" Name="Post Data To SpreadSheet">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>PengawasanProduksi_2_pekerja</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pekerja"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="181,30.486111"/>
+                    </ExtendedAttributes>
+                </Activity>
+            </Activities>
+            <Transitions>
+                <Transition From="formProduksi" Id="transition2" To="approveProduksi">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="isAchieve" Id="transition4" Name="achieve" To="updateStokGudang">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="isAchieve" Id="transition5" Name="notAchieve" To="updateStokGudang_2">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="updateStokGudang_2" Id="transition6" To="tool6">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="formProduksi_2" Id="transition7" To="approveProduksi">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="approveProduksi" Id="transition8" To="isAchieve">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="tool3" Id="transition10" To="set_meta_data">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="set_meta_data" Id="transition11" To="set_sku_name">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="tool6" Id="transition13" To="update_cacat_preform">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="updateStokGudang" Id="transition14" To="tool6_2">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="set_meta_data_preform" Id="transition18" To="set_sku_name_2">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="update_cacat_preform" Id="transition23" To="update_master_preform">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="update_master_preform" Id="transition24" To="update_pemakaian_preform_mst">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="init_transaction_preform" Id="transition28" To="set_meta_data_preform">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="update_master_preform_3" Id="transition22" To="post_data_to_spreadsheet">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="set_sku_name_2" Id="transition25" To="set_qty_preform_sebelum">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="set_qty_preform_sebelum" Id="transition29" To="formProduksi">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="update_pemakaian_preform_mst" Id="transition30" To="update_master_preform_3">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="tool6_2" Id="transition26" To="update_cacat_preform_2">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="update_cacat_preform_2" Id="transition27" To="update_master_preform_2">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="update_master_preform_2" Id="transition31" To="update_pemakaian_preform_mst_2">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="update_pemakaian_preform_mst_2" Id="transition32" To="update_master_preform_3_2">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="update_master_preform_3_2" Id="transition33" To="post_data_to_spreadsheet_3">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="set_sku_name" Id="transition34" To="set_sku_name_3">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="set_sku_name_3" Id="transition35" To="init_transaction_preform">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="post_data_to_spreadsheet" Id="transition37" To="formProduksi_2">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+            </Transitions>
+            <ExtendedAttributes>
+                <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="PengawasanProduksi_2_pekerja;PengawasanProduksi_2_pengawas"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=PengawasanProduksi_2_pengawas,CONNECTING_ACTIVITY_ID=tool3,X_OFFSET=69,Y_OFFSET=421.765625,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=PengawasanProduksi_2_pengawas,CONNECTING_ACTIVITY_ID=post_data_to_spreadsheet_3,X_OFFSET=932.0694580078125,Y_OFFSET=320.49999649804687,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+            </ExtendedAttributes>
+        </WorkflowProcess>
+        <WorkflowProcess Id="barangKeluar" Name="Barang Keluar">
+            <ProcessHeader DurationUnit="h"/>
+            <DataFields>
+                <DataField Id="pickUp" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+            </DataFields>
+            <Activities>
+                <Activity Id="tool3" Name="init transaction">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>pengawasKeluarBarang</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="pengawasKeluarBarang"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="86.0000057220459,376.60001510437013"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="set_sku_name" Name="SET SKU Name">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>pengawasKeluarBarang</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="pengawasKeluarBarang"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="238.99999809265137,210.61666435058595"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="approvePickup" Name="Approve PickUp">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>pengawasKeluarBarang</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="pengawasKeluarBarang"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="431.5,160.796875"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="batal" Name="Batal">
+                    <Route/>
+                    <Performer>pengawasKeluarBarang</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition14"/>
+                                    <TransitionRef Id="transition17"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="pengawasKeluarBarang"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="431.125,325.09375"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="updateStokGudang_3_2" Name="Update Stok Gudang">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>pengawasKeluarBarang</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="pengawasKeluarBarang"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="566,241"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="updateStokGudang_3_2_2" Name="Update Stok Gudang">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>pengawasKeluarBarang</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="pengawasKeluarBarang"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="334,32.921875"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="update_sku_master_2" Name="Update SKU Master">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>pengawasKeluarBarang</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="pengawasKeluarBarang"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="342,471"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="tool8" Name="UPDATE stock keluar barang">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>pengawasKeluarBarang</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="pengawasKeluarBarang"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="70.0000057220459,272.9333586102295"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="updateStokGudang_3_2_2_2" Name="Update Stok Gudang JSON">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>pengawasKeluarBarang</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="pengawasKeluarBarang"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="487,36"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="post_data_to_spreadsheet_2" Name="Post Data To SpreadSheet">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>pengawasKeluarBarang</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="pengawasKeluarBarang"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="551,420.99999649804687"/>
+                    </ExtendedAttributes>
+                </Activity>
+            </Activities>
+            <Transitions>
+                <Transition From="batal" Id="transition14" Name="gaJadi" To="updateStokGudang_3_2">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="batal" Id="transition17" Name="jadi" To="update_sku_master_2">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="set_sku_name" Id="transition20" To="updateStokGudang_3_2_2">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="updateStokGudang_3_2" Id="transition_end_updateStokGudang_3_2" To="post_data_to_spreadsheet_2">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="update_sku_master_2" Id="transition19" To="post_data_to_spreadsheet_2">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="tool3" Id="transition11" To="tool8">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="tool8" Id="transition10" To="set_sku_name">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="updateStokGudang_3_2_2" Id="transition12" To="updateStokGudang_3_2_2_2">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="updateStokGudang_3_2_2_2" Id="transition13" To="approvePickup">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="approvePickup" Id="transition15" To="batal">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+            </Transitions>
+            <ExtendedAttributes>
+                <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="pengawasKeluarBarang"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=pengawasKeluarBarang,CONNECTING_ACTIVITY_ID=tool3,X_OFFSET=102.99999809265137,Y_OFFSET=511.78336471374513,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=pengawasKeluarBarang,CONNECTING_ACTIVITY_ID=post_data_to_spreadsheet_2,X_OFFSET=762.0000591278076,Y_OFFSET=435.36666435058595,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+            </ExtendedAttributes>
+        </WorkflowProcess>
+        <WorkflowProcess Id="terima_preform" Name="Terima Masuk PreForm">
+            <ProcessHeader DurationUnit="h"/>
+            <DataFields>
+                <DataField Id="approveAktual" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+            </DataFields>
+            <Activities>
+                <Activity Id="form_masuk_preform" Name="Form Masuk PreForm">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>terimaBarang_2_pekerja</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="terimaBarang_2_pekerja"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="200,70.08333237451171"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="approve_masuk_preform" Name="Approve Masuk PreForm">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>terimaBarang_2_pengawas</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="terimaBarang_2_pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="368.0833435058594,35.55555374902343"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="updateStokGudang" Name="Update Stok Gudang">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>terimaBarang_2_pengawas</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="terimaBarang_2_pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="431.8611145019531,173.0138972548828"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="isAchieve" Name="isAchieve">
+                    <Route/>
+                    <Performer>terimaBarang_2_pengawas</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition4"/>
+                                    <TransitionRef Id="transition9"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="terimaBarang_2_pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="622,41.44443924707031"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="check_ulang_preform_masuk" Name="Check Ulang PreForm Masuk">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>terimaBarang_2_pekerja</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="terimaBarang_2_pekerja"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="467,44.986111"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="tool3" Name="init transaction">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>terimaBarang_2_pengawas</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="terimaBarang_2_pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="76,283.35227106738284"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="set_meta_data" Name="SET Meta Data">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>terimaBarang_2_pengawas</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="terimaBarang_2_pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="270,290.5227498881836"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="set_sku_name" Name="SET SKU Name">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>terimaBarang_2_pengawas</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="terimaBarang_2_pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="228,87.48609574121093"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="update_sku_master" Name="Update SKU Master">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>terimaBarang_2_pengawas</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="terimaBarang_2_pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="422,294.58334000390624"/>
+                    </ExtendedAttributes>
+                </Activity>
+            </Activities>
+            <Transitions>
+                <Transition From="form_masuk_preform" Id="transition2" To="approve_masuk_preform">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="isAchieve" Id="transition4" Name="achieve" To="updateStokGudang">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="check_ulang_preform_masuk" Id="transition7" To="approve_masuk_preform">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="approve_masuk_preform" Id="transition8" To="isAchieve">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="tool3" Id="transition10" To="set_meta_data">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="set_meta_data" Id="transition11" To="set_sku_name">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="set_sku_name" Id="transition12" To="form_masuk_preform">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="isAchieve" Id="transition9" Name="notAchieve" To="check_ulang_preform_masuk">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="updateStokGudang" Id="transition_end_updateStokGudang" To="update_sku_master">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+            </Transitions>
+            <ExtendedAttributes>
+                <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="terimaBarang_2_pekerja;terimaBarang_2_pengawas"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=terimaBarang_2_pengawas,CONNECTING_ACTIVITY_ID=tool3,X_OFFSET=116,Y_OFFSET=86.80555374902343,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=terimaBarang_2_pengawas,CONNECTING_ACTIVITY_ID=update_sku_master,X_OFFSET=693.0750350952148,Y_OFFSET=302.51250915527345,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+            </ExtendedAttributes>
+        </WorkflowProcess>
+        <WorkflowProcess Id="barangKeluar_2" Name="PreForm Keluar">
+            <ProcessHeader DurationUnit="h"/>
+            <DataFields>
+                <DataField Id="pickUp" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+            </DataFields>
+            <Activities>
+                <Activity Id="tool3" Name="init transaction">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>barangKeluar_2_pengawasKeluarBarang</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="barangKeluar_2_pengawasKeluarBarang"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="86.0000057220459,376.60001510437013"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="approvePickup" Name="Approve PickUp">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>barangKeluar_2_pengawasKeluarBarang</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="barangKeluar_2_pengawasKeluarBarang"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="154.5,64.796875"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="batal" Name="Batal">
+                    <Route/>
+                    <Performer>barangKeluar_2_pengawasKeluarBarang</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition14"/>
+                                    <TransitionRef Id="transition17"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="barangKeluar_2_pengawasKeluarBarang"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="431.125,325.09375"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="updateStokGudang_3_2" Name="Update Stok Gudang">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>barangKeluar_2_pengawasKeluarBarang</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="barangKeluar_2_pengawasKeluarBarang"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="566,241"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="updateStokGudang_3_2_2" Name="Update Stok Gudang">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>barangKeluar_2_pengawasKeluarBarang</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="barangKeluar_2_pengawasKeluarBarang"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="378.0000286102295,86.93331474121095"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="update_sku_master_2" Name="Update SKU Master">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>barangKeluar_2_pengawasKeluarBarang</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="barangKeluar_2_pengawasKeluarBarang"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="342,471"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="update_alur_preform_keluar" Name="UPDATE Alur PreForm keluar">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>barangKeluar_2_pengawasKeluarBarang</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="barangKeluar_2_pengawasKeluarBarang"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="118,216.921875"/>
+                    </ExtendedAttributes>
+                </Activity>
+            </Activities>
+            <Transitions>
+                <Transition From="batal" Id="transition14" Name="gaJadi" To="updateStokGudang_3_2">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="batal" Id="transition17" Name="jadi" To="update_sku_master_2">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="approvePickup" Id="transition15" To="updateStokGudang_3_2_2">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="updateStokGudang_3_2_2" Id="transition18" To="batal">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="tool3" Id="transition11" To="update_alur_preform_keluar">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="update_alur_preform_keluar" Id="transition9" To="approvePickup">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+            </Transitions>
+            <ExtendedAttributes>
+                <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="barangKeluar_2_pengawasKeluarBarang"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=barangKeluar_2_pengawasKeluarBarang,CONNECTING_ACTIVITY_ID=tool3,X_OFFSET=102.99999809265137,Y_OFFSET=511.78336471374513,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=barangKeluar_2_pengawasKeluarBarang,CONNECTING_ACTIVITY_ID=updateStokGudang_3_2,X_OFFSET=586,Y_OFFSET=406.361111,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=barangKeluar_2_pengawasKeluarBarang,CONNECTING_ACTIVITY_ID=update_sku_master_2,X_OFFSET=538,Y_OFFSET=513.4166529921876,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+            </ExtendedAttributes>
+        </WorkflowProcess>
+        <WorkflowProcess Id="pindah_item" Name="Pindah Barang">
+            <ProcessHeader DurationUnit="h"/>
+            <DataFields>
+                <DataField Id="ke_gudang" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+            </DataFields>
+            <Activities>
+                <Activity Id="init_transaction" Name="Init Transaction">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>process6_participant9</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process6_participant9"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="194,95"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="tool1" Name="Update SKU">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>process6_participant9</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process6_participant9"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="350.90277099609375,44.00000412744141"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="route1" Name="Dari Ke">
+                    <Route/>
+                    <Performer>process6_participant9</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition3"/>
+                                    <TransitionRef Id="transition5"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process6_participant9"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="473,174.99999649804687"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="produksi_ke_packing" Name="Produksi Ke Packing">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>process6_participant9</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process6_participant9"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="535,35.00000031274414"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="packing_ke_produksi" Name="Packing ke Produksi">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>process6_participant9</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process6_participant9"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="239,256.99999649804687"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="post_data_to_spreadsheet" Name="Post Data To SpreadSheet">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>process6_participant9</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process6_participant9"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="460,266.99999649804687"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="post_data_to_spreadsheet_2" Name="Post Data To SpreadSheet">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>process6_participant9</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process6_participant9"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="599,170.99999649804687"/>
+                    </ExtendedAttributes>
+                </Activity>
+            </Activities>
+            <Transitions>
+                <Transition From="init_transaction" Id="transition2" To="tool1">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="tool1" Id="transition_end_tool1" To="route1">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="route1" Id="transition3" Name="packing" To="produksi_ke_packing">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="route1" Id="transition5" Name="produksi" To="packing_ke_produksi">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="packing_ke_produksi" Id="transition_end_packing_ke_produksi" To="post_data_to_spreadsheet">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="produksi_ke_packing" Id="transition_end_produksi_ke_packing" To="post_data_to_spreadsheet_2">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+            </Transitions>
+            <ExtendedAttributes>
+                <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="process6_participant9"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=process6_participant9,CONNECTING_ACTIVITY_ID=init_transaction,X_OFFSET=71,Y_OFFSET=73,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=process6_participant9,CONNECTING_ACTIVITY_ID=post_data_to_spreadsheet_2,X_OFFSET=764.0833129882812,Y_OFFSET=116.99999649804687,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=process6_participant9,CONNECTING_ACTIVITY_ID=post_data_to_spreadsheet,X_OFFSET=636,Y_OFFSET=293.99999649804687,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+            </ExtendedAttributes>
+        </WorkflowProcess>
+        <WorkflowProcess Id="audit_sku_balance" Name="Audit SKU Balance">
+            <ProcessHeader DurationUnit="h"/>
+            <DataFields>
+                <DataField Id="status" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+            </DataFields>
+            <Activities>
+                <Activity Id="tool1" Name="Init">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>process7_participant1</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process7_participant1"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="346,33"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="tool2" Name="Update SKU Name">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>process7_participant1</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process7_participant1"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="148,36"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="approve_audit" Name="Approve Audit">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>process7_participant10</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process7_participant10"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="125,124"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="tool2_2" Name="Update SKU Balance">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>process7_participant10</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process7_participant10"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="295,213.99999649804687"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="route1" Name="Approval">
+                    <Route/>
+                    <Performer>process7_participant10</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition7"/>
+                                    <TransitionRef Id="transition9"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process7_participant10"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="300,105"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="tool2_2_3" Name="Update SKU Balance Gudang">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>process7_participant10</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process7_participant10"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="490,212.99999649804687"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="tool2_2_4" Name="Not Update SKU Balance">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>process7_participant10</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process7_participant10"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="354,36.00000031274414"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="post_data_to_spreadsheet" Name="Post Data To SpreadSheet">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>process7_participant10</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process7_participant10"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="579,119.986111"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="post_data_to_spreadsheet_2" Name="Post Data To SpreadSheet">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>process7_participant10</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process7_participant10"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="508,21.986111"/>
+                    </ExtendedAttributes>
+                </Activity>
+            </Activities>
+            <Transitions>
+                <Transition From="tool1" Id="transition2" To="tool2">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="tool2" Id="transition3" To="approve_audit">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="approve_audit" Id="transition5" To="route1">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="route1" Id="transition7" To="tool2_2">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="tool2_2" Id="transition_end_tool2_2" To="tool2_2_3">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="route1" Id="transition9" To="tool2_2_4">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="tool2_2_3" Id="transition_end_tool2_2_3" To="post_data_to_spreadsheet">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="tool2_2_4" Id="transition_end_tool2_2_4" To="post_data_to_spreadsheet_2">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+            </Transitions>
+            <ExtendedAttributes>
+                <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="process7_participant10;process7_participant1"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=process7_participant1,CONNECTING_ACTIVITY_ID=tool1,X_OFFSET=502,Y_OFFSET=60,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=process7_participant10,CONNECTING_ACTIVITY_ID=post_data_to_spreadsheet,X_OFFSET=753.046875,Y_OFFSET=202,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=process7_participant10,CONNECTING_ACTIVITY_ID=post_data_to_spreadsheet_2,X_OFFSET=688,Y_OFFSET=66.0000041274414,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+            </ExtendedAttributes>
+        </WorkflowProcess>
+        <WorkflowProcess Id="audit_preform_balance" Name="Audit Preform Balance">
+            <ProcessHeader DurationUnit="h"/>
+            <DataFields>
+                <DataField Id="status" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+            </DataFields>
+            <Activities>
+                <Activity Id="tool1" Name="Init">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>audit_sku_balance_2_process7_participant1</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="audit_sku_balance_2_process7_participant1"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="118,158"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="tool2" Name="Update SKU Name">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>audit_sku_balance_2_process7_participant1</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="audit_sku_balance_2_process7_participant1"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="148,36"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="pengawas_audit" Name="Pengawas Audit">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>audit_sku_balance_2_process7_participant10</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="audit_sku_balance_2_process7_participant10"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="285,22"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="tool2_2" Name="Update SKU Balance">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>audit_sku_balance_2_process7_participant1</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="audit_sku_balance_2_process7_participant1"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="498,240"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="route1" Name="Approval">
+                    <Route/>
+                    <Performer>audit_sku_balance_2_process7_participant1</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition7"/>
+                                    <TransitionRef Id="transition9"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="audit_sku_balance_2_process7_participant1"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="543,48"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="approve_audit" Name="Approve Audit">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>audit_sku_balance_2_process7_participant1</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="audit_sku_balance_2_process7_participant1"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="358,95"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="audit_ulang_pengawas" Name="Audit Ulang Pengawas">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>audit_sku_balance_2_process7_participant10</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="audit_sku_balance_2_process7_participant10"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="539,14"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="tool2_2_2" Name="Update Qty Audit">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>audit_sku_balance_2_process7_participant1</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="audit_sku_balance_2_process7_participant1"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="322,209"/>
+                    </ExtendedAttributes>
+                </Activity>
+            </Activities>
+            <Transitions>
+                <Transition From="tool1" Id="transition2" To="tool2">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="tool2" Id="transition3" To="pengawas_audit">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="route1" Id="transition7" To="tool2_2_2">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="pengawas_audit" Id="transition8" To="approve_audit">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="approve_audit" Id="transition10" To="route1">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="route1" Id="transition9" To="audit_ulang_pengawas">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="audit_ulang_pengawas" Id="transition11" To="approve_audit">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="tool2_2_2" Id="transition12" To="tool2_2">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+            </Transitions>
+            <ExtendedAttributes>
+                <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="audit_sku_balance_2_process7_participant10;audit_sku_balance_2_process7_participant1"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=audit_sku_balance_2_process7_participant1,CONNECTING_ACTIVITY_ID=tool1,X_OFFSET=112,Y_OFFSET=303,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=audit_sku_balance_2_process7_participant1,CONNECTING_ACTIVITY_ID=tool2_2,X_OFFSET=656.046875,Y_OFFSET=323,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+            </ExtendedAttributes>
+        </WorkflowProcess>
+        <WorkflowProcess Id="create_sku_master" Name="Create SKU Master">
+            <ProcessHeader DurationUnit="h"/>
+            <Activities>
+                <Activity Id="tool1" Name="Set kuantitas 0">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>process9_participant14</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process9_participant14"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="230,51.097225501953126"/>
+                    </ExtendedAttributes>
+                </Activity>
+            </Activities>
+            <ExtendedAttributes>
+                <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="process9_participant14"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=process9_participant14,CONNECTING_ACTIVITY_ID=tool1,X_OFFSET=75,Y_OFFSET=46,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=process9_participant14,CONNECTING_ACTIVITY_ID=tool1,X_OFFSET=450,Y_OFFSET=84.29166825097656,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+            </ExtendedAttributes>
+        </WorkflowProcess>
+    </WorkflowProcesses>
+</Package>

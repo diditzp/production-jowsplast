@@ -1,0 +1,2335 @@
+{
+    "elements": [
+        {
+            "elements": [{
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.CustomHTML",
+                    "properties": {
+                        "requiredSanitize": "true",
+                        "autoPopulate": "",
+                        "label": "",
+                        "id": "field31",
+                        "value": "<style>\n    /*#section7 {*/\n    /*    background: none;*/\n    /*    border: none;*/\n    /*}*/\n<\/style>\n\n<a href=\"/jw/web/userview/stok_jsp/jsp_view1/_/F7BFF3D2BDA448BDA2229DCF0703FAD8\"><i class=\"fa fa-arrow-left\" aria-hidden=\"true\"><\/i> Back to History<\/a>\n\n<script>\n    $(document).ready(function() {\n       var currentUrl = '#requestParam.c_id_flow#';\n\n        if (currentUrl.includes('OUT')) {\n            $('#section3').css({'display':'none'});\n            $('#section4').css({'display':'none'});\n            $('#section5').css({'display':'none'});\n            $('#section6').css({'display':'none'});\n            $('#section8').css({'display':'none'});\n            $('#section9').css({'display':'none'});\n            $('#section10').css({'display':'none'});\n            $('#section12').css({'display':'none'});\n            $('#section13').css({'display':'none'});\n            $('#section14').css({'display':'none'});\n        } else if (currentUrl.includes('IN')) {\n            $('#section3').css({'display':'none'});\n            $('#section4').css({'display':'none'});\n            $('#section5').css({'display':'none'});\n            $('#section6').css({'display':'none'});\n            $('#section7').css({'display':'none'});\n            $('#section11').css({'display':'none'});\n            $('#section12').css({'display':'none'});\n            $('#section13').css({'display':'none'});\n            $('#section14').css({'display':'none'});\n        } else if (currentUrl.includes('PROD')) {\n            $('#section7').css({'display':'none'});\n            $('#section8').css({'display':'none'});\n            $('#section9').css({'display':'none'});\n            $('#section10').css({'display':'none'});\n            $('#section11').css({'display':'none'});\n            $('#section12').css({'display':'none'});\n            $('#section13').css({'display':'none'});\n            $('#section14').css({'display':'none'});\n        } else if (currentUrl.includes('MV')) {\n            $('#section3').css({'display':'none'});\n            $('#section4').css({'display':'none'});\n            $('#section5').css({'display':'none'});\n            $('#section6').css({'display':'none'});\n            $('#section7').css({'display':'none'});\n            $('#section8').css({'display':'none'});\n            $('#section9').css({'display':'none'});\n            $('#section10').css({'display':'none'});\n            $('#section11').css({'display':'none'});\n            $('#section13').css({'display':'none'});\n            $('#section14').css({'display':'none'});\n        } else if (currentUrl.includes('AUDIT')) {\n            $('#section3').css({'display':'none'});\n            $('#section4').css({'display':'none'});\n            $('#section5').css({'display':'none'});\n            $('#section6').css({'display':'none'});\n            $('#section7').css({'display':'none'});\n            $('#section8').css({'display':'none'});\n            $('#section9').css({'display':'none'});\n            $('#section10').css({'display':'none'});\n            $('#section11').css({'display':'none'});\n            $('#section12').css({'display':'none'});\n        }\n    });\n<\/script>"
+                    }
+                }],
+                "className": "org.joget.apps.form.model.Column",
+                "properties": {"width": "100%"}
+            }],
+            "className": "org.joget.apps.form.model.Section",
+            "properties": {
+                "visibilityControl": "",
+                "permissionReadonly": "",
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "label": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityValue": "",
+                "regex": "",
+                "readonly": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "comment": "",
+                "id": "section2",
+                "join": "",
+                "readonlyLabel": ""
+            }
+        },
+        {
+            "elements": [{
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "maxlength": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "label": "ID Produksi Botol",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "id_produksi_botol",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "properties": {
+                            "useDefaultWhenEmpty": "",
+                            "permission_rules": {
+                                "fecd5d08-1e59-12a0-0e31-f06b6aa68919": {},
+                                "aa1fac9e-2954-eadb-f641-eee606d57fb6": {},
+                                "f16e031c-1fbd-7bae-8418-5847efb12979": {}
+                            },
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "",
+                            "id": "nama_sku",
+                            "value": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.SelectBox",
+                        "properties": {
+                            "controlField": "",
+                            "permission_rules": {
+                                "fecd5d08-1e59-12a0-0e31-f06b6aa68919": {},
+                                "f16e031c-1fbd-7bae-8418-5847efb12979": {},
+                                "aa1fac9e-2954-eadb-f641-eee606d57fb6": {}
+                            },
+                            "multiple": "",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "type": "",
+                                    "message": "",
+                                    "mandatory": "true"
+                                }
+                            },
+                            "label": "Nama Produk",
+                            "readonly": "",
+                            "size": "",
+                            "optionsBinder": {
+                                "className": "org.joget.plugin.enterprise.JdbcOptionsBinder",
+                                "properties": {
+                                    "useAjax": "",
+                                    "addEmpty": "true",
+                                    "jdbcDatasource": "default",
+                                    "cacheInterval": "",
+                                    "emptyLabel": "",
+                                    "sql": "select id, c_namaProduk from app_fd_sku_master;"
+                                }
+                            },
+                            "options": [],
+                            "workflowVariable": "",
+                            "id": "nama_produk",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.DatePicker",
+                        "properties": {
+                            "yearRange": "c-10:c+10",
+                            "dataFormat": "yyyy-MM-dd",
+                            "startDateFieldId": "",
+                            "permission_rules": {
+                                "fecd5d08-1e59-12a0-0e31-f06b6aa68919": {},
+                                "f16e031c-1fbd-7bae-8418-5847efb12979": {},
+                                "aa1fac9e-2954-eadb-f641-eee606d57fb6": {}
+                            },
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "type": "",
+                                    "message": "",
+                                    "mandatory": "true"
+                                }
+                            },
+                            "format": "",
+                            "label": "Tanggal Produksi",
+                            "datePickerType": "",
+                            "currentDateAs": "",
+                            "endDateFieldId": "",
+                            "readonly": "",
+                            "allowManual": "",
+                            "workflowVariable": "",
+                            "id": "tanggal_produksi",
+                            "placeholder": "",
+                            "disableWeekends": "",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.Radio",
+                        "properties": {
+                            "fullWidth": "",
+                            "controlField": "",
+                            "readonly": "",
+                            "optionsBinder": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "permission_rules": {
+                                "fecd5d08-1e59-12a0-0e31-f06b6aa68919": {},
+                                "f16e031c-1fbd-7bae-8418-5847efb12979": {},
+                                "aa1fac9e-2954-eadb-f641-eee606d57fb6": {}
+                            },
+                            "options": [
+                                {
+                                    "label": "Pagi",
+                                    "value": "pagi",
+                                    "grouping": ""
+                                },
+                                {
+                                    "label": "Malam",
+                                    "value": "malam",
+                                    "grouping": ""
+                                }
+                            ],
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "type": "",
+                                    "message": "",
+                                    "mandatory": "true"
+                                }
+                            },
+                            "workflowVariable": "",
+                            "label": "Shift",
+                            "id": "shift",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.SelectBox",
+                        "properties": {
+                            "controlField": "",
+                            "permission_rules": {
+                                "fecd5d08-1e59-12a0-0e31-f06b6aa68919": {},
+                                "f16e031c-1fbd-7bae-8418-5847efb12979": {},
+                                "aa1fac9e-2954-eadb-f641-eee606d57fb6": {}
+                            },
+                            "multiple": "",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "type": "",
+                                    "message": "",
+                                    "mandatory": "true"
+                                }
+                            },
+                            "label": "Nama PreForm",
+                            "readonly": "",
+                            "size": "",
+                            "optionsBinder": {
+                                "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                                "properties": {
+                                    "addEmptyOption": "true",
+                                    "groupingColumn": "",
+                                    "useAjax": "",
+                                    "formDefId": "preFrom",
+                                    "labelColumn": "nama_pre_form",
+                                    "extraCondition": "",
+                                    "cacheInterval": "",
+                                    "emptyLabel": "",
+                                    "idColumn": "nama_pre_form"
+                                }
+                            },
+                            "options": [],
+                            "workflowVariable": "",
+                            "id": "nama_preform",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "maxlength": "",
+                            "permission_rules": {
+                                "fecd5d08-1e59-12a0-0e31-f06b6aa68919": {},
+                                "aa1fac9e-2954-eadb-f641-eee606d57fb6": {},
+                                "f16e031c-1fbd-7bae-8418-5847efb12979": {}
+                            },
+                            "validator": {
+                                "className": "org.joget.sample.QuantityValidator",
+                                "properties": {
+                                    "id_total_item": "requestProduksi",
+                                    "id_sisa_stock": "sisa_preform",
+                                    "message": "Jumlah request melebihi jumlah sisa preform",
+                                    "mandatory": "true"
+                                }
+                            },
+                            "label": "Sisa Preform",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "sisa_preform",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "maxlength": "",
+                            "permission_rules": {
+                                "fecd5d08-1e59-12a0-0e31-f06b6aa68919": {},
+                                "f16e031c-1fbd-7bae-8418-5847efb12979": {},
+                                "aa1fac9e-2954-eadb-f641-eee606d57fb6": {}
+                            },
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "type": "numeric",
+                                    "message": "",
+                                    "mandatory": "true"
+                                }
+                            },
+                            "label": "Request Produksi",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "7",
+                            "workflowVariable": "requestProduksi",
+                            "style": "",
+                            "id": "requestProduksi",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": "true"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextArea",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "readonly": "",
+                            "permission_rules": {
+                                "fecd5d08-1e59-12a0-0e31-f06b6aa68919": {},
+                                "f16e031c-1fbd-7bae-8418-5847efb12979": {},
+                                "aa1fac9e-2954-eadb-f641-eee606d57fb6": {}
+                            },
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "",
+                            "label": "Catatan Request Produksi",
+                            "id": "catatan_request_produksi",
+                            "placeholder": "",
+                            "rows": "5",
+                            "cols": "20",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "autoPopulate": "",
+                            "permission_rules": {
+                                "fecd5d08-1e59-12a0-0e31-f06b6aa68919": {},
+                                "aa1fac9e-2954-eadb-f641-eee606d57fb6": {},
+                                "f16e031c-1fbd-7bae-8418-5847efb12979": {}
+                            },
+                            "label": "",
+                            "id": "field22",
+                            "value": "<script>\n    \n    $(document).ready(function (){\n        $(\"[name=nama_preform]\").change(function () {\n            var item = $(this).val(); // Get the value from input field\n            console.log(\"apaaaa 0-->\"+ item);\n            getSisaStock(item); // Call function to fetch details\n        });\n        \n        function getSisaStock(item){\n            console.log(\"panggil ws preform dari dropdown -->\"+item);\n            $.ajax({\n                url: \"#request.contextPath#/web/json/plugin/org.joget.jsp.GetSisaPreform/service?\",\n                type: \"GET\",\n                data: { preform : item },\n                dataType: \"json\",\n                success: function(res){\n                    const qty_preform = res.total_pre_form;\n                    \n                    $(\"[name=sisa_preform]\").val(qty_preform);\n                    console.log(\"sisa preform --> \"+qty_preform);\n                },\n                error: function (xhr, status, error) {\n                        console.log(\"Error: \" + xhr.responseText);\n                    }\n            });\n            \n        }\n    });\n<\/script>"
+                        }
+                    }
+                ],
+                "className": "org.joget.apps.form.model.Column",
+                "properties": {"width": "100%"}
+            }],
+            "className": "org.joget.apps.form.model.Section",
+            "properties": {
+                "visibilityControl": "",
+                "permissionHidden": "",
+                "permissionReadonly": "",
+                "permission_rules": {
+                    "fecd5d08-1e59-12a0-0e31-f06b6aa68919": {
+                        "permissionHidden": "",
+                        "readonly": "true"
+                    },
+                    "f16e031c-1fbd-7bae-8418-5847efb12979": {
+                        "permissionHidden": "",
+                        "readonly": "true"
+                    },
+                    "aa1fac9e-2954-eadb-f641-eee606d57fb6": {
+                        "permissionHidden": "",
+                        "readonly": "true"
+                    }
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "label": "Request Produksi",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityValue": "",
+                "regex": "",
+                "readonly": "",
+                "loadBinder": {
+                    "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
+                    "properties": {
+                        "autoHandleWorkflowVariable": "true",
+                        "jdbcDatasource": "default",
+                        "sql": "SELECT \r\n    prod.c_id_produksi_botol as id_produksi_botol,\r\n    prod.c_nama_sku as nama_sku,\r\n    prod.c_nama_produk as nama_produk, \r\n    prod.c_tanggal_produksi as tanggal_produksi,\r\n    prod.c_shift as shift,\r\n    prod.c_nama_preform as nama_preform,\r\n    prod.c_sisa_preform as sisa_preform,\r\n    prod.c_requestProduksi as requestProduksi,\r\n    prod.c_catatan_request_produksi as catatan_request_produksi\r\nFROM app_fd_produksi prod\r\njoin app_fd_flow_stock stock on stock.c_id_flow = prod.c_id_produksi_botol\r\nwhere stock.c_id_flow = '#requestParam.c_id_flow#'",
+                        "autoHandleFiles": ""
+                    }
+                },
+                "comment": "",
+                "id": "section3",
+                "join": "",
+                "readonlyLabel": ""
+            }
+        },
+        {
+            "elements": [{
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "true",
+                            "maxlength": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "label": "Target Produksi",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "sisa_target_produksi",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "properties": {
+                            "useDefaultWhenEmpty": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "",
+                            "id": "proses_produksi",
+                            "value": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "requiredSanitize": "true",
+                            "autoPopulate": "",
+                            "label": "",
+                            "id": "field19",
+                            "value": "<span>Proses Produksi<\/span>\n<table id=\"tableProsesProduksi\">\n    <thead>\n        <tr>\n            <th>Employee<\/th>\n            <th>Tanggal Produksi<\/th>\n            <th>Jam Mulai<\/th>\n            <th>Jam Selesai<\/th>\n            <th>Jumlah Cacat<\/th>\n            <th>Jumlah Produksi<\/th>\n            <th>Note Produksi<\/th>\n        <\/tr>\n    <\/thead>\n    <tbody>\n    <\/tbody>\n<\/table>\n\n<script>\n    $(document).ready(function() {\n        // const tableBody = $('#tableProsesProduksi tbody');\n        // const row = $('<tr><\/tr>');\n        \n        // const employee = $('[name=employee]').val();\n        // const tanggalProduksi = $('[name=tanggalProduksi]').val();\n        // const jamMulai = $('[name=jamMulai]').val();\n        // const jamSelesai = $('[name=jamSelesai]').val();\n        // const jumlahCacat = $('[name=jumlahCacat]').val();\n        // const jumlahProduksi = $('[name=jumlahProduksi]').val();\n        // const noteProduksi = $('[name=noteProduksi]').val();\n\n        // row.append(`<td>${employee}<\/td>`);\n        // row.append(`<td>${tanggalProduksi}<\/td>`);\n        // row.append(`<td>${jamMulai}<\/td>`);\n        // row.append(`<td>${jamSelesai}<\/td>`);\n        // row.append(`<td>${jumlahCacat}<\/td>`);\n        // row.append(`<td>${jumlahProduksi}<\/td>`);\n        // row.append(`<td>${noteProduksi}<\/td>`);\n\n        // tableBody.append(row);\n        const productionData = JSON.parse($('[name=proses_produksi]').val());\n    \n        const tableBody = document.getElementById('tableProsesProduksi').getElementsByTagName('tbody')[0];\n    \n        productionData.forEach(item => {\n            const row = tableBody.insertRow();\n    \n            row.insertCell(0).innerText = item.employee;\n            row.insertCell(1).innerText = item.tanggalProduksi;\n            row.insertCell(2).innerText = item.jamMulai;\n            row.insertCell(3).innerText = item.jamSelesai;\n            row.insertCell(4).innerText = item.jumlahCacat;\n            row.insertCell(5).innerText = item.jumlahProduksi;\n            row.insertCell(6).innerText = item.noteProduksi;\n        });\n    });\n<\/script>"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "true",
+                            "maxlength": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "label": "Total Cacat Produksi",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "total_cacat",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "true",
+                            "maxlength": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "label": "Total Produksi",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "total_produksi",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": ""
+                        }
+                    }
+                ],
+                "className": "org.joget.apps.form.model.Column",
+                "properties": {"width": "100%"}
+            }],
+            "className": "org.joget.apps.form.model.Section",
+            "properties": {
+                "visibilityControl": "",
+                "permissionHidden": "",
+                "permissionReadonly": "",
+                "permission_rules": {
+                    "fecd5d08-1e59-12a0-0e31-f06b6aa68919": {},
+                    "f16e031c-1fbd-7bae-8418-5847efb12979": {
+                        "permissionHidden": "",
+                        "readonly": ""
+                    },
+                    "aa1fac9e-2954-eadb-f641-eee606d57fb6": {
+                        "permissionHidden": "",
+                        "readonly": "true"
+                    }
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "label": "Form Produksi",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityValue": "",
+                "regex": "",
+                "readonly": "",
+                "loadBinder": {
+                    "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
+                    "properties": {
+                        "autoHandleWorkflowVariable": "true",
+                        "jdbcDatasource": "default",
+                        "sql": "SELECT \r\n    prod.c_sisa_target_produksi as sisa_target_produksi, \r\n    prod.c_proses_produksi as proses_produksi,\r\n    prod.c_total_cacat as total_cacat,\r\n    prod.c_total_produksi as total_produksi\r\nFROM app_fd_produksi prod\r\njoin app_fd_flow_stock stock on stock.c_id_flow = prod.c_id_produksi_botol\r\nwhere stock.c_id_flow = '#requestParam.c_id_flow#'",
+                        "autoHandleFiles": ""
+                    }
+                },
+                "comment": "",
+                "id": "section4",
+                "join": "",
+                "readonlyLabel": ""
+            }
+        },
+        {
+            "elements": [{
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "properties": {
+                            "useDefaultWhenEmpty": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "",
+                            "id": "aktual_produksi",
+                            "value": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "requiredSanitize": "true",
+                            "autoPopulate": "",
+                            "label": "",
+                            "id": "field19",
+                            "value": "<span>Aktual Produksi<\/span>\n<table id=\"tableAktualProduksi\">\n    <thead>\n        <tr>\n            <th>Pegawai Produksi<\/th>\n            <th>Waktu Masuk<\/th>\n            <th>Aktual Masuk Gudang<\/th>\n            <th>Aktual Cacat Gudang<\/th>\n            <th>Catatan Hasil Produksi<\/th>\n        <\/tr>\n    <\/thead>\n    <tbody>\n    <\/tbody>\n<\/table>\n\n<script>\n    $(document).ready(function() {\n        \n        const productionData = JSON.parse($('[name=aktual_produksi]').val());\n    \n        const tableBody = document.getElementById('tableAktualProduksi').getElementsByTagName('tbody')[0];\n    \n        productionData.forEach(item => {\n            const row = tableBody.insertRow();\n    \n            row.insertCell(0).innerText = item.employee;\n            row.insertCell(1).innerText = item.tanggalMasukGudang;\n            row.insertCell(2).innerText = item.jumlahMasuk;\n            row.insertCell(3).innerText = item.jumlah_aktual_cacat_produksi;\n            row.insertCell(4).innerText = item.noteHasilProduksi;\n        });\n    });\n<\/script>"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "autoPopulate": "",
+                            "permission_rules": {
+                                "fecd5d08-1e59-12a0-0e31-f06b6aa68919": {
+                                    "permissionHidden": "",
+                                    "readonly": "true"
+                                },
+                                "f16e031c-1fbd-7bae-8418-5847efb12979": {},
+                                "aa1fac9e-2954-eadb-f641-eee606d57fb6": {}
+                            },
+                            "label": "",
+                            "id": "field16",
+                            "value": "<script>\n\n    $(document).ready(function(){\n        \n        $('#sisa_target_produksi').on('change', function(){\n            var sisaProduksi = parseInt($('#sisa_target_produksi').val());\n            var aktualProduksi = parseInt($('#totalAktual').val());\n            var requestProduksi = parseInt($('#requestProduksi').val());\n            console.log(\"sisaProduksi : \"+sisaProduksi);\n            console.log(\"aktualProduksi : \"+aktualProduksi);\n            console.log(\"requestProduksi : \"+requestProduksi);\n            var prosessProduksi;\n            \n            if (aktualProduksi >= requestProduksi){\n                prosessProduksi = 'Achieve';\n                console.log(\"lolos ->\"+prosessProduksi);\n            } else{\n                prosessProduksi = 'notAchieve';\n                console.log(\"tidak lolos ->\"+prosessProduksi);\n            }\n            $('#approveAktual').val(prosessProduksi);\n            \n            console.log(\"variable wf : \" + $('#approveAktual').val());\n        })\n    })\n\n<\/script>"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "properties": {
+                            "useDefaultWhenEmpty": "",
+                            "permission_rules": {
+                                "fecd5d08-1e59-12a0-0e31-f06b6aa68919": {
+                                    "permissionHidden": "",
+                                    "readonly": "true"
+                                },
+                                "f16e031c-1fbd-7bae-8418-5847efb12979": {},
+                                "aa1fac9e-2954-eadb-f641-eee606d57fb6": {}
+                            },
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "approveAktual",
+                            "id": "approveAktual",
+                            "value": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "true",
+                            "maxlength": "",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "type": "",
+                                    "message": "",
+                                    "mandatory": "true"
+                                }
+                            },
+                            "label": "Sisa Request Produksi",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "sisa_target_produksi",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "true",
+                            "maxlength": "",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "type": "",
+                                    "message": "",
+                                    "mandatory": "true"
+                                }
+                            },
+                            "label": "Aktual Cacat Produksi",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "aktual_cacat_produksi",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "true",
+                            "maxlength": "",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "type": "",
+                                    "message": "",
+                                    "mandatory": "true"
+                                }
+                            },
+                            "label": "Aktual Produksi",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "totalAktual",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextArea",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "readonly": "",
+                            "permission_rules": {
+                                "fecd5d08-1e59-12a0-0e31-f06b6aa68919": {
+                                    "permissionHidden": "",
+                                    "readonly": "true"
+                                },
+                                "f16e031c-1fbd-7bae-8418-5847efb12979": {},
+                                "aa1fac9e-2954-eadb-f641-eee606d57fb6": {}
+                            },
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "",
+                            "label": "Catatan Pengawasan",
+                            "id": "catatan_pengawasan",
+                            "placeholder": "",
+                            "rows": "5",
+                            "cols": "20",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    }
+                ],
+                "className": "org.joget.apps.form.model.Column",
+                "properties": {"width": "100%"}
+            }],
+            "className": "org.joget.apps.form.model.Section",
+            "properties": {
+                "visibilityControl": "",
+                "permissionHidden": "",
+                "permissionReadonly": "",
+                "permission_rules": {
+                    "fecd5d08-1e59-12a0-0e31-f06b6aa68919": {
+                        "permissionHidden": "",
+                        "readonly": ""
+                    },
+                    "f16e031c-1fbd-7bae-8418-5847efb12979": {
+                        "permissionHidden": "true",
+                        "readonly": ""
+                    },
+                    "aa1fac9e-2954-eadb-f641-eee606d57fb6": {
+                        "permissionHidden": "",
+                        "readonly": ""
+                    }
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "label": "Approve Produksi - Masuk Gudang",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityValue": "",
+                "regex": "",
+                "readonly": "",
+                "loadBinder": {
+                    "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
+                    "properties": {
+                        "autoHandleWorkflowVariable": "true",
+                        "jdbcDatasource": "default",
+                        "sql": "SELECT \r\n    prod.c_aktual_produksi as aktual_produksi,\r\n    prod.c_approveAktual as approveAktual,\r\n    prod.c_sisa_target_produksi as sisa_target_produksi,\r\n    prod.c_aktual_cacat_produksi as aktual_cacat_produksi,\r\n    prod.c_totalAktual as totalAktual,\r\n    prod.c_catatan_pengawasan as catatan_pengawasan\r\nFROM app_fd_produksi prod\r\njoin app_fd_flow_stock stock on stock.c_id_flow = prod.c_id_produksi_botol\r\nwhere stock.c_id_flow = '#requestParam.c_id_flow#'",
+                        "autoHandleFiles": ""
+                    }
+                },
+                "comment": "",
+                "id": "section5",
+                "join": "",
+                "readonlyLabel": ""
+            }
+        },
+        {
+            "elements": [{
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.CustomHTML",
+                    "properties": {
+                        "requiredSanitize": "",
+                        "autoPopulate": "",
+                        "permission_rules": {
+                            "fecd5d08-1e59-12a0-0e31-f06b6aa68919": {},
+                            "aa1fac9e-2954-eadb-f641-eee606d57fb6": {},
+                            "f16e031c-1fbd-7bae-8418-5847efb12979": {}
+                        },
+                        "label": "",
+                        "id": "field18",
+                        "value": "<style type=\"text/css\">\r\n    #printOptions {\r\n        margin-top: 10px;\r\n        display: none;\r\n    }\r\n    .print-button {\r\n        cursor: pointer;\r\n        padding: 5px 10px;\r\n        border: 1px solid #ccc;\r\n        background-color: #f0f0f0;\r\n        margin-right: 5px;\r\n        border-radius: 5px;\r\n    }\r\n    #container-data {\r\n        display: flex;\r\n        align-items: center;\r\n        width: 20cm;\r\n    }\r\n    #container {\r\n        width: 5cm;\r\n        height: 5cm; \r\n    }\r\n    \r\n    #additionalData {\r\n        width: 10cm;\r\n        display: flex;\r\n        flex-direction: column;\r\n        justify-content: center;\r\n    }\r\n    \r\n    table {\r\n        border-collapse: collapse;\r\n        width: 100%;\r\n        max-height: 10cm; \r\n    }\r\n\r\n<\/style>\r\n\r\n<script type=\"text/javascript\" src=\"#appResource.qrcode.min.js#\"><\/script>\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/canvg/3.0.7/umd.min.js\"><\/script>\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js\"><\/script>\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.13/jspdf.plugin.autotable.min.js\"><\/script>\r\n\r\n<script type=\"text/javascript\">\r\n$(function() {\r\n    function generateQRCode() {\r\n        var namaProduk = $('label[field-tooltip=nama_produk]').closest('.form-cell').find('.form-cell-value .readonly_label span').text();\r\n        var requestProduksi = $('[name=requestProduksi]').val();\r\n        var totalAktual = $('[name=proses_produksi_employee]').text().trim();\r\n        var tanggalProduksi = $('[name=tanggal_produksi]').val();\r\n        var shift = $('input[name=\"shift\"]:checked').parent().text().trim();\r\n        var id = $('[name=nama_produk]').val();\r\n\r\n        $(\"#productName\").text(namaProduk);\r\n        $(\"#requestProduction\").text(requestProduksi + ' PCS');\r\n        $(\"#totalActual\").text(totalAktual);\r\n        $(\"#productionDate\").text(tanggalProduksi);\r\n        $(\"#shiftValue\").text(shift);\r\n        \r\n        $(\"#additionalData\").show();\r\n\r\n        if (!id.startsWith(\"#\")) {\r\n            $(\"#container\").show();\r\n            $(\"#printOptions\").show();\r\n            \r\n            var qrcode = new QRCode({\r\n                content: id,\r\n                container: \"svg-viewbox\",\r\n                join: true,\r\n                width: 100,\r\n                height: 100\r\n            });\r\n            var svg = qrcode.svg();\r\n            document.getElementById(\"container\").innerHTML = svg;\r\n            document.getElementById(\"containerExplain\").innerHTML = \"Scan this QR Code\";\r\n            document.getElementById(\"containerText\").innerHTML = namaProduk;\r\n        }\r\n    }\r\n\r\n    generateQRCode();\r\n});\r\n\r\n// Function to print QR code as PDF\r\n// function printPDF() {\r\n//     var { jsPDF } = window.jspdf;\r\n//     var doc = new jsPDF();\r\n    \r\n//     // Get the SVG element\r\n//     var svgElement = document.getElementById('container').querySelector('svg');\r\n\r\n//     // Create a canvas to render the SVG to\r\n//     var canvas = document.createElement('canvas');\r\n//     canvas.width = svgElement.clientWidth;\r\n//     canvas.height = svgElement.clientHeight;\r\n    \r\n//     // Use canvg to draw the SVG onto the canvas\r\n//     var ctx = canvas.getContext('2d');\r\n//     canvg.Canvg.fromString(ctx, new XMLSerializer().serializeToString(svgElement)).start();\r\n\r\n//     // Convert the canvas to a PNG image\r\n//     var imgData = canvas.toDataURL('image/png');\r\n    \r\n//     // Add the image and text to the PDF\r\n//     doc.addImage(imgData, 'PNG', 15, 40, 180, 160);\r\n//     doc.text(20, 30, document.getElementById(\"containerText\").innerHTML);\r\n    \r\n//     var saveFile = 'QR-code-'+document.getElementById(\"containerText\").innerHTML;\r\n//     // Save the PDF\r\n//     doc.save(saveFile);\r\n// }\r\n$(document).ready(function() {\r\n    \r\n$('.print-button').on('click', function() {\r\n    printLabel();\r\n});\r\n\r\nfunction printLabel() {\r\n    const printContents = document.getElementById(\"container-data\").innerHTML;\r\n    const printWindow = window.open('', '', 'width=500,height=500');\r\n    printWindow.document.write('<html><head><title>Print<\/title>');\r\n    printWindow.document.write('<style>');\r\n    printWindow.document.write('@media print { body { margin: 0; } }');\r\n    printWindow.document.write('#container-data { display: flex; align-items: center; width: 20cm; }');\r\n    printWindow.document.write('#container { width: 5cm; height: 5cm; }'); \r\n    printWindow.document.write('#additionalData { width: 10cm; display: flex; flex-direction: column; justify-content: center; }');\r\n    printWindow.document.write('table { border-collapse: collapse; width: 100%; }'); \r\n    printWindow.document.write('<\/style>');\r\n    printWindow.document.write('<\/head><body>');\r\n    printWindow.document.write('<div id=\"container-data\">' + printContents + '<\/div>'); \r\n    printWindow.document.write('<\/body><\/html>');\r\n    printWindow.document.close();\r\n    printWindow.print();\r\n    printWindow.close();\r\n}\r\n\r\n})\r\n<\/script>\r\n\r\n<!-- Print Options -->\r\n<div id=\"printOptions\">\r\n    <!--<span class=\"print-button\" onclick=\"printPDF()\">Print as PDF<\/span>-->\r\n    <span class=\"print-button\">Print as PDF<\/span>\r\n<\/div>\r\n\r\n<div id=\"containerExplain\"><\/div>\r\n<div id=\"container-data\">\r\n    <div id=\"container\"><\/div>\r\n    <div id=\"additionalData\">\r\n        <table border=\"1\" cellpadding=\"5\">\r\n            <tbody style=\"text-align: center;\">\r\n                <tr>\r\n                    <td id=\"productName\" colspan=\"3\" style=\"font-weight: bold;\"><\/td>\r\n                <\/tr>\r\n                <tr>\r\n                    <td id=\"requestProduction\" colspan=\"3\" style=\"font-weight: bold;\"><\/td>\r\n                <\/tr>\r\n                <tr>\r\n                    <th>Produksi<\/th>\r\n                    <th>Tanggal<\/th>\r\n                    <th>Shift<\/th>\r\n                <\/tr>\r\n                <tr>\r\n                    <td id=\"totalActual\"><\/td>\r\n                    <td id=\"productionDate\"><\/td>\r\n                    <td id=\"shiftValue\"><\/td>\r\n                <\/tr>\r\n            <\/tbody>\r\n        <\/table>\r\n    <\/div>\r\n<\/div>\r\n<div id=\"containerText\"><\/div>\r\n\r\n"
+                    }
+                }],
+                "className": "org.joget.apps.form.model.Column",
+                "properties": {"width": "100%"}
+            }],
+            "className": "org.joget.apps.form.model.Section",
+            "properties": {
+                "visibilityControl": "",
+                "permissionHidden": "",
+                "permissionReadonly": "",
+                "permission_rules": {
+                    "fecd5d08-1e59-12a0-0e31-f06b6aa68919": {
+                        "permissionHidden": "",
+                        "readonly": "true"
+                    },
+                    "f16e031c-1fbd-7bae-8418-5847efb12979": {
+                        "permissionHidden": "true",
+                        "readonly": ""
+                    },
+                    "aa1fac9e-2954-eadb-f641-eee606d57fb6": {
+                        "permissionHidden": "",
+                        "readonly": ""
+                    }
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "label": "QR SKU Produksi",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityValue": "",
+                "regex": "",
+                "readonly": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "comment": "",
+                "id": "section6",
+                "join": "",
+                "readonlyLabel": ""
+            }
+        },
+        {
+            "elements": [{
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "maxlength": "",
+                            "permission_rules": {
+                                "d294c7e3-566a-ff10-19d3-05ebc498b574": {},
+                                "f340d885-0c29-9873-efe7-0fcd6b092e5a": {},
+                                "a935b3da-e24f-c0bd-37f9-ed3cb57c548f": {}
+                            },
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "label": "ID Barang Keluar",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "id_barang_keluar",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.SelectBox",
+                        "properties": {
+                            "controlField": "",
+                            "permission_rules": {
+                                "d294c7e3-566a-ff10-19d3-05ebc498b574": {},
+                                "f340d885-0c29-9873-efe7-0fcd6b092e5a": {},
+                                "9493838b-6ffa-dbfe-fd86-99861dc57439": {},
+                                "a935b3da-e24f-c0bd-37f9-ed3cb57c548f": {}
+                            },
+                            "multiple": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "label": "Channel",
+                            "readonly": "",
+                            "size": "",
+                            "optionsBinder": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "options": [
+                                {
+                                    "label": "Offline",
+                                    "value": "offline",
+                                    "grouping": ""
+                                },
+                                {
+                                    "label": "Shopee",
+                                    "value": "shopee",
+                                    "grouping": ""
+                                },
+                                {
+                                    "label": "Tokopedia",
+                                    "value": "tokopedia",
+                                    "grouping": ""
+                                },
+                                {
+                                    "label": "Tiktok",
+                                    "value": "tiktok",
+                                    "grouping": ""
+                                },
+                                {
+                                    "label": "Lazada",
+                                    "value": "lazada",
+                                    "grouping": ""
+                                }
+                            ],
+                            "workflowVariable": "",
+                            "id": "channel",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "maxlength": "",
+                            "permission_rules": {
+                                "d294c7e3-566a-ff10-19d3-05ebc498b574": {},
+                                "f340d885-0c29-9873-efe7-0fcd6b092e5a": {},
+                                "9493838b-6ffa-dbfe-fd86-99861dc57439": {},
+                                "a935b3da-e24f-c0bd-37f9-ed3cb57c548f": {}
+                            },
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "label": "Order ID",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "order_id",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.DatePicker",
+                        "properties": {
+                            "yearRange": "c-10:c+10",
+                            "dataFormat": "yyyy-MM-dd",
+                            "startDateFieldId": "",
+                            "permission_rules": {
+                                "d294c7e3-566a-ff10-19d3-05ebc498b574": {},
+                                "f340d885-0c29-9873-efe7-0fcd6b092e5a": {},
+                                "9493838b-6ffa-dbfe-fd86-99861dc57439": {},
+                                "a935b3da-e24f-c0bd-37f9-ed3cb57c548f": {}
+                            },
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "format": "",
+                            "label": "Tanggal Keluar",
+                            "datePickerType": "dateTime",
+                            "currentDateAs": "",
+                            "endDateFieldId": "",
+                            "readonly": "",
+                            "allowManual": "",
+                            "workflowVariable": "",
+                            "id": "tanggal_keluar",
+                            "placeholder": "",
+                            "disableWeekends": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "format24hr": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "properties": {
+                            "useDefaultWhenEmpty": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "",
+                            "id": "barang_keluar",
+                            "value": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "requiredSanitize": "true",
+                            "autoPopulate": "",
+                            "label": "",
+                            "id": "field19",
+                            "value": "<span>Barang Keluar<\/span>\n<table id=\"tableBarangKeluar\">\n    <thead>\n        <tr>\n            <th>Nama SKU<\/th>\n            <th>Request Pengeluaran<\/th>\n            <th>Gudang<\/th>\n        <\/tr>\n    <\/thead>\n    <tbody>\n    <\/tbody>\n<\/table>\n\n<script>\n    $(document).ready(function() {\n        \n        const productionData = JSON.parse($('[name=barang_keluar]').val());\n    \n        const tableBody = document.getElementById('tableBarangKeluar').getElementsByTagName('tbody')[0];\n    \n        productionData.forEach(item => {\n            const row = tableBody.insertRow();\n    \n            row.insertCell(0).innerText = item.c_nama_sku;\n            row.insertCell(1).innerText = item.c_request_packing;\n            row.insertCell(2).innerText = item.c_gudang;\n        });\n    \n        // const tableBody = $('#tableBarangKeluar tbody');\n        // const row = $('<tr><\/tr>');\n        \n        // const namaSku = $('[name=nama_sku]').val();\n        // const requestPengeluaran = $('[name=request_packing]').val();\n        // const gudang = $('[name=gudang]').val();\n\n        // row.append(`<td>${namaSku}<\/td>`);\n        // row.append(`<td>${requestPengeluaran}<\/td>`);\n        // row.append(`<td>${gudang}<\/td>`);\n\n        // tableBody.append(row);\n    });\n<\/script>"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "maxlength": "",
+                            "permission_rules": {
+                                "d294c7e3-566a-ff10-19d3-05ebc498b574": {},
+                                "f340d885-0c29-9873-efe7-0fcd6b092e5a": {},
+                                "a935b3da-e24f-c0bd-37f9-ed3cb57c548f": {}
+                            },
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "label": "Nama Customer",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "nama_customer",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextArea",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "readonly": "",
+                            "permission_rules": {
+                                "d294c7e3-566a-ff10-19d3-05ebc498b574": {},
+                                "f340d885-0c29-9873-efe7-0fcd6b092e5a": {},
+                                "9493838b-6ffa-dbfe-fd86-99861dc57439": {},
+                                "a935b3da-e24f-c0bd-37f9-ed3cb57c548f": {}
+                            },
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "",
+                            "label": "Alamat Customer",
+                            "id": "alamat_customer",
+                            "placeholder": "",
+                            "rows": "5",
+                            "cols": "20",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextArea",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "readonly": "",
+                            "permission_rules": {
+                                "d294c7e3-566a-ff10-19d3-05ebc498b574": {},
+                                "f340d885-0c29-9873-efe7-0fcd6b092e5a": {},
+                                "9493838b-6ffa-dbfe-fd86-99861dc57439": {},
+                                "a935b3da-e24f-c0bd-37f9-ed3cb57c548f": {}
+                            },
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "",
+                            "label": "Catatan Request Packing",
+                            "id": "catatanRequestBarangKeluar",
+                            "placeholder": "",
+                            "rows": "5",
+                            "cols": "20",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "requiredSanitize": "true",
+                            "autoPopulate": "",
+                            "label": "",
+                            "id": "field11",
+                            "value": "<script>\n    $(document).ready(function() {\n       // ubah nama customer sesuai dengan channel yang dipilih\n       $('[name=channel]').on('change', function() {\n           var value = $('[name=channel] option:selected').text();\n           \n           if (!(value === 'Offline')) {\n               $('[name=nama_customer]').val(value);\n               $('[name=nama_customer]').css({'pointer-events':'none'});\n           } else {\n               $('[name=nama_customer]').val('');\n               $('[name=nama_customer]').css({'pointer-events':'auto'});\n           }\n       })\n    });\n<\/script>"
+                        }
+                    }
+                ],
+                "className": "org.joget.apps.form.model.Column",
+                "properties": {"width": "100%"}
+            }],
+            "className": "org.joget.apps.form.model.Section",
+            "properties": {
+                "visibilityControl": "",
+                "permissionHidden": "",
+                "permissionReadonly": "",
+                "permission_rules": {
+                    "d294c7e3-566a-ff10-19d3-05ebc498b574": {
+                        "permissionHidden": "",
+                        "readonly": "true"
+                    },
+                    "f340d885-0c29-9873-efe7-0fcd6b092e5a": {
+                        "permissionHidden": "",
+                        "readonly": "true"
+                    },
+                    "9493838b-6ffa-dbfe-fd86-99861dc57439": {
+                        "permissionHidden": "",
+                        "readonly": "true"
+                    },
+                    "a935b3da-e24f-c0bd-37f9-ed3cb57c548f": {
+                        "permissionHidden": "",
+                        "readonly": "true"
+                    }
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "label": "Form Barang Keluar",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityValue": "",
+                "regex": "",
+                "readonly": "",
+                "loadBinder": {
+                    "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
+                    "properties": {
+                        "autoHandleWorkflowVariable": "true",
+                        "jdbcDatasource": "default",
+                        "sql": "SELECT \n    kel.c_id_barang_keluar as id_barang_keluar,\n    kel.c_nama_customer as nama_customer,\n    kel.c_order_id as order_id,\n    kel.c_channel as channel,\n    kel.c_tanggal_keluar as tanggal_keluar,\n    kel.c_item_keluar_json as barang_keluar,\n    kel.c_alamat_customer as alamat_customer,\n    kel.c_catatanRequestBarangKeluar as catatanRequestBarangKeluar\nFROM app_fd_keluar_barang kel\njoin app_fd_flow_stock stock on stock.c_id_flow = kel.c_id_barang_keluar\nwhere stock.c_id_flow = '#requestParam.c_id_flow#'",
+                        "autoHandleFiles": ""
+                    }
+                },
+                "comment": "",
+                "id": "section7",
+                "join": "",
+                "readonlyLabel": ""
+            }
+        },
+        {
+            "elements": [{
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.Radio",
+                    "properties": {
+                        "fullWidth": "",
+                        "controlField": "",
+                        "readonly": "",
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "permission_rules": {
+                            "d294c7e3-566a-ff10-19d3-05ebc498b574": {},
+                            "f340d885-0c29-9873-efe7-0fcd6b092e5a": {},
+                            "a935b3da-e24f-c0bd-37f9-ed3cb57c548f": {}
+                        },
+                        "options": [
+                            {
+                                "label": "Jadi",
+                                "value": "jadi",
+                                "grouping": ""
+                            },
+                            {
+                                "label": "Gajadi",
+                                "value": "gajadi",
+                                "grouping": ""
+                            }
+                        ],
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "workflowVariable": "pickUp",
+                        "label": "Pick Up",
+                        "id": "pickUp",
+                        "value": "",
+                        "readonlyLabel": ""
+                    }
+                }],
+                "className": "org.joget.apps.form.model.Column",
+                "properties": {"width": "100%"}
+            }],
+            "className": "org.joget.apps.form.model.Section",
+            "properties": {
+                "visibilityControl": "",
+                "permissionHidden": "",
+                "permissionReadonly": "",
+                "permission_rules": {
+                    "d294c7e3-566a-ff10-19d3-05ebc498b574": {
+                        "permissionHidden": "true",
+                        "readonly": ""
+                    },
+                    "f340d885-0c29-9873-efe7-0fcd6b092e5a": {},
+                    "9493838b-6ffa-dbfe-fd86-99861dc57439": {
+                        "permissionHidden": "true",
+                        "readonly": ""
+                    },
+                    "a935b3da-e24f-c0bd-37f9-ed3cb57c548f": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "label": "Approval PickUp",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityValue": "",
+                "regex": "",
+                "readonly": "",
+                "loadBinder": {
+                    "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
+                    "properties": {
+                        "autoHandleWorkflowVariable": "true",
+                        "jdbcDatasource": "default",
+                        "sql": "SELECT \n    kel.c_pickUp as pickUp\nFROM app_fd_keluar_barang kel\njoin app_fd_flow_stock stock on stock.c_id_flow = kel.c_id_barang_keluar\nwhere stock.c_id_flow = '#requestParam.c_id_flow#'",
+                        "autoHandleFiles": ""
+                    }
+                },
+                "comment": "",
+                "id": "section11",
+                "join": "",
+                "readonlyLabel": ""
+            }
+        },
+        {
+            "elements": [{
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "maxlength": "",
+                            "permission_rules": {
+                                "d294c7e3-566a-ff10-19d3-05ebc498b574": {},
+                                "f340d885-0c29-9873-efe7-0fcd6b092e5a": {},
+                                "a935b3da-e24f-c0bd-37f9-ed3cb57c548f": {}
+                            },
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "label": "ID Barang Masuk",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "id_barang_masuk",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.SelectBox",
+                        "properties": {
+                            "controlField": "",
+                            "permission_rules": {
+                                "f68f2954-746e-8a30-f444-05903bc00d18": {},
+                                "15c87435-4cc2-a6d0-c123-6c10d4e04709": {},
+                                "2e529527-b1a1-add4-5020-bd6c22bc6a85": {}
+                            },
+                            "multiple": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "label": "Nama Produk",
+                            "readonly": "",
+                            "size": "",
+                            "optionsBinder": {
+                                "className": "org.joget.plugin.enterprise.JdbcOptionsBinder",
+                                "properties": {
+                                    "useAjax": "",
+                                    "addEmpty": "true",
+                                    "jdbcDatasource": "default",
+                                    "cacheInterval": "",
+                                    "emptyLabel": "",
+                                    "sql": "SELECT id, c_nama_pre_form AS `nama sku` \r\nFROM app_fd_pre_form\r\nUNION\r\nSELECT id, c_namaProduk AS `nama sku` \r\nFROM app_fd_sku_master;"
+                                }
+                            },
+                            "options": [],
+                            "workflowVariable": "",
+                            "id": "nama_produk",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.DatePicker",
+                        "properties": {
+                            "yearRange": "c-10:c+10",
+                            "dataFormat": "yyyy-MM-dd",
+                            "startDateFieldId": "",
+                            "permission_rules": {
+                                "f68f2954-746e-8a30-f444-05903bc00d18": {},
+                                "15c87435-4cc2-a6d0-c123-6c10d4e04709": {},
+                                "2e529527-b1a1-add4-5020-bd6c22bc6a85": {}
+                            },
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "format": "",
+                            "label": "Tanggal Masuk",
+                            "datePickerType": "dateTime",
+                            "currentDateAs": "",
+                            "endDateFieldId": "",
+                            "readonly": "",
+                            "allowManual": "",
+                            "workflowVariable": "",
+                            "id": "tanggal_masuk",
+                            "placeholder": "",
+                            "disableWeekends": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "format24hr": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.SelectBox",
+                        "properties": {
+                            "controlField": "",
+                            "readonly": "",
+                            "size": "",
+                            "optionsBinder": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "multiple": "",
+                            "options": [
+                                {
+                                    "label": "Gudang Produksi",
+                                    "value": "gudang_produksi",
+                                    "grouping": ""
+                                },
+                                {
+                                    "label": "Gudang Packing",
+                                    "value": "gudang_packing",
+                                    "grouping": ""
+                                }
+                            ],
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "",
+                            "label": "Gudang",
+                            "id": "gudang",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "maxlength": "",
+                            "permission_rules": {
+                                "f68f2954-746e-8a30-f444-05903bc00d18": {},
+                                "15c87435-4cc2-a6d0-c123-6c10d4e04709": {},
+                                "2e529527-b1a1-add4-5020-bd6c22bc6a85": {}
+                            },
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "type": "numeric",
+                                    "message": "",
+                                    "mandatory": "true"
+                                }
+                            },
+                            "label": "Jumlah Barang",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "7",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "jumlah_barang",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": "true"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextArea",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "readonly": "",
+                            "permission_rules": {
+                                "f68f2954-746e-8a30-f444-05903bc00d18": {},
+                                "15c87435-4cc2-a6d0-c123-6c10d4e04709": {},
+                                "2e529527-b1a1-add4-5020-bd6c22bc6a85": {}
+                            },
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "",
+                            "label": "Catatan Request Barang Masuk",
+                            "id": "catatan_request_barang_masuk",
+                            "placeholder": "",
+                            "rows": "5",
+                            "cols": "20",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    }
+                ],
+                "className": "org.joget.apps.form.model.Column",
+                "properties": {"width": "100%"}
+            }],
+            "className": "org.joget.apps.form.model.Section",
+            "properties": {
+                "visibilityControl": "",
+                "permissionHidden": "",
+                "permissionReadonly": "",
+                "permission_rules": {
+                    "f68f2954-746e-8a30-f444-05903bc00d18": {
+                        "permissionHidden": "",
+                        "readonly": "true"
+                    },
+                    "15c87435-4cc2-a6d0-c123-6c10d4e04709": {
+                        "permissionHidden": "",
+                        "readonly": "true"
+                    },
+                    "2e529527-b1a1-add4-5020-bd6c22bc6a85": {
+                        "permissionHidden": "",
+                        "readonly": "true"
+                    }
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "label": "Barang Masuk Gudang",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityValue": "",
+                "regex": "",
+                "readonly": "",
+                "loadBinder": {
+                    "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
+                    "properties": {
+                        "autoHandleWorkflowVariable": "true",
+                        "jdbcDatasource": "default",
+                        "sql": "SELECT \n    masuk.c_id_barang_masuk as id_barang_masuk,\n    masuk.c_nama_produk as nama_produk,\n    masuk.c_tanggal_masuk as tanggal_masuk,\n    masuk.c_gudang as gudang,\n    masuk.c_jumlah_barang as jumlah_barang,\n    masuk.c_catatan_request_barang_masuk as catatan_request_barang_masuk\nFROM app_fd_masuk_gudang masuk\njoin app_fd_flow_stock stock on stock.c_id_flow = masuk.c_id_barang_masuk\nwhere stock.c_id_flow = '#requestParam.c_id_flow#'",
+                        "autoHandleFiles": ""
+                    }
+                },
+                "comment": "",
+                "id": "section8",
+                "join": "",
+                "readonlyLabel": ""
+            }
+        },
+        {
+            "elements": [{
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.DatePicker",
+                        "properties": {
+                            "yearRange": "c-10:c+10",
+                            "dataFormat": "yyyy-MM-dd",
+                            "startDateFieldId": "",
+                            "permission_rules": {
+                                "f68f2954-746e-8a30-f444-05903bc00d18": {},
+                                "15c87435-4cc2-a6d0-c123-6c10d4e04709": {},
+                                "2e529527-b1a1-add4-5020-bd6c22bc6a85": {}
+                            },
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "format": "",
+                            "label": "Tanggal Masuk Aktual",
+                            "datePickerType": "dateTime",
+                            "currentDateAs": "",
+                            "endDateFieldId": "",
+                            "readonly": "",
+                            "allowManual": "",
+                            "workflowVariable": "",
+                            "id": "tanggal_masuk_aktual",
+                            "placeholder": "",
+                            "disableWeekends": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "format24hr": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "maxlength": "",
+                            "permission_rules": {
+                                "f68f2954-746e-8a30-f444-05903bc00d18": {},
+                                "15c87435-4cc2-a6d0-c123-6c10d4e04709": {},
+                                "2e529527-b1a1-add4-5020-bd6c22bc6a85": {}
+                            },
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "type": "numeric",
+                                    "message": "",
+                                    "mandatory": "true"
+                                }
+                            },
+                            "label": "Jumlah Barang Aktual",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "7",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "jumlah_barang_aktual",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": "true"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextArea",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "readonly": "",
+                            "permission_rules": {
+                                "f68f2954-746e-8a30-f444-05903bc00d18": {},
+                                "15c87435-4cc2-a6d0-c123-6c10d4e04709": {},
+                                "2e529527-b1a1-add4-5020-bd6c22bc6a85": {}
+                            },
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "",
+                            "label": "Catatan Barang Masuk",
+                            "id": "catatan_barang_masuk",
+                            "placeholder": "",
+                            "rows": "5",
+                            "cols": "20",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    }
+                ],
+                "className": "org.joget.apps.form.model.Column",
+                "properties": {"width": "100%"}
+            }],
+            "className": "org.joget.apps.form.model.Section",
+            "properties": {
+                "visibilityControl": "",
+                "permissionHidden": "",
+                "permissionReadonly": "",
+                "permission_rules": {
+                    "f68f2954-746e-8a30-f444-05903bc00d18": {
+                        "permissionHidden": "",
+                        "readonly": "true"
+                    },
+                    "15c87435-4cc2-a6d0-c123-6c10d4e04709": {},
+                    "2e529527-b1a1-add4-5020-bd6c22bc6a85": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "label": "Laporan Masuk Gudang",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityValue": "",
+                "regex": "",
+                "readonly": "",
+                "loadBinder": {
+                    "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
+                    "properties": {
+                        "autoHandleWorkflowVariable": "true",
+                        "jdbcDatasource": "default",
+                        "sql": "SELECT \n    masuk.c_tanggal_masuk_aktual as tanggal_masuk_aktual,\n    masuk.c_jumlah_barang_aktual as jumlah_barang_aktual,\n    masuk.c_catatan_barang_masuk as catatan_barang_masuk\nFROM app_fd_masuk_gudang masuk\njoin app_fd_flow_stock stock on stock.c_id_flow = masuk.c_id_barang_masuk\nwhere stock.c_id_flow = '#requestParam.c_id_flow#'",
+                        "autoHandleFiles": ""
+                    }
+                },
+                "comment": "",
+                "id": "section9",
+                "join": "",
+                "readonlyLabel": ""
+            }
+        },
+        {
+            "elements": [{
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.Radio",
+                        "properties": {
+                            "fullWidth": "",
+                            "controlField": "",
+                            "readonly": "",
+                            "optionsBinder": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "permission_rules": {
+                                "f68f2954-746e-8a30-f444-05903bc00d18": {},
+                                "15c87435-4cc2-a6d0-c123-6c10d4e04709": {},
+                                "2e529527-b1a1-add4-5020-bd6c22bc6a85": {}
+                            },
+                            "options": [
+                                {
+                                    "label": "Sesuai",
+                                    "value": "Achieve",
+                                    "grouping": ""
+                                },
+                                {
+                                    "label": "Tidak Sesuai",
+                                    "value": "notAchieve",
+                                    "grouping": ""
+                                }
+                            ],
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "approveAktual",
+                            "label": "Approve Aktual",
+                            "id": "approveAktual",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextArea",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "readonly": "",
+                            "permission_rules": {
+                                "f68f2954-746e-8a30-f444-05903bc00d18": {},
+                                "15c87435-4cc2-a6d0-c123-6c10d4e04709": {},
+                                "2e529527-b1a1-add4-5020-bd6c22bc6a85": {}
+                            },
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "",
+                            "label": "Catatan Approve Barang Masuk",
+                            "id": "catatan_approve_barang_masuk",
+                            "placeholder": "",
+                            "rows": "5",
+                            "cols": "20",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "autoPopulate": "",
+                            "label": "",
+                            "id": "field13",
+                            "value": "<style type=\"text/css\">\r\n    #container {\r\n        width: 200px;\r\n        height: 200px;\r\n        display: none;\r\n    }\r\n    #printOptions {\r\n        margin-top: 10px;\r\n        display: none;\r\n    }\r\n    .print-button {\r\n        cursor: pointer;\r\n        padding: 5px 10px;\r\n        border: 1px solid #ccc;\r\n        background-color: #f0f0f0;\r\n        margin-right: 5px;\r\n        border-radius: 5px;\r\n    }\r\n<\/style>\r\n\r\n<script type=\"text/javascript\" src=\"#appResource.qrcode.min.js#\"><\/script>\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/canvg/3.0.7/umd.min.js\"><\/script>\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js\"><\/script>\r\n\r\n<script type=\"text/javascript\">\r\n$(function() {\r\n    var id = \"#form.masuk_gudang.nama_produk#\";\r\n    var namaProduk = '#form.sku_master.namaProduk[{form.masuk_gudang.nama_produk}]#';\r\n    console.log(\"id data --> \"+id);\r\n    console.log(\"nama produk --> \"+namaProduk);\r\n    if (!id.startsWith(\"#\")) {\r\n        $(\"#container\").show();\r\n        $(\"#printOptions\").show(); // Show print options when QR code is displayed\r\n        var qrcode = new QRCode({\r\n            content: id,\r\n            container: \"svg-viewbox\", // Responsive use\r\n            join: true // Crisp rendering and 4-5x reduced file size\r\n        });\r\n        var svg = qrcode.svg();\r\n        document.getElementById(\"container\").innerHTML = svg;\r\n        document.getElementById(\"containerExplain\").innerHTML = \"Scan this QR Code\";\r\n        document.getElementById(\"containerText\").innerHTML = namaProduk;\r\n    }\r\n});\r\n\r\n// Function to print QR code as PDF\r\nfunction printPDF() {\r\n    var { jsPDF } = window.jspdf;\r\n    var doc = new jsPDF();\r\n    \r\n    // Get the SVG element\r\n    var svgElement = document.getElementById('container').querySelector('svg');\r\n\r\n    // Create a canvas to render the SVG to\r\n    var canvas = document.createElement('canvas');\r\n    canvas.width = svgElement.clientWidth;\r\n    canvas.height = svgElement.clientHeight;\r\n    \r\n    // Use canvg to draw the SVG onto the canvas\r\n    var ctx = canvas.getContext('2d');\r\n    canvg.Canvg.fromString(ctx, new XMLSerializer().serializeToString(svgElement)).start();\r\n\r\n    // Convert the canvas to a PNG image\r\n    var imgData = canvas.toDataURL('image/png');\r\n    \r\n    // Add the image and text to the PDF\r\n    doc.addImage(imgData, 'PNG', 15, 40, 180, 160);\r\n    doc.text(20, 30, document.getElementById(\"containerText\").innerHTML);\r\n    \r\n    var saveFile = 'QR-code-'+document.getElementById(\"containerText\").innerHTML;\r\n    // Save the PDF\r\n    doc.save(saveFile);\r\n}\r\n<\/script>\r\n\r\n<!-- Print Options -->\r\n<div id=\"printOptions\">\r\n    <span class=\"print-button\" onclick=\"printPDF()\">Print as PDF<\/span>\r\n<\/div>\r\n\r\n<div id=\"containerExplain\"><\/div>\r\n<div id=\"container\"><\/div>\r\n<div id=\"containerText\"><\/div>\r\n"
+                        }
+                    }
+                ],
+                "className": "org.joget.apps.form.model.Column",
+                "properties": {"width": "100%"}
+            }],
+            "className": "org.joget.apps.form.model.Section",
+            "properties": {
+                "visibilityControl": "",
+                "permissionHidden": "",
+                "permissionReadonly": "",
+                "permission_rules": {
+                    "f68f2954-746e-8a30-f444-05903bc00d18": {},
+                    "15c87435-4cc2-a6d0-c123-6c10d4e04709": {
+                        "permissionHidden": "",
+                        "readonly": "true"
+                    },
+                    "2e529527-b1a1-add4-5020-bd6c22bc6a85": {
+                        "permissionHidden": "true",
+                        "readonly": ""
+                    }
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "label": "Approve Barang Masuk",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityValue": "",
+                "regex": "",
+                "readonly": "",
+                "loadBinder": {
+                    "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
+                    "properties": {
+                        "autoHandleWorkflowVariable": "true",
+                        "jdbcDatasource": "default",
+                        "sql": "SELECT \n    masuk.c_approveAktual as approveAktual,\n    masuk.c_catatan_approve_barang_masuk as catatan_approve_barang_masuk\nFROM app_fd_masuk_gudang masuk\njoin app_fd_flow_stock stock on stock.c_id_flow = masuk.c_id_barang_masuk\nwhere stock.c_id_flow = '#requestParam.c_id_flow#'",
+                        "autoHandleFiles": ""
+                    }
+                },
+                "comment": "",
+                "id": "section10",
+                "join": "",
+                "readonlyLabel": ""
+            }
+        },
+        {
+            "elements": [{
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "permissionHidden": "",
+                            "maxlength": "",
+                            "permission_rules": {"544fe6ea-63dc-0845-a3a7-e573b7463aa8": {}},
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "label": "ID Pindah Barang",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "id_pindah_barang",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "properties": {
+                            "useDefaultWhenEmpty": "",
+                            "permission_rules": {"544fe6ea-63dc-0845-a3a7-e573b7463aa8": {}},
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "",
+                            "id": "id_req_item_keluar",
+                            "value": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "properties": {
+                            "useDefaultWhenEmpty": "",
+                            "permission_rules": {"544fe6ea-63dc-0845-a3a7-e573b7463aa8": {}},
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "",
+                            "id": "sku_produk",
+                            "value": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "permissionHidden": "",
+                            "maxlength": "",
+                            "permission_rules": {"544fe6ea-63dc-0845-a3a7-e573b7463aa8": {}},
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "label": "Nama SKU",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "nama_sku",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "permissionHidden": "",
+                            "maxlength": "",
+                            "permission_rules": {"544fe6ea-63dc-0845-a3a7-e573b7463aa8": {}},
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "label": "Sisa Stock",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "sisa_stock",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "maxlength": "",
+                            "permission_rules": {"544fe6ea-63dc-0845-a3a7-e573b7463aa8": {}},
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "label": "Sisa Gudang Produksi",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "gudang_produksi",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "maxlength": "",
+                            "permission_rules": {"544fe6ea-63dc-0845-a3a7-e573b7463aa8": {}},
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "label": "Sisa Gudang Packing",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "gudang_packing",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "maxlength": "",
+                            "permission_rules": {"544fe6ea-63dc-0845-a3a7-e573b7463aa8": {}},
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "label": "Total Item Pindah",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "total_item_pindah",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "permissionHidden": "",
+                            "maxlength": "",
+                            "permission_rules": {"544fe6ea-63dc-0845-a3a7-e573b7463aa8": {}},
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "label": "Tanggal",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "tanggal",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.SelectBox",
+                        "properties": {
+                            "controlField": "",
+                            "permission_rules": {
+                                "d294c7e3-566a-ff10-19d3-05ebc498b574": {},
+                                "f340d885-0c29-9873-efe7-0fcd6b092e5a": {},
+                                "a935b3da-e24f-c0bd-37f9-ed3cb57c548f": {},
+                                "544fe6ea-63dc-0845-a3a7-e573b7463aa8": {}
+                            },
+                            "multiple": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "label": "Dari Gudang",
+                            "readonly": "",
+                            "size": "",
+                            "optionsBinder": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "options": [
+                                {
+                                    "label": "Gudang Produksi",
+                                    "value": "gudang_produksi",
+                                    "grouping": ""
+                                },
+                                {
+                                    "label": "Gudang Packing",
+                                    "value": "gudang_packing",
+                                    "grouping": ""
+                                }
+                            ],
+                            "workflowVariable": "",
+                            "id": "dari_gudang",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.SelectBox",
+                        "properties": {
+                            "controlField": "",
+                            "permission_rules": {
+                                "d294c7e3-566a-ff10-19d3-05ebc498b574": {},
+                                "f340d885-0c29-9873-efe7-0fcd6b092e5a": {},
+                                "a935b3da-e24f-c0bd-37f9-ed3cb57c548f": {},
+                                "544fe6ea-63dc-0845-a3a7-e573b7463aa8": {}
+                            },
+                            "multiple": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "label": "Ke Gudang",
+                            "readonly": "",
+                            "size": "",
+                            "optionsBinder": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "options": [
+                                {
+                                    "label": "Gudang Produksi",
+                                    "value": "gudang_produksi",
+                                    "grouping": ""
+                                },
+                                {
+                                    "label": "Gudang Packing",
+                                    "value": "gudang_packing",
+                                    "grouping": ""
+                                }
+                            ],
+                            "workflowVariable": "ke_gudang",
+                            "id": "ke_gudang",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "requiredSanitize": "true",
+                            "autoPopulate": "",
+                            "permission_rules": {"544fe6ea-63dc-0845-a3a7-e573b7463aa8": {}},
+                            "label": "",
+                            "id": "field16",
+                            "value": "<script>\n    // Handling changes in the 'sku_produk' input field\n    $(document).ready(function (){\n        $(\"[name=sku_produk]\").change(function () {\n            var item = $(this).val(); // Get the value from input field\n            console.log(\"apaaaa 0-->\"+ item);\n            getDetailItems(item); // Call function to fetch details\n        });\n        \n        $('[name=input_manual]').change(function() {\n            var item = $(this).val();\n            console.log('input manual : ', item);\n            getDetailItems(item);\n        })\n        \n        // Function to send AJAX request to fetch product details\n        function getDetailItems(item) {\n            console.log(\"hasil ws qeury 1-->\"+nama_sku);\n            console.log(\"hasil ws qeury 2-->\"+item);\n            $.ajax({\n                url: \"#request.contextPath#/web/json/plugin/org.joget.jsp.GetDetailProduk/service?\",\n                type: \"GET\",\n                data: { sku_produk: item },\n                dataType: \"json\",\n                success: function (res) {\n                    // Assuming 'res.nama_sku' is the desired value\n                    const nama_sku = res.nama_sku;\n                    const sisa_qty = res.qty;\n                    \n                    $(\"[name=nama_sku]\").val(nama_sku); // Set the value in the corresponding field\n                    $(\"[name=sisa_stock]\").val(sisa_qty); // Set the value in the corresponding field\n                    console.log(\"hasil ws qeury 3-->\"+nama_sku);\n                    console.log(\"hasil ws qeury 3-->\"+sisa_qty);\n                },\n                error: function (xhr, status, error) {\n                    console.log(\"Error: \" + xhr.responseText);\n                }\n            });\n            \n        }\n    })\n<\/script>"
+                        }
+                    }
+                ],
+                "className": "org.joget.apps.form.model.Column",
+                "properties": {"width": "100%"}
+            }],
+            "className": "org.joget.apps.form.model.Section",
+            "properties": {
+                "visibilityControl": "",
+                "permissionReadonly": "",
+                "permission_rules": {"544fe6ea-63dc-0845-a3a7-e573b7463aa8": {}},
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "label": "Pindah Barang",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityValue": "",
+                "regex": "",
+                "readonly": "",
+                "loadBinder": {
+                    "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
+                    "properties": {
+                        "autoHandleWorkflowVariable": "true",
+                        "jdbcDatasource": "default",
+                        "sql": "SELECT \r\n    pindah.c_id_pindah_barang as id_pindah_barang,\r\n    pindah.c_tanggal as tanggal,\r\n    pindah.c_dari_gudang as dari_gudang,\r\n    pindah.c_ke_gudang as ke_gudang,\r\n    pindah.c_nama_sku as nama_sku,\r\n    pindah.c_sisa_stock as sisa_stock,\r\n    pindah.c_gudang_produksi as gudang_produksi,\r\n    pindah.c_gudang_packing as gudang_packing,\r\n    pindah.c_total_item_pindah as total_item_pindah\r\nFROM app_fd_item_pindah pindah\r\njoin app_fd_flow_stock stock on stock.c_id_flow = pindah.c_id_pindah_barang\r\nwhere stock.c_id_flow = '#requestParam.c_id_flow#'",
+                        "autoHandleFiles": ""
+                    }
+                },
+                "comment": "",
+                "id": "section12",
+                "join": "",
+                "readonlyLabel": ""
+            }
+        },
+        {
+            "elements": [{
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.IdGeneratorField",
+                        "properties": {
+                            "hidden": "",
+                            "permission_rules": {"19470869-94b0-01fc-a5c0-5785e12f72b4": {}},
+                            "format": "JSP-AUDIT-??????",
+                            "workflowVariable": "",
+                            "envVariable": "counter",
+                            "isDistributedGeneration": "",
+                            "label": "ID Audit",
+                            "id": "id_audit"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "permissionHidden": "",
+                            "maxlength": "",
+                            "permission_rules": {
+                                "19470869-94b0-01fc-a5c0-5785e12f72b4": {},
+                                "544fe6ea-63dc-0845-a3a7-e573b7463aa8": {}
+                            },
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "type": "",
+                                    "message": "",
+                                    "mandatory": "true"
+                                }
+                            },
+                            "label": "Nama SKU",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "nama_sku",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.DatePicker",
+                        "properties": {
+                            "yearRange": "c-10:c+10",
+                            "dataFormat": "yyyy-MM-dd",
+                            "startDateFieldId": "",
+                            "permission_rules": {
+                                "f68f2954-746e-8a30-f444-05903bc00d18": {},
+                                "15c87435-4cc2-a6d0-c123-6c10d4e04709": {},
+                                "2e529527-b1a1-add4-5020-bd6c22bc6a85": {}
+                            },
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "format": "",
+                            "label": "Tanggal Masuk",
+                            "datePickerType": "dateTime",
+                            "currentDateAs": "",
+                            "endDateFieldId": "",
+                            "readonly": "",
+                            "allowManual": "",
+                            "workflowVariable": "",
+                            "id": "tanggal_masuk",
+                            "placeholder": "",
+                            "disableWeekends": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "format24hr": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "permissionHidden": "",
+                            "maxlength": "",
+                            "permission_rules": {"19470869-94b0-01fc-a5c0-5785e12f72b4": {}},
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "type": "numeric",
+                                    "message": "",
+                                    "mandatory": ""
+                                }
+                            },
+                            "label": "Total Gudang Produksi",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "7",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "gudang_produksi",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "permissionHidden": "",
+                            "maxlength": "",
+                            "permission_rules": {"19470869-94b0-01fc-a5c0-5785e12f72b4": {}},
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "type": "numeric",
+                                    "message": "",
+                                    "mandatory": ""
+                                }
+                            },
+                            "label": "Total Gudang Packing",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "7",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "gudang_packing",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "permissionHidden": "",
+                            "maxlength": "",
+                            "permission_rules": {"19470869-94b0-01fc-a5c0-5785e12f72b4": {}},
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "type": "numeric",
+                                    "message": "",
+                                    "mandatory": ""
+                                }
+                            },
+                            "label": "Total",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "7",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "total",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": "true"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "requiredSanitize": "true",
+                            "autoPopulate": "",
+                            "permission_rules": {
+                                "19470869-94b0-01fc-a5c0-5785e12f72b4": {},
+                                "544fe6ea-63dc-0845-a3a7-e573b7463aa8": {}
+                            },
+                            "label": "",
+                            "id": "field16",
+                            "value": "<style>\n    #ke_gudang {\n        pointer-events : none;\n    }\n<\/style>\n\n<script>\n    // Handling changes in the 'sku_produk' input field\n    $(document).ready(function (){\n        $(\"[name=sku_produk]\").change(function () {\n            var item = $(this).val(); // Get the value from input field\n            console.log(\"apaaaa 0-->\"+ item);\n            getDetailItems(item); // Call function to fetch details\n        });\n        \n        $('[name=namaProduk]').change(function() {\n            var item = $(this).val();\n            console.log('input manual : ', item);\n            getDetailItems(item);\n        })\n        \n        // Function to send AJAX request to fetch product details\n        function getDetailItems(item) {\n            console.log(\"hasil ws qeury 1-->\"+nama_sku);\n            console.log(\"hasil ws qeury 2-->\"+item);\n            $.ajax({\n                url: \"#request.contextPath#/web/json/plugin/org.joget.jsp.GetDetailProduk/service?\",\n                type: \"GET\",\n                data: { sku_produk: item },\n                dataType: \"json\",\n                success: function (res) {\n                    // Assuming 'res.nama_sku' is the desired value\n                    const nama_sku = res.nama_sku;\n                    const sisa_qty = res.qty;\n                    const sisa_g_produksi = res.gudang_produksi;\n                    const sisa_g_packing = res.gudang_packing;\n                    \n                    $(\"[name=nama_sku]\").val(nama_sku); // Set the value in the corresponding field\n                    $(\"[name=sisa_stock]\").val(sisa_qty); // Set the value in the corresponding field\n                    // $(\"[name=gudang_produksi]\").val(sisa_g_produksi); // Set the value in the corresponding field\n                    // $(\"[name=gudang_packing]\").val(sisa_g_packing); // Set the value in the corresponding field\n                    console.log(\"hasil ws qeury 3-->\"+nama_sku);\n                    console.log(\"hasil ws qeury 3-->\"+sisa_qty);\n                    console.log(\"hasil ws qeury 3-->\"+sisa_g_produksi);\n                    console.log(\"hasil ws qeury 3-->\"+sisa_g_packing);\n                },\n                error: function (xhr, status, error) {\n                    console.log(\"Error: \" + xhr.responseText);\n                }\n            });\n            \n        }\n        \n        var dariGudangVal = $('[name=dari_gudang]').val();\n        \n        if (dariGudangVal === 'gudang_produksi') {\n            $('[name=ke_gudang]').val('Gudang Packing')\n        } else if (value === 'gudang_packing') {\n            $('[name=ke_gudang]').val('Gudang Produksi')\n        }\n        \n        $('[name=dari_gudang]').on('change', function(){\n            var value = $(this).val();\n            if (value === 'gudang_packing') {\n                $('[name=ke_gudang]').val('Gudang Produksi')\n            } else if (value === 'gudang_produksi') {\n                $('[name=ke_gudang]').val('Gudang Packing')\n            }\n        })\n    })\n<\/script>"
+                        }
+                    }
+                ],
+                "className": "org.joget.apps.form.model.Column",
+                "properties": {"width": "100%"}
+            }],
+            "className": "org.joget.apps.form.model.Section",
+            "properties": {
+                "visibilityControl": "",
+                "permissionReadonly": "",
+                "permission_rules": {"19470869-94b0-01fc-a5c0-5785e12f72b4": {
+                    "permissionHidden": "",
+                    "readonly": "true"
+                }},
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "label": "Audit SKU Balance",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityValue": "",
+                "regex": "",
+                "readonly": "",
+                "loadBinder": {
+                    "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
+                    "properties": {
+                        "autoHandleWorkflowVariable": "true",
+                        "jdbcDatasource": "default",
+                        "sql": "SELECT \r\n    audit.c_id_audit as id_audit,\r\n    audit.c_nama_sku as nama_sku,\r\n    audit.c_tanggal_masuk as tanggal_masuk,\r\n    audit.c_total as total,\r\n    audit.c_gudang_produksi as gudang_produksi,\r\n    audit.c_gudang_packing as gudang_packing\r\nFROM app_fd_audit_sku_balance audit\r\njoin app_fd_flow_stock stock on stock.c_id_flow = audit.c_id_audit\r\nwhere stock.c_id_flow = '#requestParam.c_id_flow#'",
+                        "autoHandleFiles": ""
+                    }
+                },
+                "comment": "",
+                "id": "section13",
+                "join": "",
+                "readonlyLabel": ""
+            }
+        },
+        {
+            "elements": [{
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.Radio",
+                    "properties": {
+                        "fullWidth": "",
+                        "controlField": "",
+                        "readonly": "",
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "permission_rules": {"19470869-94b0-01fc-a5c0-5785e12f72b4": {}},
+                        "options": [
+                            {
+                                "label": "Approve",
+                                "value": "approve",
+                                "grouping": ""
+                            },
+                            {
+                                "label": "Not Approve",
+                                "value": "notApprove",
+                                "grouping": ""
+                            }
+                        ],
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "workflowVariable": "status",
+                        "label": "Approval",
+                        "id": "status",
+                        "value": "",
+                        "readonlyLabel": ""
+                    }
+                }],
+                "className": "org.joget.apps.form.model.Column",
+                "properties": {"width": "100%"}
+            }],
+            "className": "org.joget.apps.form.model.Section",
+            "properties": {
+                "visibilityControl": "",
+                "permissionHidden": "",
+                "permissionReadonly": "",
+                "permission_rules": {"19470869-94b0-01fc-a5c0-5785e12f72b4": {}},
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "label": "Approval Audit SKU Balance",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityValue": "",
+                "regex": "",
+                "readonly": "",
+                "loadBinder": {
+                    "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
+                    "properties": {
+                        "autoHandleWorkflowVariable": "true",
+                        "jdbcDatasource": "default",
+                        "sql": "SELECT \r\n    audit.c_status as status\r\nFROM app_fd_audit_sku_balance audit\r\njoin app_fd_flow_stock stock on stock.c_id_flow = audit.c_id_audit\r\nwhere stock.c_id_flow = '#requestParam.c_id_flow#'",
+                        "autoHandleFiles": ""
+                    }
+                },
+                "comment": "",
+                "id": "section14",
+                "join": "",
+                "readonlyLabel": ""
+            }
+        }
+    ],
+    "className": "org.joget.apps.form.model.Form",
+    "properties": {
+        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "name": "Form History Detail",
+        "description": "",
+        "id": "history_detail",
+        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "tableName": "flow_stock"
+    }
+}

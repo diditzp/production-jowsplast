@@ -1,0 +1,108 @@
+{
+    "useSession": "false",
+    "showPageSizeSelector": "true",
+    "rowActions": [],
+    "columns": [
+        {
+            "name": "jenis_input",
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "optionsBinder": {
+                        "className": "",
+                        "properties": {}
+                    },
+                    "options": [
+                        {
+                            "label": "Scan QR",
+                            "value": "QR",
+                            "grouping": ""
+                        },
+                        {
+                            "label": "Input Manual",
+                            "value": "Manual",
+                            "grouping": ""
+                        }
+                    ]
+                }
+            },
+            "id": "column_0",
+            "label": "Jenis Input"
+        },
+        {
+            "name": "input_manual",
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "optionsBinder": {
+                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "true",
+                            "groupingColumn": "",
+                            "useAjax": "",
+                            "formDefId": "sku_master",
+                            "labelColumn": "namaProduk",
+                            "extraCondition": "",
+                            "cacheInterval": "",
+                            "emptyLabel": "Pilih Produk",
+                            "idColumn": "id"
+                        }
+                    },
+                    "options": []
+                }
+            },
+            "id": "column_1",
+            "label": "Input Manual"
+        },
+        {
+            "name": "id_req_item_keluar",
+            "id": "column_2",
+            "label": "id_req_item_keluar"
+        },
+        {
+            "name": "sku_produk",
+            "id": "column_3",
+            "label": "sku_produk"
+        },
+        {
+            "name": "dari_gudang",
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "optionsBinder": {
+                        "className": "",
+                        "properties": {}
+                    },
+                    "options": [
+                        {
+                            "label": "Gudang Produksi",
+                            "value": "gudang_produksi",
+                            "grouping": ""
+                        },
+                        {
+                            "label": "Gudang Packing",
+                            "value": "gudang_packing",
+                            "grouping": ""
+                        }
+                    ]
+                }
+            },
+            "id": "column_4",
+            "label": "Dari Gudang"
+        }
+    ],
+    "pageSize": 0,
+    "orderBy": "",
+    "filters": [],
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "buttonPosition": "bothLeft",
+    "checkboxPosition": "left",
+    "name": "List - Item Pindah",
+    "id": "list_item_pindah",
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "item_pindah"}
+    },
+    "actions": [],
+    "order": ""
+}

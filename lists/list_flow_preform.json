@@ -1,0 +1,72 @@
+{
+    "useSession": "false",
+    "showPageSizeSelector": "true",
+    "rowActions": [],
+    "columns": [
+        {
+            "name": "id_flow",
+            "id": "column_0",
+            "label": "ID Flow"
+        },
+        {
+            "name": "sku_pre_form",
+            "id": "column_1",
+            "label": "ID SKU Pre Form"
+        },
+        {
+            "name": "nama_pre_form",
+            "id": "column_2",
+            "label": "Nama Pre Form"
+        },
+        {
+            "name": "alur",
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "optionsBinder": {
+                        "className": "",
+                        "properties": {}
+                    },
+                    "options": [
+                        {
+                            "label": "Masuk",
+                            "value": "masuk",
+                            "grouping": ""
+                        },
+                        {
+                            "label": "Jual",
+                            "value": "jual",
+                            "grouping": ""
+                        },
+                        {
+                            "label": "Produksi",
+                            "value": "produksi",
+                            "grouping": ""
+                        }
+                    ]
+                }
+            },
+            "id": "column_3",
+            "label": "Alur"
+        },
+        {
+            "name": "kuantitas",
+            "id": "column_4",
+            "label": "Kuantitas"
+        }
+    ],
+    "pageSize": 0,
+    "orderBy": "",
+    "filters": [],
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "buttonPosition": "bothLeft",
+    "checkboxPosition": "left",
+    "name": "List - Flow Pre Form",
+    "id": "list_flow_preform",
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "flow_preform"}
+    },
+    "actions": [],
+    "order": ""
+}
