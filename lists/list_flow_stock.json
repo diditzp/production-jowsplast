@@ -236,22 +236,6 @@
         },
         {
             "hidden": "",
-            "name": "namaProduk",
-            "id": "filter_6",
-            "label": "Nama Produk",
-            "type": {
-                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-                "properties": {
-                    "defaultValue": "",
-                    "filterSelection": "",
-                    "searchFields": ""
-                }
-            },
-            "datalist_type": "filter",
-            "filterParamName": "d-6527824-fn_namaProduk"
-        },
-        {
-            "hidden": "",
             "name": "alur",
             "id": "filter_0",
             "label": "Alur",
