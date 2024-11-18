@@ -309,13 +309,13 @@
                                     "mandatory": "true"
                                 }
                             },
-                            "label": "Total Gudang Packing",
+                            "label": "Total Gudang Produksi",
                             "encryption": "",
                             "readonly": "",
                             "size": "14",
                             "workflowVariable": "",
                             "style": "",
-                            "id": "gudang_packing",
+                            "id": "gudang_produksi",
                             "placeholder": "",
                             "value": "0",
                             "readonlyLabel": "",
@@ -337,13 +337,13 @@
                                     "mandatory": "true"
                                 }
                             },
-                            "label": "Total Gudang Produksi",
+                            "label": "Total Gudang Packing",
                             "encryption": "",
                             "readonly": "",
                             "size": "14",
                             "workflowVariable": "",
                             "style": "",
-                            "id": "gudang_produksi",
+                            "id": "gudang_packing",
                             "placeholder": "",
                             "value": "0",
                             "readonlyLabel": "",
