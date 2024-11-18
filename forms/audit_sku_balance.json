@@ -306,7 +306,7 @@
                                 "properties": {
                                     "type": "numeric",
                                     "message": "",
-                                    "mandatory": ""
+                                    "mandatory": "true"
                                 }
                             },
                             "label": "Total Gudang Packing",
@@ -334,7 +334,7 @@
                                 "properties": {
                                     "type": "numeric",
                                     "message": "",
-                                    "mandatory": ""
+                                    "mandatory": "true"
                                 }
                             },
                             "label": "Total Gudang Produksi",
