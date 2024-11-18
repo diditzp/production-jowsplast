@@ -185,7 +185,10 @@
                 "visibilityControl": "jenis_input",
                 "permissionReadonly": "",
                 "permission_rules": {
-                    "19470869-94b0-01fc-a5c0-5785e12f72b4": {},
+                    "19470869-94b0-01fc-a5c0-5785e12f72b4": {
+                        "permissionHidden": "",
+                        "readonly": "true"
+                    },
                     "544fe6ea-63dc-0845-a3a7-e573b7463aa8": {}
                 },
                 "permission": {
@@ -270,7 +273,10 @@
                             "startDateFieldId": "",
                             "permission_rules": {
                                 "f68f2954-746e-8a30-f444-05903bc00d18": {},
-                                "19470869-94b0-01fc-a5c0-5785e12f72b4": {},
+                                "19470869-94b0-01fc-a5c0-5785e12f72b4": {
+                                    "permissionHidden": "",
+                                    "readonly": "true"
+                                },
                                 "15c87435-4cc2-a6d0-c123-6c10d4e04709": {},
                                 "2e529527-b1a1-add4-5020-bd6c22bc6a85": {}
                             },
@@ -367,6 +373,7 @@
                             ],
                             "hidden": "",
                             "prefix": "",
+                            "permission_rules": {"19470869-94b0-01fc-a5c0-5785e12f72b4": {}},
                             "equation": "produksi+packing",
                             "validator": {
                                 "className": "",
@@ -388,6 +395,10 @@
                         "properties": {
                             "requiredSanitize": "",
                             "readonly": "",
+                            "permission_rules": {"19470869-94b0-01fc-a5c0-5785e12f72b4": {
+                                "permissionHidden": "",
+                                "readonly": "true"
+                            }},
                             "validator": {
                                 "className": "",
                                 "properties": {}
@@ -490,6 +501,7 @@
                         "properties": {
                             "requiredSanitize": "",
                             "readonly": "",
+                            "permission_rules": {"19470869-94b0-01fc-a5c0-5785e12f72b4": {}},
                             "validator": {
                                 "className": "",
                                 "properties": {}
