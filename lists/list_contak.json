@@ -1,0 +1,94 @@
+{
+    "template": {
+        "className": "",
+        "properties": {}
+    },
+    "useSession": "false",
+    "showPageSizeSelector": "true",
+    "rowActions": [],
+    "columns": [
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "c_id_audit",
+            "id": "column_2",
+            "label": "c_id_audit",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "c_status",
+            "id": "column_6",
+            "label": "c_status",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "c_namaProduk",
+            "id": "column_5",
+            "label": "c_namaProduk",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "c_total",
+            "id": "column_7",
+            "label": "c_total",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "c_nama_sku",
+            "id": "column_4",
+            "label": "c_nama_sku",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "c_jenis_input",
+            "id": "column_3",
+            "label": "c_jenis_input",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "c_gudang_produksi",
+            "id": "column_1",
+            "label": "c_gudang_produksi",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "c_gudang_packing",
+            "id": "column_0",
+            "label": "c_gudang_packing",
+            "sortable": "false"
+        }
+    ],
+    "pageSize": 0,
+    "orderBy": "",
+    "filters": [],
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "buttonPosition": "bothLeft",
+    "checkboxPosition": "left",
+    "name": "List - contact",
+    "id": "list_contak",
+    "binder": {
+        "className": "org.joget.plugin.enterprise.JdbcDataListBinder",
+        "properties": {
+            "optimisePaging": "",
+            "jdbcDatasource": "default",
+            "sql": "SELECT * \nFROM app_fd_audit_sku_balance\n",
+            "primaryKey": "username"
+        }
+    },
+    "actions": [],
+    "order": ""
+}

@@ -1,0 +1,331 @@
+{
+    "template": {
+        "className": "",
+        "properties": {}
+    },
+    "considerFilterWhenGetTotal": "",
+    "showPageSizeSelector": "true",
+    "responsiveMode": "",
+    "rowActions": [],
+    "columns": [
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "ID Gudang",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "id_audit",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+                "properties": {
+                    "hrefColumn": "id_audit",
+                    "hrefParam": "c_id_flow",
+                    "href": "history_detail",
+                    "confirmation": "",
+                    "target": "_self"
+                }
+            },
+            "style": "",
+            "id": "column_5",
+            "alignment": ""
+        },
+        {
+            "name": "namaProduk",
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "optionsBinder": {
+                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "true",
+                            "groupingColumn": "",
+                            "useAjax": "",
+                            "formDefId": "sku_master",
+                            "labelColumn": "namaProduk",
+                            "extraCondition": "",
+                            "cacheInterval": "",
+                            "emptyLabel": "Pilih Produk",
+                            "idColumn": "id"
+                        }
+                    },
+                    "options": []
+                }
+            },
+            "id": "column_0",
+            "label": "Nama Produk",
+            "datalist_type": "column"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Catatan Request",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "catatan_audit",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_8",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Catatan Hasil",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "catatan_hasil_audit",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_9",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "status",
+            "id": "column_6",
+            "label": "Approval",
+            "sortable": "false"
+        },
+        {
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Total",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "total",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_1",
+            "alignment": "dataListAlignCenter"
+        },
+        {
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Gudang Produksi",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "gudang_produksi",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_2",
+            "alignment": "dataListAlignCenter"
+        },
+        {
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Gudang Packing",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "gudang_packing",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_3",
+            "alignment": "dataListAlignCenter"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Tanggal",
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "dateModified",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_7",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "org.joget.plugin.enterprise.ProcessStatusDatalistFormatter",
+                "properties": {
+                    "usernameFormat": "name",
+                    "viewPermission": "all",
+                    "userviewCacheDuration": "20",
+                    "showSkippedActivities": "",
+                    "eventClick": "",
+                    "userviewCacheScope": "",
+                    "showProcessName": "true",
+                    "showFutureActivities": "true"
+                }
+            },
+            "label": "Prosess",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "id",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_4",
+            "alignment": ""
+        }
+    ],
+    "cardCollapsible": "",
+    "pageSize": "0",
+    "orderBy": "dateCreated",
+    "description": "",
+    "showDataWhenFilterSet": "",
+    "disableResponsive": "",
+    "checkboxPosition": "left",
+    "cardCollapseByDefault": "",
+    "id": "list_audit_sku_balance",
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {
+            "joins": [],
+            "aggregateField": [],
+            "formDefId": "audit_sku_balance",
+            "customSelectionValue": "",
+            "extraCondition": "",
+            "filters": [],
+            "groupBy": "",
+            "functionColumns": []
+        }
+    },
+    "order": "1",
+    "useSession": "",
+    "draggabletable": "",
+    "filters": [
+        {
+            "hidden": "",
+            "name": "nama_sku",
+            "id": "filter_0",
+            "label": "Nama SKU",
+            "type": {
+                "className": "org.joget.plugin.enterprise.SelectBoxDataListFilterType",
+                "properties": {
+                    "controlField": "",
+                    "size": "",
+                    "optionsBinder": {
+                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "true",
+                            "groupingColumn": "",
+                            "useAjax": "",
+                            "formDefId": "sku_master",
+                            "labelColumn": "namaProduk",
+                            "extraCondition": "",
+                            "cacheInterval": "",
+                            "emptyLabel": "",
+                            "idColumn": "id"
+                        }
+                    },
+                    "defaultValue": "",
+                    "multiple": "",
+                    "options": []
+                }
+            },
+            "datalist_type": "filter",
+            "filterParamName": "d-4976363-fn_nama_sku"
+        },
+        {
+            "hidden": "",
+            "name": "dateModified",
+            "id": "filter_2",
+            "label": "Tanggal",
+            "type": {
+                "className": "org.joget.plugin.enterprise.DateRangeDataListFilterType",
+                "properties": {
+                    "fromLabel": "From",
+                    "toLabel": "To",
+                    "dateStoreInUTC": "",
+                    "formatJava": "yyyy-MM-dd",
+                    "fromDefaultValue": "",
+                    "yearRange": "c-10:c+10",
+                    "showFieldLabel": "true",
+                    "format": "mm/dd/yy",
+                    "enableTime": "",
+                    "toDefaultValue": ""
+                }
+            },
+            "datalist_type": "filter",
+            "filterParamName": "d-4976363-fn_dateModified"
+        }
+    ],
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "buttonPosition": "bothLeft",
+    "hidePageSize": "",
+    "name": "List - Audit SKU Balance",
+    "rowActionsMode": "",
+    "showhidecolumns": "",
+    "actions": []
+}

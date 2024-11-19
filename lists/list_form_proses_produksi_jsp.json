@@ -1,0 +1,70 @@
+{
+    "useSession": "false",
+    "showPageSizeSelector": "true",
+    "rowActions": [],
+    "columns": [
+        {
+            "name": "id_prosess_produksi",
+            "id": "column_0",
+            "label": "id_prosess_produksi"
+        },
+        {
+            "name": "employee",
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "optionsBinder": {
+                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "true",
+                            "groupingColumn": "",
+                            "useAjax": "",
+                            "formDefId": "employee_master",
+                            "labelColumn": "nama_pegawai",
+                            "extraCondition": "",
+                            "cacheInterval": "",
+                            "emptyLabel": "Pilih Pegawai",
+                            "idColumn": "nama_pegawai"
+                        }
+                    },
+                    "options": []
+                }
+            },
+            "id": "column_1",
+            "label": "Pegawai"
+        },
+        {
+            "name": "tanggalProduksi",
+            "format": {
+                "className": "org.joget.plugin.enterprise.DateFormatter",
+                "properties": {"dataFormat": "yyyy-MM-dd"}
+            },
+            "id": "column_2",
+            "label": "Tanggal"
+        },
+        {
+            "name": "jamMulai",
+            "id": "column_3",
+            "label": "Mulai"
+        },
+        {
+            "name": "jamSelesai",
+            "id": "column_4",
+            "label": "Selesai"
+        }
+    ],
+    "pageSize": 0,
+    "orderBy": "",
+    "filters": [],
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "buttonPosition": "bothLeft",
+    "checkboxPosition": "left",
+    "name": "List - Proses Produksi",
+    "id": "list_form_proses_produksi_jsp",
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "form_proses_produksi_jsp"}
+    },
+    "actions": [],
+    "order": ""
+}

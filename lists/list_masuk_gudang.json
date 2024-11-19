@@ -1,0 +1,303 @@
+{
+    "template": {
+        "className": "",
+        "properties": {}
+    },
+    "considerFilterWhenGetTotal": "",
+    "showPageSizeSelector": "true",
+    "responsiveMode": "",
+    "rowActions": [],
+    "columns": [
+        {
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "ID Gudang",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "id_barang_masuk",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+                "properties": {
+                    "hrefColumn": "id_barang_masuk",
+                    "hrefParam": "c_id_flow",
+                    "href": "history_detail",
+                    "confirmation": "",
+                    "target": "_self"
+                }
+            },
+            "style": "",
+            "id": "column_0",
+            "alignment": ""
+        },
+        {
+            "name": "nama_produk",
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "optionsBinder": {
+                        "className": "org.joget.plugin.enterprise.JdbcOptionsBinder",
+                        "properties": {
+                            "useAjax": "",
+                            "addEmpty": "true",
+                            "jdbcDatasource": "default",
+                            "cacheInterval": "",
+                            "emptyLabel": "",
+                            "sql": "SELECT id, c_namaProduk FROM app_fd_sku_master;"
+                        }
+                    },
+                    "options": []
+                }
+            },
+            "id": "column_1",
+            "label": "Nama Produk"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Tanggal Request",
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "dateCreated",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_2",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Tanggal Masuk",
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "tanggal_masuk_aktual",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_4",
+            "alignment": ""
+        },
+        {
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "optionsBinder": {
+                        "className": "",
+                        "properties": {}
+                    },
+                    "options": [
+                        {
+                            "label": "Gudang Produksi",
+                            "value": "gudang_produksi"
+                        },
+                        {
+                            "label": "Gudang Packing",
+                            "value": "gudang_packing"
+                        }
+                    ]
+                }
+            },
+            "label": "Gudang",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "gudang",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_3",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Total",
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "jumlah_barang_aktual",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_6",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Catatan",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "catatan_request_barang_masuk",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_7",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "org.joget.plugin.enterprise.ProcessStatusDatalistFormatter",
+                "properties": {
+                    "usernameFormat": "combine",
+                    "viewPermission": "all",
+                    "userviewCacheDuration": "20",
+                    "showSkippedActivities": "",
+                    "eventClick": "",
+                    "userviewCacheScope": "",
+                    "showProcessName": "true",
+                    "showFutureActivities": "true"
+                }
+            },
+            "label": "Prosess",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "id",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_5",
+            "alignment": ""
+        }
+    ],
+    "cardCollapsible": "",
+    "pageSize": "0",
+    "orderBy": "dateCreated",
+    "description": "",
+    "showDataWhenFilterSet": "",
+    "disableResponsive": "",
+    "checkboxPosition": "left",
+    "cardCollapseByDefault": "",
+    "id": "list_masuk_gudang",
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "masuk_gudang"}
+    },
+    "order": "1",
+    "useSession": "",
+    "draggabletable": "",
+    "filters": [
+        {
+            "hidden": "",
+            "name": "nama_produk",
+            "id": "filter_0",
+            "label": "Nama Produk",
+            "type": {
+                "className": "org.joget.plugin.enterprise.SelectBoxDataListFilterType",
+                "properties": {
+                    "controlField": "",
+                    "size": "",
+                    "optionsBinder": {
+                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "true",
+                            "groupingColumn": "",
+                            "useAjax": "",
+                            "formDefId": "sku_master",
+                            "labelColumn": "namaProduk",
+                            "extraCondition": "",
+                            "cacheInterval": "",
+                            "emptyLabel": "",
+                            "idColumn": "id"
+                        }
+                    },
+                    "defaultValue": "",
+                    "multiple": "",
+                    "options": []
+                }
+            },
+            "datalist_type": "filter",
+            "filterParamName": "d-695621-fn_nama_produk"
+        },
+        {
+            "hidden": "",
+            "name": "tanggal_masuk_aktual",
+            "id": "filter_2",
+            "label": "Tanggal",
+            "type": {
+                "className": "org.joget.plugin.enterprise.DateRangeDataListFilterType",
+                "properties": {
+                    "fromLabel": "From",
+                    "toLabel": "To",
+                    "dateStoreInUTC": "",
+                    "formatJava": "yyyy-MM-dd",
+                    "fromDefaultValue": "",
+                    "yearRange": "c-10:c+10",
+                    "showFieldLabel": "true",
+                    "format": "mm/dd/yy",
+                    "enableTime": "",
+                    "toDefaultValue": ""
+                }
+            },
+            "datalist_type": "filter",
+            "filterParamName": "d-695621-fn_tanggal_masuk_aktual"
+        }
+    ],
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "buttonPosition": "bothLeft",
+    "hidePageSize": "",
+    "name": "List - 2-Form Masuk Gudang",
+    "rowActionsMode": "",
+    "showhidecolumns": "",
+    "actions": []
+}

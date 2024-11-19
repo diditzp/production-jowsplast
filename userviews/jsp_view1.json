@@ -1,0 +1,1231 @@
+{
+    "className": "org.joget.apps.userview.model.Userview",
+    "categories": [
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.InboxMenu",
+                    "properties": {
+                        "appFilter": "all",
+                        "list-customFooter": "",
+                        "cacheAllLinks": "",
+                        "permissionHidden": "",
+                        "assignment-customHeader": "",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
+                        "assignment-customFooter": "",
+                        "label": "Inbox",
+                        "enableOffline": "",
+                        "customId": "",
+                        "buttonPosition": "bothLeft",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": "",
+                        "showPopup": "",
+                        "rowCount": "true",
+                        "id": "DF9061672F414ED539D2BE67B7A2D01F",
+                        "permissionDeny": "",
+                        "list-customHeader": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.RunProcess",
+                    "properties": {
+                        "runProcessDirectly": "Yes",
+                        "fieldPassoverMethod": "append",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
+                        "keyName": "",
+                        "label": "Pindah Barang",
+                        "redirectTarget": "",
+                        "enableOffline": "",
+                        "afterSavedReloadTarget": "true",
+                        "customId": "pindah_barang",
+                        "userviewCacheDuration": "20",
+                        "messageShowAfterComplete": "",
+                        "showInPopupDialog": "",
+                        "userviewCacheScope": "",
+                        "actionAfterSaved": "",
+                        "runProcessSubmitLabel": "",
+                        "id": "601CC8CA02D1431DA6EFE489AE6B0760",
+                        "processDefId": "pindah_item",
+                        "redirectUrlAfterComplete": "",
+                        "fieldPassover": ""
+                    }
+                }
+            ],
+            "properties": {
+                "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
+                "id": "category-EE74E4F4426241BD9BC3BC73B1D24AC7",
+                "label": "<i class='fa fa-home'><\/i> Home"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customHeader": "",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "History SKU Produk",
+                        "enableOffline": "",
+                        "customId": "",
+                        "buttonPosition": "bothLeft",
+                        "datalistId": "list_flow_stock",
+                        "checkboxPosition": "no",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "rowCount": "",
+                        "id": "F7BFF3D2BDA448BDA2229DCF0703FAD8"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customHeader": "",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "History PreForm",
+                        "enableOffline": "",
+                        "customId": "history_preform",
+                        "buttonPosition": "bothLeft",
+                        "datalistId": "flow_preform",
+                        "checkboxPosition": "no",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "rowCount": "",
+                        "id": "99BBA2DA9C6F4A9F22389FEF5F6ED531"
+                    }
+                }
+            ],
+            "properties": {
+                "hide": "",
+                "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                    "hide": "yes",
+                    "permissionDeny": ""
+                }},
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "comment": "",
+                "label": "<i class=\"fas fa-warehouse\"><\/i> History Gudang ",
+                "id": "category-A0E8394162A343F80D9585E7AF23CB9C"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customHeader": "",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "SKU Produk Balance",
+                        "enableOffline": "",
+                        "customId": "sku_balance",
+                        "buttonPosition": "bothLeft",
+                        "datalistId": "list_sku_master_1",
+                        "checkboxPosition": "no",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "rowCount": "",
+                        "id": "1623BAC81A5445CA884DEB4F68D6AE30"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customHeader": "",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "PreForm Balance",
+                        "enableOffline": "",
+                        "customId": "preform_balance",
+                        "buttonPosition": "bothLeft",
+                        "datalistId": "list_sku_preform",
+                        "checkboxPosition": "no",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "rowCount": "",
+                        "id": "8BE1B7C9C580489E4496FBF0E93C1FF9"
+                    }
+                }
+            ],
+            "properties": {
+                "hide": "",
+                "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                    "hide": "yes",
+                    "permissionDeny": ""
+                }},
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "comment": "",
+                "label": "<i class=\"fas fa-balance-scale\"><\/i> Balance Gudang",
+                "id": "category-B189A44F893A4057AEABA6DA5F9D38F0"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customHeader": "",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "List Produksi",
+                        "enableOffline": "",
+                        "customId": "list_produksi",
+                        "buttonPosition": "bothLeft",
+                        "datalistId": "list_form_produksi_jsp",
+                        "checkboxPosition": "no",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "rowCount": "",
+                        "id": "5CD18538EBDF4A4573AA7976151B6C32"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.RunProcess",
+                    "properties": {
+                        "permissionHidden": "",
+                        "runProcessDirectly": "Yes",
+                        "fieldPassoverMethod": "append",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                            "permissionHidden": "",
+                            "permissionDeny": ""
+                        }},
+                        "keyName": "",
+                        "label": "Request Produksi",
+                        "redirectTarget": "",
+                        "enableOffline": "",
+                        "afterSavedReloadTarget": "true",
+                        "customId": "requestProduksi",
+                        "userviewCacheDuration": "20",
+                        "messageShowAfterComplete": "",
+                        "showInPopupDialog": "",
+                        "userviewCacheScope": "",
+                        "actionAfterSaved": "",
+                        "runProcessSubmitLabel": "",
+                        "id": "8D43BBD435FB4EBC3E0206B5F9319B4C",
+                        "permissionDeny": "",
+                        "processDefId": "produksiBotol",
+                        "redirectUrlAfterComplete": "/jw/web/userview/stok_jsp/jsp_view1/_/list_produksi",
+                        "fieldPassover": ""
+                    }
+                }
+            ],
+            "properties": {
+                "hide": "",
+                "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                    "hide": "yes",
+                    "permissionDeny": ""
+                }},
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "comment": "",
+                "label": "<i class=\"fab fa-product-hunt\"><\/i> Produksi",
+                "id": "category-D5B32361446B4717824158376F43EAA6"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customHeader": "",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "List Barang Keluar",
+                        "enableOffline": "",
+                        "customId": "list_barang_keluar",
+                        "buttonPosition": "bothLeft",
+                        "datalistId": "list_formKeluarBarang",
+                        "checkboxPosition": "no",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "rowCount": "",
+                        "id": "EC908298C95D4E79630022EE37BEAB34"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.RunProcess",
+                    "properties": {
+                        "runProcessDirectly": "Yes",
+                        "fieldPassoverMethod": "append",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                            "permissionHidden": "true",
+                            "permissionDeny": ""
+                        }},
+                        "keyName": "",
+                        "label": "Request Barang Keluar",
+                        "redirectTarget": "",
+                        "enableOffline": "",
+                        "afterSavedReloadTarget": "true",
+                        "customId": "barang_keluar",
+                        "userviewCacheDuration": "20",
+                        "messageShowAfterComplete": "",
+                        "showInPopupDialog": "",
+                        "userviewCacheScope": "",
+                        "actionAfterSaved": "",
+                        "runProcessSubmitLabel": "",
+                        "id": "5C68FC18FE1941B14BF983B98F037C71",
+                        "processDefId": "barangKeluar",
+                        "redirectUrlAfterComplete": "/jw/web/userview/stok_jsp/jsp_view1/_/list_barang_keluar",
+                        "fieldPassover": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customHeader": "",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                            "permissionHidden": "true",
+                            "permissionDeny": ""
+                        }},
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "List Preform Keluar",
+                        "enableOffline": "",
+                        "customId": "list_preform_keluar",
+                        "buttonPosition": "bothLeft",
+                        "datalistId": "list_preform_keluar",
+                        "checkboxPosition": "no",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "rowCount": "",
+                        "id": "7149EF21CADB4583FD976D5C6348A66D"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.RunProcess",
+                    "properties": {
+                        "runProcessDirectly": "Yes",
+                        "fieldPassoverMethod": "append",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                            "permissionHidden": "true",
+                            "permissionDeny": ""
+                        }},
+                        "keyName": "",
+                        "label": "Request Preform Keluar",
+                        "redirectTarget": "",
+                        "enableOffline": "",
+                        "afterSavedReloadTarget": "true",
+                        "customId": "jual_preform",
+                        "userviewCacheDuration": "20",
+                        "messageShowAfterComplete": "",
+                        "showInPopupDialog": "",
+                        "userviewCacheScope": "",
+                        "actionAfterSaved": "",
+                        "runProcessSubmitLabel": "",
+                        "id": "55BC3EB659EC4C17EFB69E4752F82DDF",
+                        "processDefId": "barangKeluar_2",
+                        "redirectUrlAfterComplete": "/jw/web/userview/stok_jsp/jsp_view1/_/list_preform_keluar",
+                        "fieldPassover": ""
+                    }
+                }
+            ],
+            "properties": {
+                "hide": "",
+                "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                    "hide": "",
+                    "permissionDeny": ""
+                }},
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "comment": "",
+                "label": "<i class=\"fas fa-sign-out-alt\"><\/i> Barang Keluar",
+                "id": "category-60CAD1C16A7A4903B9F88FF5AF890740"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customHeader": "",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "List Barang Masuk",
+                        "enableOffline": "",
+                        "customId": "list_barang_masuk",
+                        "buttonPosition": "bothLeft",
+                        "datalistId": "list_masuk_gudang",
+                        "checkboxPosition": "no",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "rowCount": "",
+                        "id": "9240A2D8CBA84D272A24DD74E7A23F9C"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.RunProcess",
+                    "properties": {
+                        "permissionHidden": "",
+                        "runProcessDirectly": "Yes",
+                        "fieldPassoverMethod": "append",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                            "permissionHidden": "true",
+                            "permissionDeny": ""
+                        }},
+                        "keyName": "",
+                        "label": "Terima Masuk Barang",
+                        "redirectTarget": "",
+                        "enableOffline": "",
+                        "afterSavedReloadTarget": "true",
+                        "customId": "terimaBarang",
+                        "userviewCacheDuration": "20",
+                        "messageShowAfterComplete": "",
+                        "showInPopupDialog": "",
+                        "userviewCacheScope": "",
+                        "actionAfterSaved": "",
+                        "runProcessSubmitLabel": "",
+                        "id": "E7C2A0F15440452C1433E82DF6BB0927",
+                        "permissionDeny": "",
+                        "processDefId": "terimaBarang",
+                        "redirectUrlAfterComplete": "/jw/web/userview/stok_jsp/jsp_view1/_/list_barang_masuk",
+                        "fieldPassover": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customHeader": "",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "List Preform Masuk",
+                        "enableOffline": "",
+                        "customId": "list_preform_masuk",
+                        "buttonPosition": "bothLeft",
+                        "datalistId": "list_preform_masuk",
+                        "checkboxPosition": "no",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "rowCount": "",
+                        "id": "424042A990D64E6592D6A038D5F1DD45"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.RunProcess",
+                    "properties": {
+                        "runProcessDirectly": "Yes",
+                        "fieldPassoverMethod": "append",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                            "permissionHidden": "true",
+                            "permissionDeny": ""
+                        }},
+                        "keyName": "",
+                        "label": "Terima Masuk PreForm",
+                        "redirectTarget": "",
+                        "enableOffline": "",
+                        "afterSavedReloadTarget": "true",
+                        "customId": "terima_masuk_preform",
+                        "userviewCacheDuration": "20",
+                        "messageShowAfterComplete": "",
+                        "showInPopupDialog": "",
+                        "userviewCacheScope": "",
+                        "actionAfterSaved": "",
+                        "runProcessSubmitLabel": "",
+                        "id": "AB4D226782014EAC8DC9DDF0711CF196",
+                        "processDefId": "terima_preform",
+                        "redirectUrlAfterComplete": "/jw/web/userview/stok_jsp/jsp_view1/_/list_preform_masuk",
+                        "fieldPassover": ""
+                    }
+                }
+            ],
+            "properties": {
+                "hide": "",
+                "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                    "hide": "yes",
+                    "permissionDeny": ""
+                }},
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "comment": "",
+                "label": "<i class=\"fab fa-stack-overflow\"><\/i> Barang Masuk",
+                "id": "category-C1D9D5EAE98C4F59E146382CD29B135F"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.RunProcess",
+                    "properties": {
+                        "runProcessDirectly": "Yes",
+                        "fieldPassoverMethod": "append",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                            "permissionHidden": "true",
+                            "permissionDeny": ""
+                        }},
+                        "keyName": "",
+                        "label": "Audit SKU Produk",
+                        "redirectTarget": "",
+                        "enableOffline": "",
+                        "afterSavedReloadTarget": "true",
+                        "customId": "audit_sku_balance",
+                        "userviewCacheDuration": "20",
+                        "messageShowAfterComplete": "",
+                        "showInPopupDialog": "",
+                        "userviewCacheScope": "",
+                        "actionAfterSaved": "",
+                        "runProcessSubmitLabel": "",
+                        "id": "15486E22AD304B5039133DCDD8D210DF",
+                        "processDefId": "audit_sku_balance",
+                        "redirectUrlAfterComplete": "/jw/web/userview/stok_jsp/jsp_view1/_/list_audit_sku",
+                        "fieldPassover": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customHeader": "",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                            "permissionHidden": "true",
+                            "permissionDeny": ""
+                        }},
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "List Audit SKU Produk",
+                        "enableOffline": "",
+                        "customId": "list_audit_sku",
+                        "buttonPosition": "bothLeft",
+                        "datalistId": "list_audit_sku_balance",
+                        "checkboxPosition": "no",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "rowCount": "",
+                        "id": "FFD16C3C89B7405D409FB005F9664DD1"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.RunProcess",
+                    "properties": {
+                        "runProcessDirectly": "Yes",
+                        "fieldPassoverMethod": "append",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                            "permissionHidden": "true",
+                            "permissionDeny": ""
+                        }},
+                        "keyName": "",
+                        "label": "Audit PreForm",
+                        "redirectTarget": "",
+                        "enableOffline": "",
+                        "afterSavedReloadTarget": "true",
+                        "customId": "audit_preform",
+                        "userviewCacheDuration": "20",
+                        "messageShowAfterComplete": "",
+                        "showInPopupDialog": "",
+                        "userviewCacheScope": "",
+                        "actionAfterSaved": "",
+                        "runProcessSubmitLabel": "",
+                        "id": "12C128BDDCF146D6063645B7A98BE3B5",
+                        "processDefId": "audit_preform_balance",
+                        "redirectUrlAfterComplete": "/jw/web/userview/stok_jsp/jsp_view1/_/list_audit_preform",
+                        "fieldPassover": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customHeader": "",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                            "permissionHidden": "true",
+                            "permissionDeny": ""
+                        }},
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "List Audit Preform",
+                        "enableOffline": "",
+                        "customId": "list_audit_preform",
+                        "buttonPosition": "bothLeft",
+                        "datalistId": "list_audit_preform",
+                        "checkboxPosition": "no",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "rowCount": "",
+                        "id": "6A79ABC4F4E947ACF84CBABB5B659274"
+                    }
+                }
+            ],
+            "properties": {
+                "hide": "",
+                "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                    "hide": "yes",
+                    "permissionDeny": ""
+                }},
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "comment": "",
+                "label": "<i class=\"fas fa-clipboard-check\"><\/i> Audit Gudang",
+                "id": "category-DC02B8EB434545BA672038467AD3B7EF"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.RunProcess",
+                    "properties": {
+                        "runProcessDirectly": "Yes",
+                        "fieldPassoverMethod": "append",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
+                        "keyName": "",
+                        "label": "Create SKU Master",
+                        "redirectTarget": "",
+                        "enableOffline": "",
+                        "afterSavedReloadTarget": "true",
+                        "customId": "create_sku_master",
+                        "userviewCacheDuration": "20",
+                        "messageShowAfterComplete": "",
+                        "showInPopupDialog": "",
+                        "userviewCacheScope": "",
+                        "actionAfterSaved": "",
+                        "runProcessSubmitLabel": "",
+                        "id": "F95F6EE4AE1849622102E4C5E3C8500E",
+                        "processDefId": "create_sku_master",
+                        "redirectUrlAfterComplete": "/jw/web/userview/stok_jsp/jsp_view1/_/sku_master_crud",
+                        "fieldPassover": ""
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.CrudMenu",
+                    "properties": {
+                        "list-customFooter": "",
+                        "add-afterSavedRedirectUrl": "",
+                        "editFormId": "sku_tipe",
+                        "cacheAllLinks": "",
+                        "edit-saveButtonLabel": "",
+                        "list-showDeleteButton": "",
+                        "list-newButtonLabel": "",
+                        "add-afterSavedRedirectParamName": "",
+                        "list-deleteSubformData": "",
+                        "enableOffline": "",
+                        "selectionType": "multiple",
+                        "addFormId": "sku_tipe",
+                        "id": "7350980c-a901-466d-a9a1-d13ce1cd18d5",
+                        "add-messageShowAfterComplete": "",
+                        "edit-readonlyLabel": "",
+                        "list-editLinkLabel": "",
+                        "add-cancelButtonLabel": "",
+                        "list-deleteFiles": "",
+                        "add-customHeader": "",
+                        "edit-readonly": "",
+                        "datalistId": "list_sku_tipe",
+                        "edit-nextButtonLabel": "",
+                        "list-confirmation": "",
+                        "userviewCacheDuration": "",
+                        "add-afterSaved": "list",
+                        "add-afterSavedRedirectParamvalue": "",
+                        "list-customHeader": "",
+                        "edit-customHeader": "",
+                        "edit-afterSavedRedirectParamName": "",
+                        "list-abortRelatedRunningProcesses": "",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
+                        "edit-afterSavedRedirectUrl": "",
+                        "edit-prevButtonLabel": "",
+                        "customId": "sku_tipe_crud",
+                        "edit-afterSaved": "list",
+                        "list-deleteButtonLabel": "",
+                        "checkboxPosition": "no",
+                        "add-customFooter": "",
+                        "list-deleteGridData": "",
+                        "edit-allowRecordTraveling": "",
+                        "rowCount": "true",
+                        "edit-afterSavedRedirectParamvalue": "",
+                        "edit-customFooter": "",
+                        "keyName": "",
+                        "label": "Create Tipe Produk",
+                        "list-newLinkTarget": "",
+                        "edit-lastButtonLabel": "",
+                        "buttonPosition": "bothLeft",
+                        "edit-firstButtonLabel": "",
+                        "add-saveButtonLabel": "",
+                        "edit-messageShowAfterComplete": "",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "edit-moreActions": [],
+                        "list-moreActions": [],
+                        "edit-backButtonLabel": "",
+                        "list-editLinkTarget": ""
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.CrudMenu",
+                    "properties": {
+                        "list-customFooter": "",
+                        "add-afterSavedRedirectUrl": "",
+                        "editFormId": "sku_master",
+                        "cacheAllLinks": "",
+                        "edit-saveButtonLabel": "",
+                        "list-showDeleteButton": "",
+                        "list-newButtonLabel": "",
+                        "add-afterSavedRedirectParamName": "",
+                        "list-deleteSubformData": "",
+                        "enableOffline": "",
+                        "selectionType": "multiple",
+                        "addFormId": "",
+                        "id": "f6d4bbff-e17e-44bb-a4c8-671f1044713b",
+                        "add-messageShowAfterComplete": "",
+                        "edit-readonlyLabel": "",
+                        "list-editLinkLabel": "",
+                        "add-cancelButtonLabel": "",
+                        "list-deleteFiles": "",
+                        "add-customHeader": "",
+                        "edit-readonly": "",
+                        "datalistId": "list_sku_master",
+                        "edit-nextButtonLabel": "",
+                        "list-confirmation": "",
+                        "userviewCacheDuration": "",
+                        "add-afterSaved": "list",
+                        "add-afterSavedRedirectParamvalue": "",
+                        "list-customHeader": "",
+                        "edit-customHeader": "",
+                        "edit-afterSavedRedirectParamName": "",
+                        "list-abortRelatedRunningProcesses": "",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
+                        "edit-afterSavedRedirectUrl": "",
+                        "edit-prevButtonLabel": "",
+                        "customId": "sku_master_crud",
+                        "edit-afterSaved": "list",
+                        "list-deleteButtonLabel": "",
+                        "checkboxPosition": "no",
+                        "add-customFooter": "",
+                        "list-deleteGridData": "",
+                        "edit-allowRecordTraveling": "",
+                        "rowCount": "true",
+                        "edit-afterSavedRedirectParamvalue": "",
+                        "edit-customFooter": "",
+                        "keyName": "",
+                        "label": "List SKU Produk",
+                        "list-newLinkTarget": "",
+                        "edit-lastButtonLabel": "",
+                        "buttonPosition": "bothLeft",
+                        "edit-firstButtonLabel": "",
+                        "add-saveButtonLabel": "",
+                        "edit-messageShowAfterComplete": "",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "edit-moreActions": [],
+                        "list-moreActions": [],
+                        "edit-backButtonLabel": "",
+                        "list-editLinkTarget": ""
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.CrudMenu",
+                    "properties": {
+                        "list-customFooter": "",
+                        "add-afterSavedRedirectUrl": "",
+                        "editFormId": "preFrom",
+                        "cacheAllLinks": "",
+                        "edit-saveButtonLabel": "",
+                        "list-showDeleteButton": "",
+                        "list-newButtonLabel": "",
+                        "add-afterSavedRedirectParamName": "",
+                        "list-deleteSubformData": "",
+                        "enableOffline": "",
+                        "selectionType": "multiple",
+                        "addFormId": "preFrom",
+                        "id": "d12dc05c-dcba-4d21-a151-e263d4c92908",
+                        "add-messageShowAfterComplete": "",
+                        "edit-readonlyLabel": "",
+                        "list-editLinkLabel": "",
+                        "add-cancelButtonLabel": "",
+                        "list-deleteFiles": "",
+                        "add-customHeader": "",
+                        "edit-readonly": "",
+                        "datalistId": "list_preFrom",
+                        "edit-nextButtonLabel": "",
+                        "list-confirmation": "",
+                        "userviewCacheDuration": "",
+                        "add-afterSaved": "list",
+                        "add-afterSavedRedirectParamvalue": "",
+                        "list-customHeader": "",
+                        "edit-customHeader": "",
+                        "edit-afterSavedRedirectParamName": "",
+                        "list-abortRelatedRunningProcesses": "",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
+                        "edit-afterSavedRedirectUrl": "",
+                        "edit-prevButtonLabel": "",
+                        "customId": "preFrom_crud",
+                        "edit-afterSaved": "list",
+                        "list-deleteButtonLabel": "",
+                        "checkboxPosition": "no",
+                        "add-customFooter": "",
+                        "list-deleteGridData": "",
+                        "edit-allowRecordTraveling": "",
+                        "rowCount": "true",
+                        "edit-afterSavedRedirectParamvalue": "",
+                        "edit-customFooter": "",
+                        "keyName": "",
+                        "label": "Create Pre Form",
+                        "list-newLinkTarget": "",
+                        "edit-lastButtonLabel": "",
+                        "buttonPosition": "topLeft",
+                        "edit-firstButtonLabel": "",
+                        "add-saveButtonLabel": "",
+                        "edit-messageShowAfterComplete": "",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "edit-moreActions": [],
+                        "list-moreActions": [],
+                        "edit-backButtonLabel": "",
+                        "list-editLinkTarget": ""
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.CrudMenu",
+                    "properties": {
+                        "list-customFooter": "",
+                        "add-afterSavedRedirectUrl": "",
+                        "editFormId": "mesin_produksi",
+                        "cacheAllLinks": "",
+                        "edit-saveButtonLabel": "",
+                        "list-showDeleteButton": "",
+                        "list-newButtonLabel": "",
+                        "add-afterSavedRedirectParamName": "",
+                        "list-deleteSubformData": "",
+                        "enableOffline": "",
+                        "selectionType": "multiple",
+                        "addFormId": "mesin_produksi",
+                        "id": "0973c5a7-9241-41ba-8bff-b2d1204d18db",
+                        "add-messageShowAfterComplete": "",
+                        "edit-readonlyLabel": "",
+                        "list-editLinkLabel": "",
+                        "add-cancelButtonLabel": "",
+                        "list-deleteFiles": "",
+                        "add-customHeader": "",
+                        "edit-readonly": "",
+                        "datalistId": "list_mesin_produksi",
+                        "edit-nextButtonLabel": "",
+                        "list-confirmation": "",
+                        "userviewCacheDuration": "",
+                        "add-afterSaved": "list",
+                        "add-afterSavedRedirectParamvalue": "",
+                        "list-customHeader": "",
+                        "edit-customHeader": "",
+                        "edit-afterSavedRedirectParamName": "",
+                        "list-abortRelatedRunningProcesses": "",
+                        "edit-afterSavedRedirectUrl": "",
+                        "edit-prevButtonLabel": "",
+                        "customId": "mesin_produksi_crud",
+                        "edit-afterSaved": "list",
+                        "list-deleteButtonLabel": "",
+                        "checkboxPosition": "no",
+                        "add-customFooter": "",
+                        "list-deleteGridData": "",
+                        "edit-allowRecordTraveling": "",
+                        "rowCount": "true",
+                        "edit-afterSavedRedirectParamvalue": "",
+                        "edit-customFooter": "",
+                        "keyName": "",
+                        "label": "Manage Mesin Produksi",
+                        "list-newLinkTarget": "",
+                        "edit-lastButtonLabel": "",
+                        "buttonPosition": "topLeft",
+                        "edit-firstButtonLabel": "",
+                        "add-saveButtonLabel": "",
+                        "edit-messageShowAfterComplete": "",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "edit-moreActions": [],
+                        "list-moreActions": [],
+                        "edit-backButtonLabel": "",
+                        "list-editLinkTarget": ""
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.CrudMenu",
+                    "properties": {
+                        "list-customFooter": "",
+                        "add-afterSavedRedirectUrl": "",
+                        "editFormId": "employee_master",
+                        "cacheAllLinks": "",
+                        "edit-saveButtonLabel": "",
+                        "list-showDeleteButton": "",
+                        "list-newButtonLabel": "",
+                        "add-afterSavedRedirectParamName": "",
+                        "list-deleteSubformData": "",
+                        "enableOffline": "",
+                        "selectionType": "multiple",
+                        "addFormId": "employee_master",
+                        "id": "f77e7e93-ad75-4cfe-8f45-4ba3502cb661",
+                        "add-messageShowAfterComplete": "",
+                        "edit-readonlyLabel": "",
+                        "list-editLinkLabel": "",
+                        "add-cancelButtonLabel": "",
+                        "list-deleteFiles": "",
+                        "add-customHeader": "",
+                        "edit-readonly": "",
+                        "datalistId": "list_employee_master",
+                        "edit-nextButtonLabel": "",
+                        "list-confirmation": "",
+                        "userviewCacheDuration": "",
+                        "add-afterSaved": "list",
+                        "add-afterSavedRedirectParamvalue": "",
+                        "list-customHeader": "",
+                        "edit-customHeader": "",
+                        "edit-afterSavedRedirectParamName": "",
+                        "list-abortRelatedRunningProcesses": "",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
+                        "edit-afterSavedRedirectUrl": "",
+                        "edit-prevButtonLabel": "",
+                        "customId": "employee_master_crud",
+                        "edit-afterSaved": "list",
+                        "list-deleteButtonLabel": "",
+                        "checkboxPosition": "no",
+                        "add-customFooter": "",
+                        "list-deleteGridData": "",
+                        "edit-allowRecordTraveling": "",
+                        "rowCount": "true",
+                        "edit-afterSavedRedirectParamvalue": "",
+                        "edit-customFooter": "",
+                        "keyName": "",
+                        "label": "Manage Employee",
+                        "list-newLinkTarget": "",
+                        "edit-lastButtonLabel": "",
+                        "buttonPosition": "topLeft",
+                        "edit-firstButtonLabel": "",
+                        "add-saveButtonLabel": "",
+                        "edit-messageShowAfterComplete": "",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "edit-moreActions": [],
+                        "list-moreActions": [],
+                        "edit-backButtonLabel": "",
+                        "list-editLinkTarget": ""
+                    }
+                }
+            ],
+            "properties": {
+                "hide": "",
+                "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                    "hide": "yes",
+                    "permissionDeny": ""
+                }},
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "comment": "",
+                "id": "category-8326e5e8-4737-4346-a8ba-615187ca4dfb",
+                "label": "<i class=\"fa fa-tasks\"><\/i> Input Master Data",
+                "permissionDeny": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.HtmlPage",
+                    "properties": {
+                        "userviewCacheDuration": "",
+                        "userviewCacheScope": "",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                            "permissionHidden": "true",
+                            "permissionDeny": ""
+                        }},
+                        "id": "76996081-ecc7-498a-954e-3871830bebe8",
+                        "label": "Welcome",
+                        "enableOffline": "",
+                        "customId": "welcome",
+                        "content": "<p style=\"text-align: center;\"><span style=\"font-size: 12pt;\"><strong>Aplikasi Pengawasan Gudang JSP<\/strong><\/span><\/p>"
+                    }
+                },
+                {
+                    "className": "org.joget.rbuilder.lib.ReportUserviewMenu",
+                    "properties": {
+                        "userviewCacheDuration": "20",
+                        "customHeader": "",
+                        "reportId": "rp_detail_barang_keluar",
+                        "userviewCacheScope": "",
+                        "reportParams": [{
+                            "default": "",
+                            "param": "id_req_item_keluar",
+                            "value": "#requestParam.id_req_item_keluar#"
+                        }],
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
+                        "customFooter": "",
+                        "label": "Detail Barang Keluar",
+                        "id": "CE38AE2845CD4E0CF35CBD9DBE5E6629",
+                        "enableOffline": "",
+                        "customId": "detail_barang_keluar"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "loadDataWithKey": "",
+                        "redirectUrlOnCancel": "",
+                        "actionOnCancel": "",
+                        "redirectTargetOnCancel": "top",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
+                        "customFooter": "",
+                        "paramName": "",
+                        "enableOffline": "",
+                        "afterSavedReloadTarget": "true",
+                        "customId": "history_detail",
+                        "showInPopupDialog": "",
+                        "readonly": "Yes",
+                        "cancelButtonLabel": "",
+                        "actionAfterSaved": "",
+                        "showEditButton": "",
+                        "id": "007C88A476A840BA2B5C6C1A538E7825",
+                        "redirectUrlAfterComplete": "",
+                        "fieldPassover": "",
+                        "formId": "history_detail",
+                        "customHeader": "",
+                        "fieldPassoverMethod": "append",
+                        "redirectTargetOnComplete": "",
+                        "keyName": "",
+                        "label": "History Detail",
+                        "userviewCacheDuration": "20",
+                        "messageShowAfterComplete": "",
+                        "submitButtonLabel": "",
+                        "userviewCacheScope": "",
+                        "readonlyLabel": "true"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customHeader": "",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "List Item Keluar",
+                        "enableOffline": "",
+                        "customId": "list_item_keluar",
+                        "buttonPosition": "bothLeft",
+                        "datalistId": "list_item_keluar",
+                        "checkboxPosition": "no",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "rowCount": "",
+                        "id": "AAF8DC53D387480DC675DC3E60EEE9CA"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "loadDataWithKey": "",
+                        "redirectUrlOnCancel": "",
+                        "actionOnCancel": "",
+                        "redirectTargetOnCancel": "top",
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
+                        "customFooter": "",
+                        "paramName": "",
+                        "enableOffline": "",
+                        "afterSavedReloadTarget": "true",
+                        "customId": "history_preform_detail",
+                        "showInPopupDialog": "",
+                        "readonly": "Yes",
+                        "cancelButtonLabel": "",
+                        "actionAfterSaved": "",
+                        "showEditButton": "",
+                        "id": "DED93C40A53B4A187348E467D0BB0A3F",
+                        "redirectUrlAfterComplete": "",
+                        "fieldPassover": "",
+                        "formId": "history_preform_detail",
+                        "customHeader": "",
+                        "fieldPassoverMethod": "append",
+                        "redirectTargetOnComplete": "",
+                        "keyName": "",
+                        "label": "History Preform Detail",
+                        "userviewCacheDuration": "20",
+                        "messageShowAfterComplete": "",
+                        "submitButtonLabel": "",
+                        "userviewCacheScope": "",
+                        "readonlyLabel": "true"
+                    }
+                },
+                {
+                    "className": "org.joget.rbuilder.lib.ReportUserviewMenu",
+                    "properties": {
+                        "userviewCacheDuration": "20",
+                        "customHeader": "",
+                        "reportId": "rp_label_produksi",
+                        "userviewCacheScope": "",
+                        "reportParams": [],
+                        "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
+                        "customFooter": "",
+                        "label": "Label Produksi",
+                        "id": "9D3C1B47BC7C4DDC01508CC480BD2762",
+                        "enableOffline": "",
+                        "customId": "label_produksi"
+                    }
+                }
+            ],
+            "properties": {
+                "hide": "yes",
+                "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {
+                    "hide": "yes",
+                    "permissionDeny": ""
+                }},
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "comment": "",
+                "id": "category-923FE207582C43019EA00717CB7DAB78",
+                "label": "<i class=\"fas fa-adjust\"><\/i> Hidden Category",
+                "permissionDeny": ""
+            }
+        }
+    ],
+    "properties": {
+        "logoutText": "Logout",
+        "welcomeMessage": "#date.EEE, d MMM yyyy#",
+        "name": "JSP View",
+        "description": "",
+        "footerMessage": "Powered by Joget",
+        "id": "jsp_view1"
+    },
+    "setting": {"properties": {
+        "__": "",
+        "userviewDescription": "",
+        "noPermissionMessage": "",
+        "userviewId": "jsp_view1",
+        "permission_rules": [{
+            "permission_key": "02bb9545-dce0-60fc-96dc-34b4aee955c4",
+            "permission": {
+                "className": "org.joget.apps.userview.lib.UserPermission",
+                "properties": {
+                    "allowedUsernames": "cat;pegawaiJSP",
+                    "orgId": "ORG-001"
+                }
+            },
+            "permission_name": "pegawai"
+        }],
+        "hideThisUserviewInAppCenter": "",
+        "userview_thumbnail": "",
+        "userview_category": "",
+        "theme": {
+            "className": "org.joget.apps.userview.lib.AjaxUniversalTheme",
+            "properties": {
+                "dx8navBadge": "",
+                "css": "",
+                "loginBackground": "",
+                "dx8navLinkColor": "",
+                "disablePush": "",
+                "removeAssignmentTitle": "",
+                "shortcutLinkLabel": "",
+                "disableHelpGuide": "",
+                "logo": "#appResource.logo_jsp.png#",
+                "enableResponsiveSwitch": "",
+                "dx8headerFontColor": "",
+                "fav_icon": "",
+                "mobileViewDisabled": "",
+                "dx8navLinkIcon": "",
+                "horizontal_menu": "",
+                "profile": "",
+                "homeAttractBanner": "",
+                "dx8headingBgColor": "",
+                "dx8linkColor": "",
+                "homeUrl": "",
+                "dx8linkActiveColor": "",
+                "dx8footerColor": "",
+                "subheader": "",
+                "disablePwa": "",
+                "dx8contentbackground": "",
+                "loginPageBottom": "",
+                "dx8backgroundImage": "",
+                "dx8navBadgeText": "",
+                "dx8background": "",
+                "dx8headerColor": "",
+                "dx8colorScheme": "rgb(233, 233, 233);rgb(255, 255, 255);rgb(174, 202, 199);rgb(44, 101, 98);rgb(25, 118, 210);rgb(0, 75, 160)",
+                "dx8navBackground": "",
+                "js": "",
+                "dx8navActiveIconColor": "",
+                "dx8navScrollbarThumb": "",
+                "userMenu": [],
+                "urlsToCache": "",
+                "loginPageTop": "",
+                "userImage": "no",
+                "dx8buttonColor": "",
+                "shortcut": [],
+                "fontControl": "",
+                "dx8navActiveLinkBackground": "",
+                "dx8fontColor": "",
+                "dx8navLinkBackground": "",
+                "dx8buttonBackground": "",
+                "dx8contentFontColor": "",
+                "subfooter": "",
+                "mobileCacheEnabled": "",
+                "dx8footerBackground": "",
+                "dx8headingFontColor": "",
+                "dx8primaryColor": "",
+                "darkMode": "",
+                "dx8navActiveLinkColor": "",
+                "inbox": "current"
+            }
+        },
+        "permission": {
+            "className": "org.joget.apps.userview.lib.UserPermission",
+            "properties": {
+                "allowedUsernames": "adminJSP;clark;ownerJSP",
+                "orgId": "ORG-001"
+            }
+        },
+        "userviewName": "JSP View"
+    }}
+}

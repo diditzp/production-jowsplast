@@ -1,0 +1,70 @@
+{
+    "useSession": "false",
+    "showPageSizeSelector": "true",
+    "rowActions": [],
+    "columns": [
+        {
+            "name": "id_aktual_produksi",
+            "id": "column_0",
+            "label": "id_aktual_produksi"
+        },
+        {
+            "name": "employee",
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "optionsBinder": {
+                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "true",
+                            "groupingColumn": "",
+                            "useAjax": "",
+                            "formDefId": "employee_master",
+                            "labelColumn": "nama_pegawai",
+                            "extraCondition": "",
+                            "cacheInterval": "",
+                            "emptyLabel": "Pilih Pegawai",
+                            "idColumn": "nama_pegawai"
+                        }
+                    },
+                    "options": []
+                }
+            },
+            "id": "column_1",
+            "label": "Pegawai Produksi"
+        },
+        {
+            "name": "tanggalMasukGudang",
+            "format": {
+                "className": "org.joget.plugin.enterprise.DateFormatter",
+                "properties": {"dataFormat": "yyyy-MM-dd"}
+            },
+            "id": "column_2",
+            "label": "Tanggal Masuk"
+        },
+        {
+            "name": "jumlahMasuk",
+            "id": "column_3",
+            "label": "Jumlah Masuk Gudang"
+        },
+        {
+            "name": "jumlah_aktual_cacat_produksi",
+            "id": "column_4",
+            "label": "Jumlah Aktual Cacat Produksi"
+        }
+    ],
+    "pageSize": 0,
+    "orderBy": "",
+    "filters": [],
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "buttonPosition": "bothLeft",
+    "checkboxPosition": "left",
+    "name": "List - Aktual Produksi",
+    "id": "list_form_aktual_produksi_jsp",
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "form_aktual_produksi_jsp"}
+    },
+    "actions": [],
+    "order": ""
+}

@@ -1,0 +1,16 @@
+{
+    "elements": [
+        {"className": "menu-component"},
+        {
+            "className": "org.joget.plugin.enterprise.HtmlCodeComponent",
+            "properties": {
+                "attr-data-events-listening": [],
+                "textContent": "<iframe width=\"1030\" height=\"450\" src=\"https://lookerstudio.google.com/embed/reporting/604c2383-250d-47bd-8b2a-d6ac5f3becf7/page/I8pIE\" frameborder=\"0\" style=\"border:0;width: 100%;\" allowfullscreen=\"\" sandbox=\"allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox\"><\/iframe>",
+                "id": "B1E59EA907764327A6B7B2C656128D46",
+                "customId": "id"
+            }
+        }
+    ],
+    "className": "org.joget.apps.userview.model.UserviewPage",
+    "properties": {"id": "up-76996081-ecc7-498a-954e-3871830bebe8"}
+}

@@ -1,0 +1,367 @@
+{
+    "template": {
+        "className": "",
+        "properties": {}
+    },
+    "considerFilterWhenGetTotal": "",
+    "showPageSizeSelector": "true",
+    "responsiveMode": "",
+    "rowActions": [],
+    "columns": [
+        {
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "ID Gudang",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "id_produksi_botol",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+                "properties": {
+                    "hrefColumn": "id_produksi_botol",
+                    "hrefParam": "c_id_flow",
+                    "href": "history_detail",
+                    "confirmation": "",
+                    "target": "_self"
+                }
+            },
+            "style": "",
+            "id": "column_0",
+            "alignment": ""
+        },
+        {
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "optionsBinder": {
+                        "className": "org.joget.plugin.enterprise.JdbcOptionsBinder",
+                        "properties": {
+                            "useAjax": "",
+                            "addEmpty": "true",
+                            "jdbcDatasource": "default",
+                            "cacheInterval": "",
+                            "emptyLabel": "",
+                            "sql": "select id, c_namaProduk from app_fd_sku_master;"
+                        }
+                    },
+                    "options": []
+                }
+            },
+            "label": "Nama Produk",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "nama_produk",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_2",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Tanggal Mulai",
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "tanggal_produksi",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_1",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Tanggal Selesai",
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "tanggal_selesai_produksi",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_4",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Catatan",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "catatan_request_produksi",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_10",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Request",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "requestProduksi",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_8",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Total",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "total_produksi",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_7",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Cacat",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "aktual_cacat_produksi",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_9",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "org.joget.plugin.enterprise.ProcessStatusDatalistFormatter",
+                "properties": {
+                    "usernameFormat": "combine",
+                    "viewPermission": "",
+                    "userviewCacheDuration": "20",
+                    "showSkippedActivities": "",
+                    "eventClick": "",
+                    "userviewCacheScope": "",
+                    "showProcessName": "",
+                    "showFutureActivities": "true"
+                }
+            },
+            "label": "Prosess",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "id",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_5",
+            "alignment": ""
+        }
+    ],
+    "cardCollapsible": "",
+    "pageSize": "0",
+    "orderBy": "dateCreated",
+    "description": "",
+    "showDataWhenFilterSet": "",
+    "disableResponsive": "",
+    "checkboxPosition": "left",
+    "cardCollapseByDefault": "",
+    "id": "list_form_produksi_jsp",
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {
+            "joins": [],
+            "aggregateField": [],
+            "formDefId": "form_produksi_jsp",
+            "customSelectionValue": "",
+            "extraCondition": "",
+            "filters": [],
+            "groupBy": "",
+            "functionColumns": []
+        }
+    },
+    "order": "1",
+    "useSession": "",
+    "draggabletable": "",
+    "filters": [
+        {
+            "hidden": "",
+            "name": "nama_produk",
+            "id": "filter_0",
+            "label": "Nama Produk",
+            "type": {
+                "className": "org.joget.plugin.enterprise.SelectBoxDataListFilterType",
+                "properties": {
+                    "controlField": "",
+                    "size": "",
+                    "optionsBinder": {
+                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "true",
+                            "groupingColumn": "",
+                            "useAjax": "",
+                            "formDefId": "sku_master",
+                            "labelColumn": "namaProduk",
+                            "extraCondition": "",
+                            "cacheInterval": "",
+                            "emptyLabel": "",
+                            "idColumn": "id"
+                        }
+                    },
+                    "defaultValue": "",
+                    "multiple": "",
+                    "options": []
+                }
+            },
+            "datalist_type": "filter",
+            "filterParamName": "d-6335559-fn_nama_produk"
+        },
+        {
+            "hidden": "",
+            "name": "shift",
+            "id": "filter_2",
+            "label": "Shift",
+            "type": {
+                "className": "org.joget.plugin.enterprise.SelectBoxDataListFilterType",
+                "properties": {
+                    "controlField": "",
+                    "size": "",
+                    "optionsBinder": {
+                        "className": "",
+                        "properties": {}
+                    },
+                    "defaultValue": "",
+                    "multiple": "",
+                    "options": [
+                        {
+                            "label": "Pagi",
+                            "value": "Pagi",
+                            "grouping": ""
+                        },
+                        {
+                            "label": "Malam",
+                            "value": "Malam",
+                            "grouping": ""
+                        }
+                    ]
+                }
+            },
+            "datalist_type": "filter",
+            "filterParamName": "d-6335559-fn_shift"
+        },
+        {
+            "hidden": "",
+            "name": "tanggal_produksi",
+            "id": "filter_3",
+            "label": "Tanggal Produksi",
+            "type": {
+                "className": "org.joget.plugin.enterprise.DateRangeDataListFilterType",
+                "properties": {
+                    "fromLabel": "From",
+                    "toLabel": "To",
+                    "dateStoreInUTC": "",
+                    "formatJava": "yyyy-MM-dd",
+                    "fromDefaultValue": "",
+                    "yearRange": "c-10:c+10",
+                    "showFieldLabel": "true",
+                    "format": "mm/dd/yy",
+                    "enableTime": "",
+                    "toDefaultValue": ""
+                }
+            },
+            "datalist_type": "filter",
+            "filterParamName": "d-6335559-fn_tanggal_produksi"
+        }
+    ],
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "buttonPosition": "bothLeft",
+    "hidePageSize": "",
+    "name": "List - 1-Form Produksi JSP",
+    "rowActionsMode": "",
+    "showhidecolumns": "",
+    "actions": []
+}

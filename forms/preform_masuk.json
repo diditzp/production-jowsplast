@@ -1,0 +1,663 @@
+{
+    "elements": [
+        {
+            "elements": [{
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.IdGeneratorField",
+                        "properties": {
+                            "hidden": "",
+                            "permission_rules": {
+                                "b549b713-573e-2d1d-4353-994759cc0426": {},
+                                "f68f2954-746e-8a30-f444-05903bc00d18": {},
+                                "15c87435-4cc2-a6d0-c123-6c10d4e04709": {},
+                                "2e529527-b1a1-add4-5020-bd6c22bc6a85": {},
+                                "442b7def-d42b-5edf-1cce-4ef453e0c78c": {},
+                                "162edf01-78a0-5efe-d65a-c84ed00d3aec": {}
+                            },
+                            "format": "JSP-IN-PF-??????",
+                            "workflowVariable": "",
+                            "envVariable": "counter",
+                            "isDistributedGeneration": "",
+                            "label": "ID PreForm Masuk",
+                            "id": "id_preform_masuk"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.SelectBox",
+                        "properties": {
+                            "controlField": "",
+                            "permission_rules": {
+                                "b549b713-573e-2d1d-4353-994759cc0426": {},
+                                "f68f2954-746e-8a30-f444-05903bc00d18": {},
+                                "15c87435-4cc2-a6d0-c123-6c10d4e04709": {},
+                                "2e529527-b1a1-add4-5020-bd6c22bc6a85": {},
+                                "442b7def-d42b-5edf-1cce-4ef453e0c78c": {},
+                                "162edf01-78a0-5efe-d65a-c84ed00d3aec": {}
+                            },
+                            "multiple": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "label": "Nama PreForm",
+                            "readonly": "",
+                            "size": "",
+                            "optionsBinder": {
+                                "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                                "properties": {
+                                    "addEmptyOption": "true",
+                                    "groupingColumn": "",
+                                    "useAjax": "",
+                                    "formDefId": "preFrom",
+                                    "labelColumn": "nama_pre_form",
+                                    "extraCondition": "",
+                                    "cacheInterval": "",
+                                    "emptyLabel": "",
+                                    "idColumn": "nama_pre_form"
+                                }
+                            },
+                            "options": [],
+                            "workflowVariable": "",
+                            "id": "nama_preform",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.DatePicker",
+                        "properties": {
+                            "yearRange": "c-10:c+10",
+                            "dataFormat": "yyyy-MM-dd",
+                            "startDateFieldId": "",
+                            "permission_rules": {
+                                "b549b713-573e-2d1d-4353-994759cc0426": {},
+                                "f68f2954-746e-8a30-f444-05903bc00d18": {},
+                                "15c87435-4cc2-a6d0-c123-6c10d4e04709": {},
+                                "2e529527-b1a1-add4-5020-bd6c22bc6a85": {},
+                                "442b7def-d42b-5edf-1cce-4ef453e0c78c": {},
+                                "162edf01-78a0-5efe-d65a-c84ed00d3aec": {}
+                            },
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "format": "",
+                            "label": "Tanggal Masuk",
+                            "datePickerType": "dateTime",
+                            "currentDateAs": "",
+                            "endDateFieldId": "",
+                            "readonly": "",
+                            "allowManual": "",
+                            "workflowVariable": "",
+                            "id": "tanggal_masuk",
+                            "placeholder": "",
+                            "disableWeekends": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "format24hr": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "maxlength": "",
+                            "permission_rules": {
+                                "b549b713-573e-2d1d-4353-994759cc0426": {},
+                                "f68f2954-746e-8a30-f444-05903bc00d18": {},
+                                "15c87435-4cc2-a6d0-c123-6c10d4e04709": {},
+                                "2e529527-b1a1-add4-5020-bd6c22bc6a85": {},
+                                "442b7def-d42b-5edf-1cce-4ef453e0c78c": {},
+                                "162edf01-78a0-5efe-d65a-c84ed00d3aec": {}
+                            },
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "type": "numeric",
+                                    "message": "",
+                                    "mandatory": "true"
+                                }
+                            },
+                            "label": "Jumlah Barang",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "7",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "jumlah_barang",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": "true"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "maxlength": "",
+                            "permission_rules": {
+                                "b549b713-573e-2d1d-4353-994759cc0426": {},
+                                "f68f2954-746e-8a30-f444-05903bc00d18": {},
+                                "15c87435-4cc2-a6d0-c123-6c10d4e04709": {},
+                                "2e529527-b1a1-add4-5020-bd6c22bc6a85": {},
+                                "442b7def-d42b-5edf-1cce-4ef453e0c78c": {},
+                                "162edf01-78a0-5efe-d65a-c84ed00d3aec": {}
+                            },
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "type": "numeric",
+                                    "message": "",
+                                    "mandatory": "true"
+                                }
+                            },
+                            "label": "Jumlah Bal",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "7",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "jumlah_bal",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": "true"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextArea",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "readonly": "",
+                            "permission_rules": {
+                                "b549b713-573e-2d1d-4353-994759cc0426": {},
+                                "f68f2954-746e-8a30-f444-05903bc00d18": {},
+                                "15c87435-4cc2-a6d0-c123-6c10d4e04709": {},
+                                "2e529527-b1a1-add4-5020-bd6c22bc6a85": {},
+                                "442b7def-d42b-5edf-1cce-4ef453e0c78c": {},
+                                "162edf01-78a0-5efe-d65a-c84ed00d3aec": {}
+                            },
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "",
+                            "label": "Catatan Request Barang Masuk",
+                            "id": "catatan_request_barang_masuk",
+                            "placeholder": "",
+                            "rows": "5",
+                            "cols": "20",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    }
+                ],
+                "className": "org.joget.apps.form.model.Column",
+                "properties": {"width": "100%"}
+            }],
+            "className": "org.joget.apps.form.model.Section",
+            "properties": {
+                "visibilityControl": "",
+                "permissionHidden": "",
+                "permissionReadonly": "",
+                "permission_rules": {
+                    "b549b713-573e-2d1d-4353-994759cc0426": {
+                        "permissionHidden": "",
+                        "readonly": "true"
+                    },
+                    "f68f2954-746e-8a30-f444-05903bc00d18": {
+                        "permissionHidden": "",
+                        "readonly": "true"
+                    },
+                    "15c87435-4cc2-a6d0-c123-6c10d4e04709": {
+                        "permissionHidden": "",
+                        "readonly": "true"
+                    },
+                    "2e529527-b1a1-add4-5020-bd6c22bc6a85": {
+                        "permissionHidden": "",
+                        "readonly": "true"
+                    },
+                    "442b7def-d42b-5edf-1cce-4ef453e0c78c": {
+                        "permissionHidden": "",
+                        "readonly": "true"
+                    },
+                    "162edf01-78a0-5efe-d65a-c84ed00d3aec": {
+                        "permissionHidden": "",
+                        "readonly": "true"
+                    }
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "label": "PreForm Masuk Gudang",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityValue": "",
+                "regex": "",
+                "readonly": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "comment": "",
+                "id": "preform_masuk_gudang",
+                "join": "",
+                "readonlyLabel": ""
+            }
+        },
+        {
+            "elements": [{
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.DatePicker",
+                        "properties": {
+                            "yearRange": "c-10:c+10",
+                            "dataFormat": "yyyy-MM-dd",
+                            "startDateFieldId": "",
+                            "permission_rules": {
+                                "b549b713-573e-2d1d-4353-994759cc0426": {},
+                                "f68f2954-746e-8a30-f444-05903bc00d18": {},
+                                "15c87435-4cc2-a6d0-c123-6c10d4e04709": {},
+                                "2e529527-b1a1-add4-5020-bd6c22bc6a85": {},
+                                "442b7def-d42b-5edf-1cce-4ef453e0c78c": {},
+                                "162edf01-78a0-5efe-d65a-c84ed00d3aec": {}
+                            },
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "format": "",
+                            "label": "Tanggal Masuk Aktual",
+                            "datePickerType": "dateTime",
+                            "currentDateAs": "",
+                            "endDateFieldId": "",
+                            "readonly": "",
+                            "allowManual": "",
+                            "workflowVariable": "",
+                            "id": "tanggal_masuk_aktual",
+                            "placeholder": "",
+                            "disableWeekends": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "format24hr": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "maxlength": "",
+                            "permission_rules": {
+                                "b549b713-573e-2d1d-4353-994759cc0426": {},
+                                "f68f2954-746e-8a30-f444-05903bc00d18": {},
+                                "15c87435-4cc2-a6d0-c123-6c10d4e04709": {},
+                                "2e529527-b1a1-add4-5020-bd6c22bc6a85": {},
+                                "442b7def-d42b-5edf-1cce-4ef453e0c78c": {},
+                                "162edf01-78a0-5efe-d65a-c84ed00d3aec": {}
+                            },
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "type": "numeric",
+                                    "message": "",
+                                    "mandatory": "true"
+                                }
+                            },
+                            "label": "Jumlah PreForm Aktual",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "7",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "jumlah_preform_aktual",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": "true"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "maxlength": "",
+                            "permission_rules": {
+                                "b549b713-573e-2d1d-4353-994759cc0426": {},
+                                "f68f2954-746e-8a30-f444-05903bc00d18": {},
+                                "15c87435-4cc2-a6d0-c123-6c10d4e04709": {},
+                                "2e529527-b1a1-add4-5020-bd6c22bc6a85": {},
+                                "442b7def-d42b-5edf-1cce-4ef453e0c78c": {},
+                                "162edf01-78a0-5efe-d65a-c84ed00d3aec": {}
+                            },
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "type": "numeric",
+                                    "message": "",
+                                    "mandatory": "true"
+                                }
+                            },
+                            "label": "Jumlah Bal Aktual",
+                            "encryption": "",
+                            "readonly": "",
+                            "size": "7",
+                            "workflowVariable": "",
+                            "style": "",
+                            "id": "jumlah_bal_aktual",
+                            "placeholder": "",
+                            "value": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": "true"
+                        }
+                    },
+                    {
+                        "className": "org.joget.plugin.enterprise.ImageUpload",
+                        "properties": {
+                            "resizeMethod": "",
+                            "editor": "",
+                            "permissionType": "",
+                            "padding": "",
+                            "maxSizeMsg": "File size limit exceeded",
+                            "resizeWidth": "",
+                            "permission_rules": {
+                                "b549b713-573e-2d1d-4353-994759cc0426": {},
+                                "f68f2954-746e-8a30-f444-05903bc00d18": {},
+                                "15c87435-4cc2-a6d0-c123-6c10d4e04709": {},
+                                "2e529527-b1a1-add4-5020-bd6c22bc6a85": {},
+                                "442b7def-d42b-5edf-1cce-4ef453e0c78c": {},
+                                "162edf01-78a0-5efe-d65a-c84ed00d3aec": {}
+                            },
+                            "multiple": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "createThumbnail": "true",
+                            "maxSize": "",
+                            "label": "Upload Foto PreForm Masuk",
+                            "resizeQuality": "0.8",
+                            "readonly": "",
+                            "removeFile": "",
+                            "width": "60",
+                            "fileTypeMsg": "Invalid file type",
+                            "id": "uploadMasuk",
+                            "resizeHeight": "",
+                            "fileType": ".jpeg;.jpg;.gif;.png",
+                            "height": "60"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextArea",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "readonly": "",
+                            "permission_rules": {
+                                "b549b713-573e-2d1d-4353-994759cc0426": {},
+                                "f68f2954-746e-8a30-f444-05903bc00d18": {},
+                                "15c87435-4cc2-a6d0-c123-6c10d4e04709": {},
+                                "2e529527-b1a1-add4-5020-bd6c22bc6a85": {},
+                                "442b7def-d42b-5edf-1cce-4ef453e0c78c": {},
+                                "162edf01-78a0-5efe-d65a-c84ed00d3aec": {}
+                            },
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "",
+                            "label": "Catatan PreForm Masuk",
+                            "id": "catatan_barang_masuk",
+                            "placeholder": "",
+                            "rows": "5",
+                            "cols": "20",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    }
+                ],
+                "className": "org.joget.apps.form.model.Column",
+                "properties": {"width": "100%"}
+            }],
+            "className": "org.joget.apps.form.model.Section",
+            "properties": {
+                "visibilityControl": "",
+                "permissionHidden": "true",
+                "permissionReadonly": "",
+                "permission_rules": {
+                    "b549b713-573e-2d1d-4353-994759cc0426": {},
+                    "f68f2954-746e-8a30-f444-05903bc00d18": {
+                        "permissionHidden": "",
+                        "readonly": "true"
+                    },
+                    "15c87435-4cc2-a6d0-c123-6c10d4e04709": {},
+                    "2e529527-b1a1-add4-5020-bd6c22bc6a85": {},
+                    "442b7def-d42b-5edf-1cce-4ef453e0c78c": {},
+                    "162edf01-78a0-5efe-d65a-c84ed00d3aec": {
+                        "permissionHidden": "",
+                        "readonly": "true"
+                    }
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "label": "Laporan Masuk PreForm",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityValue": "",
+                "regex": "",
+                "readonly": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "comment": "",
+                "id": "laporan_masuk_preform",
+                "join": "",
+                "readonlyLabel": ""
+            }
+        },
+        {
+            "elements": [{
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.Radio",
+                        "properties": {
+                            "fullWidth": "",
+                            "controlField": "",
+                            "readonly": "",
+                            "optionsBinder": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "permission_rules": {
+                                "b549b713-573e-2d1d-4353-994759cc0426": {},
+                                "f68f2954-746e-8a30-f444-05903bc00d18": {},
+                                "15c87435-4cc2-a6d0-c123-6c10d4e04709": {},
+                                "2e529527-b1a1-add4-5020-bd6c22bc6a85": {},
+                                "442b7def-d42b-5edf-1cce-4ef453e0c78c": {},
+                                "162edf01-78a0-5efe-d65a-c84ed00d3aec": {}
+                            },
+                            "options": [
+                                {
+                                    "label": "Sesuai",
+                                    "value": "Achieve",
+                                    "grouping": ""
+                                },
+                                {
+                                    "label": "Tidak Sesuai",
+                                    "value": "notAchieve",
+                                    "grouping": ""
+                                },
+                                {
+                                    "label": "Cancel",
+                                    "value": "cancel",
+                                    "grouping": ""
+                                }
+                            ],
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "approveAktual",
+                            "label": "Approve Aktual",
+                            "id": "approveAktual",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextArea",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "readonly": "",
+                            "permission_rules": {
+                                "b549b713-573e-2d1d-4353-994759cc0426": {},
+                                "f68f2954-746e-8a30-f444-05903bc00d18": {},
+                                "15c87435-4cc2-a6d0-c123-6c10d4e04709": {},
+                                "2e529527-b1a1-add4-5020-bd6c22bc6a85": {},
+                                "442b7def-d42b-5edf-1cce-4ef453e0c78c": {},
+                                "162edf01-78a0-5efe-d65a-c84ed00d3aec": {}
+                            },
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "",
+                            "label": "Catatan Approve PreForm Masuk",
+                            "id": "catatan_approve_preform_masuk",
+                            "placeholder": "",
+                            "rows": "5",
+                            "cols": "20",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "autoPopulate": "",
+                            "permission_rules": {
+                                "b549b713-573e-2d1d-4353-994759cc0426": {},
+                                "442b7def-d42b-5edf-1cce-4ef453e0c78c": {},
+                                "162edf01-78a0-5efe-d65a-c84ed00d3aec": {}
+                            },
+                            "label": "",
+                            "id": "field13",
+                            "value": "<style type=\"text/css\">\r\n    #container {\r\n        width: 200px;\r\n        height: 200px;\r\n        display: none;\r\n    }\r\n    #printOptions {\r\n        margin-top: 10px;\r\n        display: none;\r\n    }\r\n    .print-button {\r\n        cursor: pointer;\r\n        padding: 5px 10px;\r\n        border: 1px solid #ccc;\r\n        background-color: #f0f0f0;\r\n        margin-right: 5px;\r\n        border-radius: 5px;\r\n    }\r\n<\/style>\r\n\r\n<script type=\"text/javascript\" src=\"#appResource.qrcode.min.js#\"><\/script>\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/canvg/3.0.7/umd.min.js\"><\/script>\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js\"><\/script>\r\n\r\n<script type=\"text/javascript\">\r\n$(function() {\r\n    var id = \"#form.masuk_gudang.nama_produk#\";\r\n    var namaProduk = '#form.sku_master.namaProduk[{form.masuk_gudang.nama_produk}]#';\r\n    console.log(\"id data --> \"+id);\r\n    console.log(\"nama produk --> \"+namaProduk);\r\n    if (!id.startsWith(\"#\")) {\r\n        $(\"#container\").show();\r\n        $(\"#printOptions\").show(); // Show print options when QR code is displayed\r\n        var qrcode = new QRCode({\r\n            content: id,\r\n            container: \"svg-viewbox\", // Responsive use\r\n            join: true // Crisp rendering and 4-5x reduced file size\r\n        });\r\n        var svg = qrcode.svg();\r\n        document.getElementById(\"container\").innerHTML = svg;\r\n        document.getElementById(\"containerExplain\").innerHTML = \"Scan this QR Code\";\r\n        document.getElementById(\"containerText\").innerHTML = namaProduk;\r\n    }\r\n});\r\n\r\n// Function to print QR code as PDF\r\nfunction printPDF() {\r\n    var { jsPDF } = window.jspdf;\r\n    var doc = new jsPDF();\r\n    \r\n    // Get the SVG element\r\n    var svgElement = document.getElementById('container').querySelector('svg');\r\n\r\n    // Create a canvas to render the SVG to\r\n    var canvas = document.createElement('canvas');\r\n    canvas.width = svgElement.clientWidth;\r\n    canvas.height = svgElement.clientHeight;\r\n    \r\n    // Use canvg to draw the SVG onto the canvas\r\n    var ctx = canvas.getContext('2d');\r\n    canvg.Canvg.fromString(ctx, new XMLSerializer().serializeToString(svgElement)).start();\r\n\r\n    // Convert the canvas to a PNG image\r\n    var imgData = canvas.toDataURL('image/png');\r\n    \r\n    // Add the image and text to the PDF\r\n    doc.addImage(imgData, 'PNG', 15, 40, 180, 160);\r\n    doc.text(20, 30, document.getElementById(\"containerText\").innerHTML);\r\n    \r\n    var saveFile = 'QR-code-'+document.getElementById(\"containerText\").innerHTML;\r\n    // Save the PDF\r\n    doc.save(saveFile);\r\n}\r\n<\/script>\r\n\r\n<!-- Print Options -->\r\n<div id=\"printOptions\">\r\n    <span class=\"print-button\" onclick=\"printPDF()\">Print as PDF<\/span>\r\n<\/div>\r\n\r\n<div id=\"containerExplain\"><\/div>\r\n<div id=\"container\"><\/div>\r\n<div id=\"containerText\"><\/div>\r\n"
+                        }
+                    }
+                ],
+                "className": "org.joget.apps.form.model.Column",
+                "properties": {"width": "100%"}
+            }],
+            "className": "org.joget.apps.form.model.Section",
+            "properties": {
+                "visibilityControl": "",
+                "permissionHidden": "true",
+                "permissionReadonly": "",
+                "permission_rules": {
+                    "b549b713-573e-2d1d-4353-994759cc0426": {
+                        "permissionHidden": "true",
+                        "readonly": ""
+                    },
+                    "f68f2954-746e-8a30-f444-05903bc00d18": {},
+                    "15c87435-4cc2-a6d0-c123-6c10d4e04709": {
+                        "permissionHidden": "",
+                        "readonly": "true"
+                    },
+                    "2e529527-b1a1-add4-5020-bd6c22bc6a85": {
+                        "permissionHidden": "true",
+                        "readonly": ""
+                    },
+                    "442b7def-d42b-5edf-1cce-4ef453e0c78c": {
+                        "permissionHidden": "",
+                        "readonly": "true"
+                    },
+                    "162edf01-78a0-5efe-d65a-c84ed00d3aec": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "label": "Approve Masuk PreForm",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityValue": "",
+                "regex": "",
+                "readonly": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "comment": "",
+                "id": "approve_masuk_preform",
+                "join": "",
+                "readonlyLabel": ""
+            }
+        }
+    ],
+    "className": "org.joget.apps.form.model.Form",
+    "properties": {
+        "noPermissionMessage": "",
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "permission_rules": [
+            {
+                "permission_key": "442b7def-d42b-5edf-1cce-4ef453e0c78c",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.BeanShellPermission",
+                    "properties": {"script": "return (\"#assignment.activityDefId#\".equalsIgnoreCase(\"check_ulang_preform_masuk\"));"}
+                },
+                "permission_name": "Check Masuk PreForm"
+            },
+            {
+                "permission_key": "162edf01-78a0-5efe-d65a-c84ed00d3aec",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.BeanShellPermission",
+                    "properties": {"script": "return (\"#assignment.activityDefId#\".equalsIgnoreCase(\"approve_masuk_preform\"));"}
+                },
+                "permission_name": "Approve Masuk PreForm"
+            },
+            {
+                "permission_key": "b549b713-573e-2d1d-4353-994759cc0426",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.BeanShellPermission",
+                    "properties": {"script": "return (\"#assignment.activityDefId#\".equalsIgnoreCase(\"form_masuk_preform\"));"}
+                },
+                "permission_name": "Form Masuk PreForm"
+            }
+        ],
+        "name": "Form Masuk Preform",
+        "description": "",
+        "postProcessorRunOn": "create",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "id": "preform_masuk",
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "tableName": "preform_masuk"
+    }
+}

@@ -1,0 +1,170 @@
+{
+    "footer": {"elements": []},
+    "header": {"elements": [{
+        "elements": [
+            {
+                "elements": [{
+                    "className": "org.joget.rbuilder.lib.TextReportElement",
+                    "properties": {
+                        "size": "",
+                        "color": "",
+                        "marginBottom": "10px",
+                        "id": "81A6B300-D179-4A8E-2D2E-783A28D6911E",
+                        "text": "Jow\u2019s Plast\nJl. Wirabudi 3, Cipinang Melayu, 13620, \nJakarta Timur, Jakarta\n081280706686\nEmail: jows.plast@gmail.com",
+                        "bold": "true",
+                        "align": "left",
+                        "selectorClass": "",
+                        "italic": "",
+                        "decoration": "",
+                        "height": ""
+                    }
+                }],
+                "className": "org.joget.rbuilder.lib.ColumnReportElement",
+                "properties": {}
+            },
+            {
+                "elements": [{
+                    "className": "org.joget.rbuilder.lib.ImageReportElement",
+                    "properties": {
+                        "path": "#appResource.logo_jsp.png#",
+                        "width": "105px",
+                        "marginBottom": "10px",
+                        "id": "397E716B-D820-4DE7-FBD2-A35B9EBDF3FC",
+                        "halign": "right",
+                        "selectorClass": "",
+                        "height": ""
+                    }
+                }],
+                "className": "org.joget.rbuilder.lib.ColumnReportElement",
+                "properties": {}
+            }
+        ],
+        "className": "org.joget.rbuilder.lib.ColumnsReportElement",
+        "properties": {
+            "gap": "1%",
+            "display_border": "false",
+            "marginBottom": "10px",
+            "id": "E90E7187-F7C1-45F0-5514-406EAF3F9C65",
+            "type": "1"
+        }
+    }]},
+    "body": {"elements": [
+        {
+            "className": "org.joget.rbuilder.lib.HtmlReportElement",
+            "properties": {
+                "html": "<div class=\"top-header\">\n    <div class=\"top-title\">Surat Jalan<\/div>\n    <div class=\"top-detail\">#form.keluar_barang.id#<\/div> \n<\/div>\n\n<div class=\"top-subject\">\n    <div class=\"top-word\">Kepada Yth :<\/div>\n    <div class=\"top-company\" id=\"nama_customer\"><\/div>\n<\/div>\n\n<style>\n    .top-header {\n        width: 100%;\n        background: #6b8c95;\n        display: flex;\n        justify-content: space-between;\n        margin-bottom: 20px;\n    }\n    .top-title, .top-detail {\n        font-size: 20px;\n        margin: 10px;\n        color: #ffffff;\n    }\n    .top-word {\n        border-bottom: 1px solid #6b8c95;\n    }\n    .top-subject {\n        margin-bottom: 20px;\n    }\n    #e_D512AA97-6DFC-45CD-9B58-F8A2E1C88057 {\n        margin-top: 10px;\n        width: 40%;\n    }\n    #e_2CF39DBC-AAAA-4B29-36D6-03FBCE132084 {\n        border: 3px solid #6b8c95;\n        border-radius: 3px;\n        padding: 10px;\n    }\n<\/style>\n\n<script>\n    $(document).ready(function() {\n        var detail_id = '#requestParam.id_req_item_keluar#';\n        console.log('ID : ', detail_id);\n        $.ajax({\n            url : \"/jw/web/json/plugin/org.joget.sample.GetCustomerName/service?id_req_item_keluar=\"+detail_id,\n            async : false,\n            type : \"GET\",\n            dataType : 'json',\n            success : function(data) {\n                $.each(data, function(i, data) {\n                    var result = data;\n                    console.log(\"INI DATA : \"+result);\n                    $('#nama_customer').text(result);\n                });\n            }\n        });\n    });\n<\/script>",
+                "id": "54D308E8-2190-48A9-0A14-DC0032331B31",
+                "selectorClass": ""
+            }
+        },
+        {
+            "className": "org.joget.rbuilder.lib.ListReportElement",
+            "properties": {
+                "headerTextColor": "#FFFFFF",
+                "headerColor": "#6B8C95",
+                "automatedNum": "true",
+                "footer": [],
+                "repeatFooterRowEveryPage": "",
+                "formulaColumns": [],
+                "footerRowlabel": "",
+                "id": "6BDF8A40-B284-4BF4-8F28-3D54174B7AD4",
+                "selectorClass": "",
+                "filterParams": [{
+                    "param": "d-3050393-fn_id_req_item_keluar",
+                    "value": "#reportParam.id_req_item_keluar#"
+                }],
+                "datalistId": "list_item_keluar"
+            }
+        },
+        {
+            "className": "org.joget.rbuilder.lib.TextReportElement",
+            "properties": {
+                "size": "",
+                "color": "",
+                "marginBottom": "10px",
+                "id": "D512AA97-6DFC-45CD-9B58-F8A2E1C88057",
+                "text": "DP sudah dilunaskan pada Sabtu tanggal 12 Oktober dan sisa pembayaran setelah semua barang diterima oleh pihak Gudang PON.",
+                "bold": "",
+                "align": "left",
+                "selectorClass": "",
+                "italic": "",
+                "decoration": "",
+                "height": ""
+            }
+        },
+        {
+            "elements": [
+                {
+                    "elements": [{
+                        "className": "org.joget.rbuilder.lib.TextReportElement",
+                        "properties": {
+                            "size": "13px",
+                            "color": "",
+                            "marginBottom": "10px",
+                            "id": "2CF39DBC-AAAA-4B29-36D6-03FBCE132084",
+                            "text": "Transfer :\nBCA, A/N : OCTAVIANUS JONATHAN SIDAURUK\n5771155619",
+                            "bold": "true",
+                            "align": "left",
+                            "selectorClass": "",
+                            "italic": "",
+                            "decoration": "",
+                            "height": ""
+                        }
+                    }],
+                    "className": "org.joget.rbuilder.lib.ColumnReportElement",
+                    "properties": {}
+                },
+                {
+                    "elements": [{
+                        "className": "org.joget.rbuilder.lib.HtmlReportElement",
+                        "properties": {
+                            "html": "<!-- <div class=\"bottom-information\">\r\n    <div class=\"detail-data\">\r\n        <div class=\"title\">SUBTOTAL<\/div>\r\n        <div id=\"text_subtotal\" class=\"description\">Rp. 4.987.500<\/div>\r\n    <\/div>\r\n    <div class=\"detail-data\">\r\n        <div class=\"title\">DP<\/div>\r\n        <div id=\"text_dp\" class=\"description\">Rp. 2.137.500<\/div>\r\n    <\/div>\r\n    <div class=\"detail-data\">\r\n        <div class=\"title\">GRAND TOTAL<\/div>\r\n        <div id=\"text_grandtotal\" class=\"description\">Rp. 7.125.000<\/div>\r\n    <\/div>\r\n<\/div>\r\n\r\n<style>\r\n    .detail-data {\r\n        display: grid;\r\n        grid-template-columns: 3fr 9fr;\r\n        border-bottom: 1px solid #6b8c95;\r\n    }\r\n<\/style> -->\r\n",
+                            "id": "B2F8B8B0-A900-45F8-9D00-F76F9C4F3C1F",
+                            "selectorClass": ""
+                        }
+                    }],
+                    "className": "org.joget.rbuilder.lib.ColumnReportElement",
+                    "properties": {}
+                }
+            ],
+            "className": "org.joget.rbuilder.lib.ColumnsReportElement",
+            "properties": {
+                "gap": "1%",
+                "display_border": "false",
+                "marginBottom": "10px",
+                "id": "99DF5CBE-68E1-4641-8A00-0B391AF7846D",
+                "type": "1"
+            }
+        },
+        {
+            "className": "org.joget.rbuilder.lib.TextReportElement",
+            "properties": {
+                "size": "15px",
+                "color": "",
+                "marginBottom": "10px",
+                "id": "A126877E-B797-4FCB-88EF-7E47E331C44F",
+                "text": "Jakarta. #dateLocale.d MMM yyyy#\n\n\n\n \nOctavianus Jonathan Sidauruk",
+                "bold": "",
+                "align": "right",
+                "selectorClass": "",
+                "italic": "",
+                "decoration": "",
+                "height": ""
+            }
+        }
+    ]},
+    "properties": {
+        "margins": "normal",
+        "orientation": "portrait",
+        "leftMargin": "10",
+        "topMargin": "10",
+        "rightMargin": "10",
+        "bottomMargin": "10",
+        "name": "Report Invoice",
+        "description": "",
+        "id": "rp_invoice",
+        "pageHeight": "297",
+        "paperSize": "a4",
+        "pageWidth": "210"
+    }
+}
