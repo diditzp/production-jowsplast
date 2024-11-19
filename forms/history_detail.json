@@ -771,7 +771,7 @@
                     "properties": {
                         "autoHandleWorkflowVariable": "true",
                         "jdbcDatasource": "default",
-                        "sql": "SELECT \r\n    prod.c_aktual_produksi as aktual_produksi,\r\n    prod.c_approveAktual as approveAktual,\r\n    prod.c_sisa_target_produksi as sisa_target_produksi,\r\n    prod.c_aktual_cacat_produksi as aktual_cacat_produksi,\r\n    prod.c_totalAktual as totalAktual,\r\n    prod.c_catatan_pengawasan as catatan_pengawasan\r\nFROM app_fd_produksi prod\r\njoin app_fd_flow_stock stock on stock.c_id_flow = prod.c_id_produksi_botol\r\nwhere stock.c_id_flow = '#requestParam.c_id_flow#'",
+                        "sql": "SELECT \r\n    prod.c_aktual_produksi as aktual_produksi,\r\n    prod.c_approveAktual as approveAktual,\r\n    -- prod.c_sisa_target_produksi as sisa_target_produksi,\r\n    prod.c_aktual_cacat_produksi as aktual_cacat_produksi,\r\n    prod.c_totalAktual as totalAktual,\r\n    prod.c_catatan_pengawasan as catatan_pengawasan\r\nFROM app_fd_produksi prod\r\njoin app_fd_flow_stock stock on stock.c_id_flow = prod.c_id_produksi_botol\r\nwhere stock.c_id_flow = '#requestParam.c_id_flow#'",
                         "autoHandleFiles": ""
                     }
                 },
