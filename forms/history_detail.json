@@ -1700,6 +1700,40 @@
                         }
                     },
                     {
+                        "className": "org.joget.apps.form.lib.Radio",
+                        "properties": {
+                            "fullWidth": "",
+                            "controlField": "",
+                            "readonly": "",
+                            "optionsBinder": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "permission_rules": {"544fe6ea-63dc-0845-a3a7-e573b7463aa8": {}},
+                            "options": [
+                                {
+                                    "label": "Scan QR",
+                                    "value": "QR",
+                                    "grouping": ""
+                                },
+                                {
+                                    "label": "Input Manual",
+                                    "value": "Manual",
+                                    "grouping": ""
+                                }
+                            ],
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "",
+                            "label": "Jenis Input",
+                            "id": "jenis_input",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    },
+                    {
                         "className": "org.joget.apps.form.lib.HiddenField",
                         "properties": {
                             "useDefaultWhenEmpty": "",
@@ -1986,7 +2020,7 @@
                     "properties": {
                         "autoHandleWorkflowVariable": "true",
                         "jdbcDatasource": "default",
-                        "sql": "SELECT \r\n    pindah.c_id_pindah_barang as id_pindah_barang,\r\n    pindah.c_tanggal as tanggal,\r\n    pindah.c_dari_gudang as dari_gudang,\r\n    pindah.c_ke_gudang as ke_gudang,\r\n    pindah.c_nama_sku as nama_sku,\r\n    pindah.c_sisa_stock as sisa_stock,\r\n    pindah.c_gudang_produksi as gudang_produksi,\r\n    pindah.c_gudang_packing as gudang_packing,\r\n    pindah.c_total_item_pindah as total_item_pindah\r\nFROM app_fd_item_pindah pindah\r\njoin app_fd_flow_stock stock on stock.c_id_flow = pindah.c_id_pindah_barang\r\nwhere stock.c_id_flow = '#requestParam.c_id_flow#'",
+                        "sql": "SELECT \r\n    pindah.c_id_pindah_barang as id_pindah_barang,\r\n    pindah.c_jenis_input as jenis_input,\r\n    pindah.c_tanggal as tanggal,\r\n    pindah.c_dari_gudang as dari_gudang,\r\n    pindah.c_ke_gudang as ke_gudang,\r\n    pindah.c_nama_sku as nama_sku,\r\n    pindah.c_sisa_stock as sisa_stock,\r\n    pindah.c_gudang_produksi as gudang_produksi,\r\n    pindah.c_gudang_packing as gudang_packing,\r\n    pindah.c_total_item_pindah as total_item_pindah\r\nFROM app_fd_item_pindah pindah\r\njoin app_fd_flow_stock stock on stock.c_id_flow = pindah.c_id_pindah_barang\r\nwhere stock.c_id_flow = '#requestParam.c_id_flow#'",
                         "autoHandleFiles": ""
                     }
                 },
