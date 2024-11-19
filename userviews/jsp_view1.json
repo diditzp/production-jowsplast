@@ -3,36 +3,47 @@
     "categories": [
         {
             "className": "org.joget.apps.userview.model.UserviewCategory",
-            "menus": [
-                {
-                    "className": "org.joget.apps.userview.lib.InboxMenu",
-                    "properties": {
-                        "appFilter": "all",
-                        "list-customFooter": "",
-                        "cacheAllLinks": "",
-                        "permissionHidden": "",
-                        "assignment-customHeader": "",
-                        "permission_rules": {
-                            "540c8040-1bd9-9c6e-5e17-a58505dde8db": {
-                                "permissionHidden": "true",
-                                "permissionDeny": ""
-                            },
-                            "4beb7f52-a03d-7b36-dfe0-7cbebf35daa9": {}
+            "menus": [{
+                "className": "org.joget.apps.userview.lib.InboxMenu",
+                "properties": {
+                    "appFilter": "all",
+                    "list-customFooter": "",
+                    "cacheAllLinks": "",
+                    "permissionHidden": "",
+                    "assignment-customHeader": "",
+                    "permission_rules": {
+                        "540c8040-1bd9-9c6e-5e17-a58505dde8db": {
+                            "permissionHidden": "true",
+                            "permissionDeny": ""
                         },
-                        "assignment-customFooter": "",
-                        "label": "Inbox",
-                        "enableOffline": "",
-                        "customId": "",
-                        "buttonPosition": "bothLeft",
-                        "userviewCacheDuration": "20",
-                        "userviewCacheScope": "",
-                        "showPopup": "",
-                        "rowCount": "true",
-                        "id": "DF9061672F414ED539D2BE67B7A2D01F",
-                        "permissionDeny": "",
-                        "list-customHeader": ""
-                    }
+                        "4beb7f52-a03d-7b36-dfe0-7cbebf35daa9": {}
+                    },
+                    "assignment-customFooter": "",
+                    "label": "Inbox",
+                    "enableOffline": "",
+                    "customId": "",
+                    "buttonPosition": "bothLeft",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": "",
+                    "showPopup": "",
+                    "rowCount": "true",
+                    "id": "DF9061672F414ED539D2BE67B7A2D01F",
+                    "permissionDeny": "",
+                    "list-customHeader": ""
+                }
+            }],
+            "properties": {
+                "permission_rules": {
+                    "4beb7f52-a03d-7b36-dfe0-7cbebf35daa9": {},
+                    "540c8040-1bd9-9c6e-5e17-a58505dde8db": {}
                 },
+                "id": "category-EE74E4F4426241BD9BC3BC73B1D24AC7",
+                "label": "<i class='fa fa-home'><\/i> Home"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
                 {
                     "className": "org.joget.apps.userview.lib.RunProcess",
                     "properties": {
@@ -43,7 +54,7 @@
                             "4beb7f52-a03d-7b36-dfe0-7cbebf35daa9": {}
                         },
                         "keyName": "",
-                        "label": "Pindah Barang",
+                        "label": "Pindah Barang CIHUYYYY",
                         "redirectTarget": "",
                         "enableOffline": "",
                         "afterSavedReloadTarget": "true",
@@ -60,35 +71,6 @@
                         "fieldPassover": ""
                     }
                 },
-                {
-                    "className": "org.joget.apps.userview.lib.HtmlPage",
-                    "properties": {
-                        "userviewCacheDuration": "",
-                        "userviewCacheScope": "",
-                        "permission_rules": {
-                            "4beb7f52-a03d-7b36-dfe0-7cbebf35daa9": {},
-                            "540c8040-1bd9-9c6e-5e17-a58505dde8db": {}
-                        },
-                        "id": "76996081-ecc7-498a-954e-3871830bebe8",
-                        "label": "Welcome",
-                        "enableOffline": "",
-                        "customId": "welcome",
-                        "content": "<p style=\"text-align: center;\"><span style=\"font-size: 12pt;\"><strong>Aplikasi Pengawasan Gudang JSP<\/strong><\/span><\/p>"
-                    }
-                }
-            ],
-            "properties": {
-                "permission_rules": {
-                    "4beb7f52-a03d-7b36-dfe0-7cbebf35daa9": {},
-                    "540c8040-1bd9-9c6e-5e17-a58505dde8db": {}
-                },
-                "id": "category-EE74E4F4426241BD9BC3BC73B1D24AC7",
-                "label": "<i class='fa fa-home'><\/i> Home"
-            }
-        },
-        {
-            "className": "org.joget.apps.userview.model.UserviewCategory",
-            "menus": [
                 {
                     "className": "org.joget.apps.userview.lib.DataListMenu",
                     "properties": {
