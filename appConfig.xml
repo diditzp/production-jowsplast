@@ -11,7 +11,7 @@
       <pluginDefaultProperties>
          <id>org.joget.apps.app.lib.ProcessDataCollectorAuditTrail</id>
          <appId>stok_jsp</appId>
-         <appVersion>2</appVersion>
+         <appVersion>7</appVersion>
          <pluginName>Process Data Collector</pluginName>
          <pluginDescription>Save process data into app_report_* tables for reporting purposes</pluginDescription>
          <pluginProperties>{}</pluginProperties>
@@ -19,7 +19,7 @@
       <pluginDefaultProperties>
          <id>org.joget.plugin.enterprise.FormDataAuditTrailPlugin</id>
          <appId>stok_jsp</appId>
-         <appVersion>2</appVersion>
+         <appVersion>7</appVersion>
          <pluginName>Form Data Audit Trail</pluginName>
          <pluginDescription>Store audit trail of Form Data to app_form_data_audit_trail table.</pluginDescription>
          <pluginProperties>{&quot;captureLoad&quot;:&quot;true&quot;,&quot;captureSave&quot;:&quot;true&quot;,&quot;captureSavedDatainJson&quot;:&quot;true&quot;,&quot;captureDelete&quot;:&quot;true&quot;,&quot;captureMode&quot;:&quot;selected&quot;,&quot;formDefIds&quot;:&quot;form_produksi_jsp;masuk_gudang;item_keluar&quot;}</pluginProperties>
@@ -28,6 +28,8 @@
    <environmentVariableList>
       <environmentVariable>
          <id>counter</id>
+         <appId>stok_jsp</appId>
+         <appVersion>7</appVersion>
          <value>234</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
       </environmentVariable>
