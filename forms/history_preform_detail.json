@@ -2186,6 +2186,11 @@
                                     "label": "Tidak Sesuai",
                                     "value": "notAchieve",
                                     "grouping": ""
+                                },
+                                {
+                                    "label": "Cancel",
+                                    "value": "cancel",
+                                    "grouping": ""
                                 }
                             ],
                             "validator": {
