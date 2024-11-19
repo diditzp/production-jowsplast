@@ -410,7 +410,7 @@
                     "properties": {
                         "autoHandleWorkflowVariable": "true",
                         "jdbcDatasource": "default",
-                        "sql": "SELECT \r\n    prod.c_id_produksi_botol as id_produksi_botol,\r\n    prod.c_nama_sku as nama_sku,\r\n    prod.c_nama_produk as nama_produk, \r\n    prod.c_tanggal_produksi as tanggal_produksi,\r\n    prod.c_nama_preform as nama_preform,\r\n    prod.c_mesin_produksi as mesin_produksi,\r\n    prod.c_sisa_preform as sisa_preform,\r\n    prod.c_requestProduksi as requestProduksi,\r\n    prod.c_catatan_request_produksi as catatan_request_produksi\r\nFROM app_fd_produksi prod\r\njoin app_fd_flow_stock stock on stock.c_id_flow = prod.c_id_produksi_botol\r\nwhere stock.c_id_flow = '#requestParam.c_id_flow#'",
+                        "sql": "SELECT \r\n    prod.c_id_produksi_botol as id_produksi_botol,\r\n    prod.c_nama_sku as nama_sku,\r\n    prod.c_nama_produk as nama_produk, \r\n    prod.c_tanggal_produksi as tanggal_produksi,\r\n    prod.c_tanggal_selesai_produksi as tanggal_selesai_produksi,\r\n    prod.c_nama_preform as nama_preform,\r\n    prod.c_mesin_produksi as mesin_produksi,\r\n    prod.c_sisa_preform as sisa_preform,\r\n    prod.c_requestProduksi as requestProduksi,\r\n    prod.c_catatan_request_produksi as catatan_request_produksi\r\nFROM app_fd_produksi prod\r\njoin app_fd_flow_stock stock on stock.c_id_flow = prod.c_id_produksi_botol\r\nwhere stock.c_id_flow = '#requestParam.c_id_flow#'",
                         "autoHandleFiles": ""
                     }
                 },
