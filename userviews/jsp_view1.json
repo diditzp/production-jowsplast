@@ -53,9 +53,15 @@
                 }
             ],
             "properties": {
+                "hide": "",
                 "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "comment": "",
                 "id": "category-EE74E4F4426241BD9BC3BC73B1D24AC7",
-                "label": "<i class='fa fa-home'><\/i> Home"
+                "label": "<i class=\"fa fa-home\"><\/i> Home TEST GITHUB"
             }
         },
         {
