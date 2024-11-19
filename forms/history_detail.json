@@ -2034,7 +2034,7 @@
                                 "properties": {}
                             },
                             "format": "",
-                            "label": "Tanggal Masuk",
+                            "label": "Tanggal Audit",
                             "datePickerType": "dateTime",
                             "currentDateAs": "",
                             "endDateFieldId": "",
@@ -2134,6 +2134,29 @@
                         }
                     },
                     {
+                        "className": "org.joget.apps.form.lib.TextArea",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "readonly": "",
+                            "permission_rules": {"19470869-94b0-01fc-a5c0-5785e12f72b4": {
+                                "permissionHidden": "",
+                                "readonly": "true"
+                            }},
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "",
+                            "label": "Catatan Audit",
+                            "id": "catatan_audit",
+                            "placeholder": "",
+                            "rows": "5",
+                            "cols": "20",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    },
+                    {
                         "className": "org.joget.apps.form.lib.CustomHTML",
                         "properties": {
                             "requiredSanitize": "true",
@@ -2177,7 +2200,7 @@
                     "properties": {
                         "autoHandleWorkflowVariable": "true",
                         "jdbcDatasource": "default",
-                        "sql": "SELECT \r\n    audit.c_id_audit as id_audit,\r\n    audit.c_nama_sku as nama_sku,\r\n    audit.c_tanggal_masuk as tanggal_masuk,\r\n    audit.c_total as total,\r\n    audit.c_gudang_produksi as gudang_produksi,\r\n    audit.c_gudang_packing as gudang_packing\r\nFROM app_fd_audit_sku_balance audit\r\njoin app_fd_flow_stock stock on stock.c_id_flow = audit.c_id_audit\r\nwhere stock.c_id_flow = '#requestParam.c_id_flow#'",
+                        "sql": "SELECT \r\n    audit.c_id_audit as id_audit,\r\n    audit.c_nama_sku as nama_sku,\r\n    audit.c_tanggal_masuk as tanggal_masuk,\r\n    audit.c_total as total,\r\n    audit.c_gudang_produksi as gudang_produksi,\r\n    audit.c_gudang_packing as gudang_packing,\r\n    audit.c_catatan_audit as catatan_audit\r\nFROM app_fd_audit_sku_balance audit\r\njoin app_fd_flow_stock stock on stock.c_id_flow = audit.c_id_audit\r\nwhere stock.c_id_flow = '#requestParam.c_id_flow#'",
                         "autoHandleFiles": ""
                     }
                 },
@@ -2189,40 +2212,62 @@
         },
         {
             "elements": [{
-                "elements": [{
-                    "className": "org.joget.apps.form.lib.Radio",
-                    "properties": {
-                        "fullWidth": "",
-                        "controlField": "",
-                        "readonly": "",
-                        "optionsBinder": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "permission_rules": {"19470869-94b0-01fc-a5c0-5785e12f72b4": {}},
-                        "options": [
-                            {
-                                "label": "Approve",
-                                "value": "approve",
-                                "grouping": ""
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.Radio",
+                        "properties": {
+                            "fullWidth": "",
+                            "controlField": "",
+                            "readonly": "",
+                            "optionsBinder": {
+                                "className": "",
+                                "properties": {}
                             },
-                            {
-                                "label": "Not Approve",
-                                "value": "notApprove",
-                                "grouping": ""
-                            }
-                        ],
-                        "validator": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "workflowVariable": "status",
-                        "label": "Approval",
-                        "id": "status",
-                        "value": "",
-                        "readonlyLabel": ""
+                            "permission_rules": {"19470869-94b0-01fc-a5c0-5785e12f72b4": {}},
+                            "options": [
+                                {
+                                    "label": "Approve",
+                                    "value": "approve",
+                                    "grouping": ""
+                                },
+                                {
+                                    "label": "Not Approve",
+                                    "value": "notApprove",
+                                    "grouping": ""
+                                }
+                            ],
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "status",
+                            "label": "Approval",
+                            "id": "status",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextArea",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "readonly": "",
+                            "permission_rules": {"19470869-94b0-01fc-a5c0-5785e12f72b4": {}},
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "",
+                            "label": "Catatan Hasil Audit",
+                            "id": "catatan_hasil_audit",
+                            "placeholder": "",
+                            "rows": "5",
+                            "cols": "20",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
                     }
-                }],
+                ],
                 "className": "org.joget.apps.form.model.Column",
                 "properties": {"width": "100%"}
             }],
@@ -2250,7 +2295,7 @@
                     "properties": {
                         "autoHandleWorkflowVariable": "true",
                         "jdbcDatasource": "default",
-                        "sql": "SELECT \r\n    audit.c_status as status\r\nFROM app_fd_audit_sku_balance audit\r\njoin app_fd_flow_stock stock on stock.c_id_flow = audit.c_id_audit\r\nwhere stock.c_id_flow = '#requestParam.c_id_flow#'",
+                        "sql": "SELECT \r\n    audit.c_status as status,\r\n    audit.c_catatan_hasil_audit as catatan_hasil_audit\r\nFROM app_fd_audit_sku_balance audit\r\njoin app_fd_flow_stock stock on stock.c_id_flow = audit.c_id_audit\r\nwhere stock.c_id_flow = '#requestParam.c_id_flow#'",
                         "autoHandleFiles": ""
                     }
                 },
