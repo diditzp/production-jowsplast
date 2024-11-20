@@ -223,6 +223,19 @@
                     "className": "org.joget.apps.form.lib.HiddenField",
                     "properties": {
                         "useDefaultWhenEmpty": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "workflowVariable": "",
+                        "id": "id_produksi_botol",
+                        "value": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "useDefaultWhenEmpty": "",
                         "permission_rules": {
                             "fecd5d08-1e59-12a0-0e31-f06b6aa68919": {},
                             "aa1fac9e-2954-eadb-f641-eee606d57fb6": {},
