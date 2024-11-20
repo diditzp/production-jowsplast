@@ -56,14 +56,6 @@
             "sortable": "false"
         },
         {
-            "filterable": true,
-            "hidden": "false",
-            "name": "shift",
-            "id": "column_6",
-            "label": "Shift",
-            "sortable": "false"
-        },
-        {
             "name": "employee",
             "format": {
                 "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
@@ -89,13 +81,38 @@
             "label": "Pegawai Produksi"
         },
         {
-            "name": "tanggalMasukGudang",
+            "hidden": "false",
+            "renderHtml": "",
             "format": {
                 "className": "org.joget.plugin.enterprise.DateFormatter",
-                "properties": {"dataFormat": "yyyy-MM-dd"}
+                "properties": {
+                    "dateStoreInUTC": "",
+                    "dataFormat": "yyyy-MM-dd",
+                    "displayFormat": ""
+                }
             },
+            "label": "Tanggal Masuk",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "tanggalMasukGudang",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
             "id": "column_2",
-            "label": "Tanggal Masuk"
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "shift",
+            "id": "column_6",
+            "label": "Shift",
+            "sortable": "false"
         },
         {
             "name": "jumlahMasuk",
