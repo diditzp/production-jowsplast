@@ -189,14 +189,6 @@
         {
             "filterable": true,
             "hidden": "false",
-            "name": "totalAktual",
-            "id": "column_3",
-            "label": "Aktual Produksi",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
             "renderHtml": "",
             "format": {
                 "className": "",
