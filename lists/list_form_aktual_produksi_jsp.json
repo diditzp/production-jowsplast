@@ -1,12 +1,19 @@
 {
+    "template": {
+        "className": "",
+        "properties": {}
+    },
     "useSession": "false",
     "showPageSizeSelector": "true",
     "rowActions": [],
     "columns": [
         {
-            "name": "id_aktual_produksi",
-            "id": "column_0",
-            "label": "id_aktual_produksi"
+            "filterable": true,
+            "hidden": "false",
+            "name": "id_produksi_botol",
+            "id": "column_5",
+            "label": "id_produksi_botol",
+            "sortable": "false"
         },
         {
             "name": "employee",
@@ -51,6 +58,22 @@
             "name": "jumlah_aktual_cacat_produksi",
             "id": "column_4",
             "label": "Jumlah Aktual Cacat Produksi"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "shift",
+            "id": "column_6",
+            "label": "Shift",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "isi_per_ball_produksi",
+            "id": "column_7",
+            "label": "Isi Pcs / Bal Label Produksi",
+            "sortable": "false"
         }
     ],
     "pageSize": 0,
