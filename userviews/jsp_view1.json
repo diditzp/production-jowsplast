@@ -53,15 +53,9 @@
                 }
             ],
             "properties": {
-                "hide": "",
                 "permission_rules": {"02bb9545-dce0-60fc-96dc-34b4aee955c4": {}},
-                "permission": {
-                    "className": "",
-                    "properties": {}
-                },
-                "comment": "",
                 "id": "category-EE74E4F4426241BD9BC3BC73B1D24AC7",
-                "label": "<i class=\"fa fa-home\"><\/i> Home TEST GITHUB"
+                "label": "<i class='fa fa-home'><\/i> Home"
             }
         },
         {
@@ -1148,6 +1142,7 @@
     },
     "setting": {"properties": {
         "__": "",
+        "tempDisablePermissionChecking": "",
         "userviewDescription": "",
         "noPermissionMessage": "",
         "userviewId": "jsp_view1",
@@ -1200,7 +1195,8 @@
                 "dx8headerColor": "",
                 "dx8colorScheme": "rgb(233, 233, 233);rgb(255, 255, 255);rgb(174, 202, 199);rgb(44, 101, 98);rgb(25, 118, 210);rgb(0, 75, 160)",
                 "dx8navBackground": "",
-                "js": "",
+                "js": "$(document).ready(function() {\n    \n    var currentUserRole = ' #currentUser.firstName#';\n    \n    $('body').on('page_loaded', function() {\n        var location = window.location.href;\n        \n        if (location.includes('_ja_profile')) {\n            if (currentUserRole.trim() != 'owner') {\n                $('[type=password]').closest('.form-row').css({'pointer-events':'none'});\n                $('[type=password]').css({'background-color':'rgb(234, 236, 240)'});\n            }\n        }\n    });\n});\n",
+                "compactTheme": "",
                 "dx8navActiveIconColor": "",
                 "dx8navScrollbarThumb": "",
                 "userMenu": [],
@@ -1228,7 +1224,7 @@
         "permission": {
             "className": "org.joget.apps.userview.lib.UserPermission",
             "properties": {
-                "allowedUsernames": "adminJSP;clark;ownerJSP",
+                "allowedUsernames": "adminJSP;ownerJSP",
                 "orgId": "ORG-001"
             }
         },

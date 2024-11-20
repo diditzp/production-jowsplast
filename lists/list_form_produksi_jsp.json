@@ -194,6 +194,29 @@
                 "className": "",
                 "properties": {}
             },
+            "label": "Approve",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "totalAktual",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_6",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
             "label": "Cacat",
             "sortable": "false",
             "datalist_type": "column",
