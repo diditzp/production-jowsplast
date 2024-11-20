@@ -1195,7 +1195,7 @@
                 "dx8headerColor": "",
                 "dx8colorScheme": "rgb(233, 233, 233);rgb(255, 255, 255);rgb(174, 202, 199);rgb(44, 101, 98);rgb(25, 118, 210);rgb(0, 75, 160)",
                 "dx8navBackground": "",
-                "js": "$('body').on('page_loaded', function(e){\n    var location = window.location.href;\n    alert(location);\n});",
+                "js": "$(document).ready(function() {\n    $('body').on('page_loaded', function() {\n        var location = window.location.href;\n        alert(location);\n    });\n});\n",
                 "compactTheme": "",
                 "dx8navActiveIconColor": "",
                 "dx8navScrollbarThumb": "",
