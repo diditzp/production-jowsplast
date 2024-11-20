@@ -10,6 +10,29 @@
     "columns": [
         {
             "filterable": true,
+            "hidden": "true",
+            "include_export": "",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "ID",
+            "sortable": "false",
+            "datalist_type": "column",
+            "name": "id",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_0",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
             "hidden": "false",
             "name": "id_produksi_botol",
             "id": "column_5",
