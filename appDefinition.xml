@@ -815,15 +815,6 @@
                </packageActivityPlugin>
             </entry>
             <entry>
-               <string>terima_preform::tool6</string>
-               <packageActivityPlugin>
-                  <processDefId>terima_preform</processDefId>
-                  <activityDefId>tool6</activityDefId>
-                  <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
-                  <pluginProperties>{}</pluginProperties>
-               </packageActivityPlugin>
-            </entry>
-            <entry>
                <string>terimaBarang::set_meta_data</string>
                <packageActivityPlugin>
                   <processDefId>terimaBarang</processDefId>
@@ -869,21 +860,12 @@
                </packageActivityPlugin>
             </entry>
             <entry>
-               <string>produksiBotol::tool23</string>
-               <packageActivityPlugin>
-                  <processDefId>produksiBotol</processDefId>
-                  <activityDefId>tool23</activityDefId>
-                  <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
-                  <pluginProperties>{}</pluginProperties>
-               </packageActivityPlugin>
-            </entry>
-            <entry>
                <string>produksiBotol::tool24</string>
                <packageActivityPlugin>
                   <processDefId>produksiBotol</processDefId>
                   <activityDefId>tool24</activityDefId>
                   <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
-                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.DatabaseUpdateTool&quot;,&quot;properties&quot;:{&quot;query&quot;:&quot;update app_fd_aktual_produksi a\r\ninner join app_fd_produksi b \r\non a.c_id_aktual_produksi = b.id \r\nset \r\na.c_nama_sku = b.c_nama_sku,\r\na.c_nama_produk = b.c_nama_produk\r\nWHERE b.id=&apos;#process.recordId#&apos;&quot;,&quot;jdbcDatasource&quot;:&quot;default&quot;}}]}</pluginProperties>
+                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.DatabaseUpdateTool&quot;,&quot;properties&quot;:{&quot;query&quot;:&quot;update app_fd_aktual_produksi a\r\ninner join app_fd_produksi b \r\non a.c_id_aktual_produksi = b.id \r\nset \r\na.c_nama_sku = b.c_nama_sku,\r\na.c_nama_produk = b.c_nama_produk,\r\na.c_id_produksi_botol = b.c_id_produksi_botol\r\nWHERE b.id=&apos;#process.recordId#&apos;&quot;,&quot;jdbcDatasource&quot;:&quot;default&quot;}}]}</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>

@@ -317,7 +317,7 @@
                     </TransitionRestrictions>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="366.07501220703125,34.56249542236327"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="385.0687789916992,24.543743896484386"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="updateStokGudang" Name="Update Stok Gudang">
