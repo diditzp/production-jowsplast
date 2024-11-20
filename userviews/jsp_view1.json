@@ -210,6 +210,27 @@
                     }
                 },
                 {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customHeader": "",
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "List Label Produksi",
+                        "enableOffline": "",
+                        "customId": "list_label_produksi",
+                        "buttonPosition": "bothLeft",
+                        "datalistId": "list_form_aktual_produksi_jsp",
+                        "checkboxPosition": "left",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "rowCount": "",
+                        "id": "DC98F74366944B288F4CD229C3CF47BB"
+                    }
+                },
+                {
                     "className": "org.joget.apps.userview.lib.RunProcess",
                     "properties": {
                         "permissionHidden": "",
