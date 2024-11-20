@@ -1195,7 +1195,7 @@
                 "dx8headerColor": "",
                 "dx8colorScheme": "rgb(233, 233, 233);rgb(255, 255, 255);rgb(174, 202, 199);rgb(44, 101, 98);rgb(25, 118, 210);rgb(0, 75, 160)",
                 "dx8navBackground": "",
-                "js": "$(document).ready(function() {\n    \n    var currentUserRole = ' #currentUser.firstName#';\n    console.log('ROLE : ', currentUserRole)\n    \n    $('body').on('page_loaded', function() {\n        var location = window.location.href;\n        \n        if (location.includes('_ja_profile')) {\n            if (currentUserRole.trim() === 'owner') {\n                console.log('OWNER');   \n            }\n            if (currentUserRole.trim() === 'admin') {\n                console.log('ADMIN');   \n            }\n            if (currentUserRole.trim() === 'pegawai') {\n                console.log('PEGAWAI');   \n            }\n        }\n    });\n});\n",
+                "js": "$(document).ready(function() {\n    \n    var currentUserRole = ' #currentUser.firstName#';\n    console.log('ROLE : ', currentUserRole)\n    \n    $('body').on('page_loaded', function() {\n        var location = window.location.href;\n        \n        if (location.includes('_ja_profile')) {\n            if (currentUserRole.trim() != 'owner') {\n                $('[type=password]').closest('.form-row').css({'pointer-events':'none'});\n                $('[type=password]').css({'background-color':'rgb(234, 236, 240)'});\n            }\n        }\n    });\n});\n",
                 "compactTheme": "",
                 "dx8navActiveIconColor": "",
                 "dx8navScrollbarThumb": "",
