@@ -34,18 +34,48 @@
         {
             "filterable": true,
             "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Nama SKU",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
             "name": "nama_sku",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
             "id": "column_8",
-            "label": "nama_sku",
-            "sortable": "false"
+            "alignment": ""
         },
         {
             "filterable": true,
             "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "ID Produksi Botol",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
             "name": "id_produksi_botol",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
             "id": "column_5",
-            "label": "id_produksi_botol",
-            "sortable": "false"
+            "alignment": ""
         },
         {
             "filterable": true,
