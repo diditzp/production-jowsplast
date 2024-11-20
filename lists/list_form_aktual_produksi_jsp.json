@@ -34,9 +34,33 @@
         {
             "filterable": true,
             "hidden": "false",
+            "name": "nama_sku",
+            "id": "column_8",
+            "label": "nama_sku",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
             "name": "id_produksi_botol",
             "id": "column_5",
             "label": "id_produksi_botol",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "isi_per_ball_produksi",
+            "id": "column_7",
+            "label": "Isi Pcs / Bal Label Produksi",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "shift",
+            "id": "column_6",
+            "label": "Shift",
             "sortable": "false"
         },
         {
@@ -82,22 +106,6 @@
             "name": "jumlah_aktual_cacat_produksi",
             "id": "column_4",
             "label": "Jumlah Aktual Cacat Produksi"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "name": "shift",
-            "id": "column_6",
-            "label": "Shift",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "name": "isi_per_ball_produksi",
-            "id": "column_7",
-            "label": "Isi Pcs / Bal Label Produksi",
-            "sortable": "false"
         }
     ],
     "cardCollapsible": "",
