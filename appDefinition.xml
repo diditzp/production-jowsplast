@@ -815,6 +815,15 @@
                </packageActivityPlugin>
             </entry>
             <entry>
+               <string>terima_preform::tool6</string>
+               <packageActivityPlugin>
+                  <processDefId>terima_preform</processDefId>
+                  <activityDefId>tool6</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
+                  <pluginProperties>{}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
                <string>terimaBarang::set_meta_data</string>
                <packageActivityPlugin>
                   <processDefId>terimaBarang</processDefId>
