@@ -3,8 +3,9 @@
         "className": "",
         "properties": {}
     },
-    "useSession": "false",
+    "considerFilterWhenGetTotal": "",
     "showPageSizeSelector": "true",
+    "responsiveMode": "",
     "rowActions": [],
     "columns": [
         {
@@ -76,18 +77,28 @@
             "sortable": "false"
         }
     ],
-    "pageSize": 0,
-    "orderBy": "",
-    "filters": [],
-    "pageSizeSelectorOptions": "10,20,30,40,50,100",
-    "buttonPosition": "bothLeft",
+    "cardCollapsible": "",
+    "pageSize": "0",
+    "orderBy": "dateModified",
+    "description": "",
+    "showDataWhenFilterSet": "",
+    "disableResponsive": "",
     "checkboxPosition": "left",
-    "name": "List - Aktual Produksi",
+    "cardCollapseByDefault": "",
     "id": "list_form_aktual_produksi_jsp",
     "binder": {
         "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
         "properties": {"formDefId": "form_aktual_produksi_jsp"}
     },
-    "actions": [],
-    "order": ""
+    "order": "1",
+    "useSession": "",
+    "draggabletable": "",
+    "filters": [],
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "buttonPosition": "bothLeft",
+    "hidePageSize": "",
+    "name": "List - Aktual Produksi",
+    "rowActionsMode": "",
+    "showhidecolumns": "",
+    "actions": []
 }
