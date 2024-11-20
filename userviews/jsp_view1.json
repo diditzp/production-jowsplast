@@ -1142,6 +1142,7 @@
     },
     "setting": {"properties": {
         "__": "",
+        "tempDisablePermissionChecking": "",
         "userviewDescription": "",
         "noPermissionMessage": "",
         "userviewId": "jsp_view1",
@@ -1194,7 +1195,8 @@
                 "dx8headerColor": "",
                 "dx8colorScheme": "rgb(233, 233, 233);rgb(255, 255, 255);rgb(174, 202, 199);rgb(44, 101, 98);rgb(25, 118, 210);rgb(0, 75, 160)",
                 "dx8navBackground": "",
-                "js": "",
+                "js": "$('body').on('page_loaded', function(){\n    var location = window.location.href;\n    console.log(location);\n});",
+                "compactTheme": "",
                 "dx8navActiveIconColor": "",
                 "dx8navScrollbarThumb": "",
                 "userMenu": [],
@@ -1222,7 +1224,7 @@
         "permission": {
             "className": "org.joget.apps.userview.lib.UserPermission",
             "properties": {
-                "allowedUsernames": "adminJSP;clark;ownerJSP",
+                "allowedUsernames": "adminJSP;ownerJSP",
                 "orgId": "ORG-001"
             }
         },
