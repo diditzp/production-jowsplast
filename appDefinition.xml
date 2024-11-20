@@ -428,6 +428,15 @@
                </packageActivityPlugin>
             </entry>
             <entry>
+               <string>produksiBotol::update_aktual_json</string>
+               <packageActivityPlugin>
+                  <processDefId>produksiBotol</processDefId>
+                  <activityDefId>update_aktual_json</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
+                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.DatabaseUpdateTool&quot;,&quot;properties&quot;:{&quot;query&quot;:&quot;UPDATE app_fd_produksi kel\r\nJOIN (\r\n    SELECT \r\n        kel.id AS aktual_id,\r\n        JSON_ARRAYAGG(\r\n            JSON_OBJECT(\r\n                &apos;c_employee&apos;, item.c_employee,\r\n                &apos;c_tanggalMasukGudang&apos;, item.c_tanggalMasukGudang,\r\n                &apos;c_shift&apos;, item.c_shift,\r\n                &apos;c_jumlahMasuk&apos;, item.c_jumlahMasuk,\r\n                &apos;c_jumlah_aktual_cacat_produksi&apos;, item.c_jumlah_aktual_cacat_produksi,\r\n                &apos;c_noteHasilProduksi&apos;, item.c_noteHasilProduksi,\r\n                &apos;c_isi_per_ball_produksi&apos;, item.c_isi_per_ball_produksi\r\n            )\r\n        ) AS json_result\r\n    FROM app_fd_produksi kel\r\n    JOIN app_fd_flow_stock stock ON stock.c_id_flow = kel.c_id_produksi_botol\r\n    JOIN app_fd_aktual_produksi item ON item.c_id_aktual_produksi = kel.id \r\n    WHERE kel.id = &apos;#process.recordId#&apos;\r\n    GROUP BY kel.id\r\n) subquery ON kel.id = subquery.aktual_id\r\nSET kel.c_aktual_prod_json = subquery.json_result&quot;,&quot;jdbcDatasource&quot;:&quot;default&quot;}}]}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
                <string>pindah_item::init_transaction</string>
                <packageActivityPlugin>
                   <processDefId>pindah_item</processDefId>
@@ -806,15 +815,6 @@
                </packageActivityPlugin>
             </entry>
             <entry>
-               <string>terima_preform::tool6</string>
-               <packageActivityPlugin>
-                  <processDefId>terima_preform</processDefId>
-                  <activityDefId>tool6</activityDefId>
-                  <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
-                  <pluginProperties>{}</pluginProperties>
-               </packageActivityPlugin>
-            </entry>
-            <entry>
                <string>terimaBarang::set_meta_data</string>
                <packageActivityPlugin>
                   <processDefId>terimaBarang</processDefId>
@@ -857,6 +857,24 @@
                   <activityDefId>tool1</activityDefId>
                   <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
                   <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.DatabaseUpdateTool&quot;,&quot;properties&quot;:{&quot;query&quot;:&quot;INSERT INTO app_fd_flow_stock \r\n(\r\nid,\r\ndateCreated,\r\ndateModified,\r\ncreatedBy,\r\ncreatedByName,\r\nmodifiedBy,\r\nmodifiedByName,\r\nc_skuProduk,\r\nc_kuantitas,\r\nc_id_flow\r\n)\r\nSELECT \r\nid,\r\ndateCreated,\r\ndateModified,\r\ncreatedBy,\r\ncreatedByName,\r\nmodifiedBy,\r\nmodifiedByName,\r\nc_namaProduk as c_skuProduk,\r\nc_total as c_kuantitas,\r\nc_id_audit as c_id_flow\r\nFROM app_fd_audit_sku_balance a\r\nWHERE a.id = &apos;#process.recordId#&apos;;&quot;,&quot;jdbcDatasource&quot;:&quot;default&quot;}}]}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>produksiBotol::tool23</string>
+               <packageActivityPlugin>
+                  <processDefId>produksiBotol</processDefId>
+                  <activityDefId>tool23</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
+                  <pluginProperties>{}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>produksiBotol::tool24</string>
+               <packageActivityPlugin>
+                  <processDefId>produksiBotol</processDefId>
+                  <activityDefId>tool24</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
+                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.DatabaseUpdateTool&quot;,&quot;properties&quot;:{&quot;query&quot;:&quot;update app_fd_aktual_produksi a\r\ninner join app_fd_produksi b \r\non a.c_id_aktual_produksi = b.id \r\nset \r\na.c_nama_sku = b.c_nama_sku,\r\na.c_nama_produk = b.c_nama_produk\r\nWHERE b.id=&apos;#process.recordId#&apos;&quot;,&quot;jdbcDatasource&quot;:&quot;default&quot;}}]}</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
@@ -1128,7 +1146,7 @@
                   <processDefId>produksiBotol</processDefId>
                   <participantId>PengawasanProduksi_2_pengawas</participantId>
                   <type>user</type>
-                  <value>admin;adminJSP;clark;ownerJSP</value>
+                  <value>adminJSP;ownerJSP</value>
                </packageParticipant>
             </entry>
             <entry>

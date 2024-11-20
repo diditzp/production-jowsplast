@@ -317,7 +317,7 @@
                     </TransitionRestrictions>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="406.078125,42.578125"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="366.07501220703125,34.56249542236327"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="updateStokGudang" Name="Update Stok Gudang">
@@ -327,7 +327,7 @@
                     <Performer>PengawasanProduksi_2_pengawas</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="460.8500061035156,136.01249237060546"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="460.83751678466797,229.9875"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="isAchieve" Name="isAchieve">
@@ -345,7 +345,7 @@
                     </TransitionRestrictions>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="639.0000591278076,70.46665519531251"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="805.9875106811523,149.43751220703126"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="updateStokGudang_2" Name="Update Stok Gudang Ulang">
@@ -355,7 +355,7 @@
                     <Performer>PengawasanProduksi_2_pekerja</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pekerja"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="480,156.60000915527343"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="894.0000228881836,250.59376220703126"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="formProduksi_2" Name="Form Produksi">
@@ -405,7 +405,7 @@
                     <Performer>PengawasanProduksi_2_pekerja</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pekerja"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="657,217.0625"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="997.9875106811523,121.05"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="tool6_2" Name="Update Master SKU">
@@ -415,7 +415,7 @@
                     <Performer>PengawasanProduksi_2_pengawas</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="472,284.90625"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="634.9875106811523,390.90000610351564"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="init_transaction_preform" Name="init transaction preform">
@@ -455,7 +455,7 @@
                     <Performer>PengawasanProduksi_2_pekerja</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pekerja"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="822,94.96875"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="819.9937973022461,21.95625"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="update_master_preform" Name="Update Pemakaian PreForm">
@@ -465,7 +465,7 @@
                     <Performer>PengawasanProduksi_2_pekerja</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pekerja"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="678,14.984375"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="666.0000228881836,111.97500305175781"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="update_master_preform_3" Name="Update Master PreForm">
@@ -505,7 +505,7 @@
                     <Performer>PengawasanProduksi_2_pengawas</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="615,218.9375"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="652.9875106811523,391.91248779296876"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="update_master_preform_2" Name="Update Pemakaian PreForm">
@@ -515,7 +515,7 @@
                     <Performer>PengawasanProduksi_2_pengawas</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="713,20.9375"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="740.9625473022461,258.88123779296876"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="update_pemakaian_preform_mst_2" Name="Update Pemakaian PreForm Mst">
@@ -525,7 +525,7 @@
                     <Performer>PengawasanProduksi_2_pengawas</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="749,252.9375"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="868.9687728881836,373.93128662109376"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="update_master_preform_3_2" Name="Update Master PreForm">
@@ -535,7 +535,7 @@
                     <Performer>PengawasanProduksi_2_pengawas</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="851,12.9375"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="881.9812850952148,112.93125610351564"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="set_sku_name_3" Name="SET SKU Name Produksi">
@@ -555,7 +555,7 @@
                     <Performer>PengawasanProduksi_2_pengawas</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="926,172.99999649804687"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="994.9875106811523,225.97498779296876"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="post_data_to_spreadsheet" Name="Post Data To SpreadSheet">
@@ -566,6 +566,26 @@
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pekerja"/>
                         <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="181,30.486111"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="update_aktual_json" Name="update aktual json">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>PengawasanProduksi_2_pengawas</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="524.9812850952148,84.58125000000001"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="tool24" Name="Set sku aktual produksi">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>PengawasanProduksi_2_pengawas</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="PengawasanProduksi_2_pengawas"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="669.9937973022461,32.606243896484386"/>
                     </ExtendedAttributes>
                 </Activity>
             </Activities>
@@ -593,11 +613,6 @@
                     </ExtendedAttributes>
                 </Transition>
                 <Transition From="formProduksi_2" Id="transition7" To="approveProduksi">
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="approveProduksi" Id="transition8" To="isAchieve">
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                     </ExtendedAttributes>
@@ -702,11 +717,26 @@
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                     </ExtendedAttributes>
                 </Transition>
+                <Transition From="tool24" Id="transition38" To="isAchieve">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="approveProduksi" Id="transition36" To="update_aktual_json">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="update_aktual_json" Id="transition39" To="tool24">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
             </Transitions>
             <ExtendedAttributes>
                 <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="PengawasanProduksi_2_pekerja;PengawasanProduksi_2_pengawas"/>
                 <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=PengawasanProduksi_2_pengawas,CONNECTING_ACTIVITY_ID=tool3,X_OFFSET=69,Y_OFFSET=421.765625,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=PengawasanProduksi_2_pengawas,CONNECTING_ACTIVITY_ID=post_data_to_spreadsheet_3,X_OFFSET=932.0694580078125,Y_OFFSET=320.49999649804687,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=PengawasanProduksi_2_pengawas,CONNECTING_ACTIVITY_ID=post_data_to_spreadsheet_3,X_OFFSET=1054.0500717163086,Y_OFFSET=369.4875,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
             </ExtendedAttributes>
         </WorkflowProcess>
         <WorkflowProcess Id="barangKeluar" Name="Barang Keluar">
