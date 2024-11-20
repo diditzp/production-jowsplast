@@ -218,6 +218,42 @@
                         "value": "",
                         "readonlyLabel": ""
                     }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "useDefaultWhenEmpty": "",
+                        "permission_rules": {
+                            "fecd5d08-1e59-12a0-0e31-f06b6aa68919": {},
+                            "aa1fac9e-2954-eadb-f641-eee606d57fb6": {},
+                            "f16e031c-1fbd-7bae-8418-5847efb12979": {}
+                        },
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "workflowVariable": "",
+                        "id": "nama_sku",
+                        "value": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "useDefaultWhenEmpty": "",
+                        "permission_rules": {
+                            "fecd5d08-1e59-12a0-0e31-f06b6aa68919": {},
+                            "aa1fac9e-2954-eadb-f641-eee606d57fb6": {},
+                            "f16e031c-1fbd-7bae-8418-5847efb12979": {}
+                        },
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "workflowVariable": "",
+                        "id": "nama_produk",
+                        "value": ""
+                    }
                 }
             ],
             "className": "org.joget.apps.form.model.Column",
