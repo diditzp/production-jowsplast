@@ -647,8 +647,11 @@
                             "requestParams": [],
                             "enableSorting": "",
                             "storeBinder": {
-                                "className": "",
-                                "properties": {}
+                                "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                                "properties": {
+                                    "formDefId": "form_aktual_produksi_jsp",
+                                    "foreignKey": "id_aktual_produksi"
+                                }
                             },
                             "readonly": "",
                             "deleteGridData": "",
@@ -717,8 +720,11 @@
                             "label": "Aktual Produksi",
                             "deleteFiles": "",
                             "loadBinder": {
-                                "className": "",
-                                "properties": {}
+                                "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                                "properties": {
+                                    "formDefId": "form_aktual_produksi_jsp",
+                                    "foreignKey": "id_aktual_produksi"
+                                }
                             },
                             "disabledAdd": "",
                             "submit-label-readonly": "",
