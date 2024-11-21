@@ -46,6 +46,7 @@
                <packageActivityForm>
                   <processDefId>process10</processDefId>
                   <activityDefId>runProcess</activityDefId>
+                  <formId></formId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
@@ -965,7 +966,7 @@
                   <processDefId>process10</processDefId>
                   <activityDefId>tool1</activityDefId>
                   <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
-                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.DatabaseUpdateTool&quot;,&quot;properties&quot;:{&quot;query&quot;:&quot;INSERT INTO app_fd_aktual_produksi (\r\n    id,\r\n    c_jumlahMasuk,\r\n    c_tanggalMasukGudang,\r\n    c_employee,\r\n    c_noteHasilProduksi,\r\n    c_jumlah_aktual_cacat_produksi,\r\n    c_isi_per_ball_produksi,\r\n    c_shift,\r\n    c_id_aktual_produksi\r\n)\r\nVALUES (\r\n    &apos;0cc184c5-d161-47df-a2e2-4f9c88831005&apos;, \r\n    &apos;4300&apos;,                                \r\n    &apos;2024-11-18 17:17&apos;,                    \r\n    &apos;Deni&apos;,                                \r\n    &apos;&apos;,                                    \r\n    &apos;1&apos;,                                   \r\n    &apos;100&apos;,                                 \r\n    &apos;pagi&apos;,                                \r\n    &apos;78456ce5-66fd-4c1e-9f6e-8b39a7524885&apos;                                     \r\n);&quot;,&quot;jdbcDatasource&quot;:&quot;default&quot;}}]}</pluginProperties>
+                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.DatabaseUpdateTool&quot;,&quot;properties&quot;:{&quot;query&quot;:&quot;INSERT INTO app_fd_aktual_produksi (\r\n    id,\r\n    dateCreated,\r\n    dateModified,\r\n    createdBy,\r\n    createdByName,\r\n    modifiedBy,\r\n    modifiedByName,\r\n    c_jumlahMasuk,\r\n    c_tanggalMasukGudang,\r\n    c_employee,\r\n    c_noteHasilProduksi,\r\n    c_jumlah_aktual_cacat_produksi,\r\n    c_isi_per_ball_produksi,\r\n    c_shift,\r\n    c_id_aktual_produksi\r\n)\r\nVALUES (\r\n    &apos;0cc184c5-d161-47df-a2e2-4f9c88831005&apos;, \r\n    now(3),\r\n    now(3),\r\n    &apos;ownerJSP&apos;,\r\n    &apos;owner JSP&apos;,\r\n    &apos;ownerJSP&apos;,\r\n    &apos;owner JSP&apos;,\r\n    &apos;4300&apos;,                                \r\n    &apos;2024-11-18 17:17&apos;,                    \r\n    &apos;Deni&apos;,                                \r\n    &apos;testt manual insert&apos;,                                    \r\n    &apos;1&apos;,                                   \r\n    &apos;100&apos;,                                 \r\n    &apos;pagi&apos;,                                \r\n    &apos;78456ce5-66fd-4c1e-9f6e-8b39x7524882&apos;                                     \r\n);&quot;,&quot;jdbcDatasource&quot;:&quot;default&quot;}}]}</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
