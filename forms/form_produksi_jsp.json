@@ -772,19 +772,6 @@
                         }
                     },
                     {
-                        "className": "org.joget.apps.form.lib.HiddenField",
-                        "properties": {
-                            "useDefaultWhenEmpty": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "workflowVariable": "",
-                            "id": "aktual_prod_json",
-                            "value": ""
-                        }
-                    },
-                    {
                         "className": "org.joget.plugin.enterprise.CalculationField",
                         "properties": {
                             "variables": [
