@@ -20,17 +20,6 @@
                </packageActivityForm>
             </entry>
             <entry>
-               <string>produksiBotol::formProduksi</string>
-               <packageActivityForm>
-                  <processDefId>produksiBotol</processDefId>
-                  <activityDefId>formProduksi</activityDefId>
-                  <formId>form_produksi_jsp</formId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>true</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
                <string>terimaBarang::checkBarangMasuk</string>
                <packageActivityForm>
                   <processDefId>terimaBarang</processDefId>
@@ -39,17 +28,6 @@
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>true</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
-               <string>terima_preform::runProcess</string>
-               <packageActivityForm>
-                  <processDefId>terima_preform</processDefId>
-                  <activityDefId>runProcess</activityDefId>
-                  <formId>preform_masuk</formId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
             <entry>
@@ -64,6 +42,17 @@
                </packageActivityForm>
             </entry>
             <entry>
+               <string>process10::runProcess</string>
+               <packageActivityForm>
+                  <processDefId>process10</processDefId>
+                  <activityDefId>runProcess</activityDefId>
+                  <formId></formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
                <string>terimaBarang::runProcess</string>
                <packageActivityForm>
                   <processDefId>terimaBarang</processDefId>
@@ -72,17 +61,6 @@
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
-               <string>audit_preform_balance::pengawas_audit</string>
-               <packageActivityForm>
-                  <processDefId>audit_preform_balance</processDefId>
-                  <activityDefId>pengawas_audit</activityDefId>
-                  <formId>audit_preform</formId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>true</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
             <entry>
@@ -97,17 +75,6 @@
                </packageActivityForm>
             </entry>
             <entry>
-               <string>terimaBarang::approveMasukBarang</string>
-               <packageActivityForm>
-                  <processDefId>terimaBarang</processDefId>
-                  <activityDefId>approveMasukBarang</activityDefId>
-                  <formId>masuk_gudang</formId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>true</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
                <string>barangKeluar_2::runProcess</string>
                <packageActivityForm>
                   <processDefId>barangKeluar_2</processDefId>
@@ -119,17 +86,6 @@
                </packageActivityForm>
             </entry>
             <entry>
-               <string>audit_preform_balance::audit_ulang_pengawas</string>
-               <packageActivityForm>
-                  <processDefId>audit_preform_balance</processDefId>
-                  <activityDefId>audit_ulang_pengawas</activityDefId>
-                  <formId>audit_preform</formId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>true</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
                <string>audit_sku_balance::runProcess</string>
                <packageActivityForm>
                   <processDefId>audit_sku_balance</processDefId>
@@ -138,17 +94,6 @@
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
-               <string>produksiBotol::formProduksi_2</string>
-               <packageActivityForm>
-                  <processDefId>produksiBotol</processDefId>
-                  <activityDefId>formProduksi_2</activityDefId>
-                  <formId>form_produksi_jsp</formId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>true</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
             <entry>
@@ -174,17 +119,6 @@
                </packageActivityForm>
             </entry>
             <entry>
-               <string>produksiBotol::runProcess</string>
-               <packageActivityForm>
-                  <processDefId>produksiBotol</processDefId>
-                  <activityDefId>runProcess</activityDefId>
-                  <formId>form_produksi_jsp</formId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
                <string>barangKeluar::approvePickup</string>
                <packageActivityForm>
                   <processDefId>barangKeluar</processDefId>
@@ -204,6 +138,94 @@
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>true</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>produksiBotol::approveProduksi</string>
+               <packageActivityForm>
+                  <processDefId>produksiBotol</processDefId>
+                  <activityDefId>approveProduksi</activityDefId>
+                  <formId>form_produksi_jsp</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>produksiBotol::formProduksi</string>
+               <packageActivityForm>
+                  <processDefId>produksiBotol</processDefId>
+                  <activityDefId>formProduksi</activityDefId>
+                  <formId>form_produksi_jsp</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>terima_preform::runProcess</string>
+               <packageActivityForm>
+                  <processDefId>terima_preform</processDefId>
+                  <activityDefId>runProcess</activityDefId>
+                  <formId>preform_masuk</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>audit_preform_balance::pengawas_audit</string>
+               <packageActivityForm>
+                  <processDefId>audit_preform_balance</processDefId>
+                  <activityDefId>pengawas_audit</activityDefId>
+                  <formId>audit_preform</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>terimaBarang::approveMasukBarang</string>
+               <packageActivityForm>
+                  <processDefId>terimaBarang</processDefId>
+                  <activityDefId>approveMasukBarang</activityDefId>
+                  <formId>masuk_gudang</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>audit_preform_balance::audit_ulang_pengawas</string>
+               <packageActivityForm>
+                  <processDefId>audit_preform_balance</processDefId>
+                  <activityDefId>audit_ulang_pengawas</activityDefId>
+                  <formId>audit_preform</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>produksiBotol::formProduksi_2</string>
+               <packageActivityForm>
+                  <processDefId>produksiBotol</processDefId>
+                  <activityDefId>formProduksi_2</activityDefId>
+                  <formId>form_produksi_jsp</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>produksiBotol::runProcess</string>
+               <packageActivityForm>
+                  <processDefId>produksiBotol</processDefId>
+                  <activityDefId>runProcess</activityDefId>
+                  <formId>form_produksi_jsp</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
             <entry>
@@ -237,17 +259,6 @@
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
-               <string>produksiBotol::approveProduksi</string>
-               <packageActivityForm>
-                  <processDefId>produksiBotol</processDefId>
-                  <activityDefId>approveProduksi</activityDefId>
-                  <formId>form_produksi_jsp</formId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>true</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
             <entry>
@@ -968,6 +979,15 @@
                </packageActivityPlugin>
             </entry>
             <entry>
+               <string>process10::tool1</string>
+               <packageActivityPlugin>
+                  <processDefId>process10</processDefId>
+                  <activityDefId>tool1</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
+                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.DatabaseUpdateTool&quot;,&quot;properties&quot;:{&quot;query&quot;:&quot;INSERT INTO app_fd_aktual_produksi (\r\n    id,\r\n    c_jumlahMasuk,\r\n    c_tanggalMasukGudang,\r\n    c_employee,\r\n    c_noteHasilProduksi,\r\n    c_jumlah_aktual_cacat_produksi,\r\n    c_isi_per_ball_produksi,\r\n    c_shift,\r\n    c_id_aktual_produksi\r\n)\r\nVALUES (\r\n    &apos;0cc184c5-d161-47df-a2e2-4f9c88831005&apos;, \r\n    &apos;4300&apos;,                                \r\n    &apos;2024-11-18 17:17&apos;,                    \r\n    &apos;Deni&apos;,                                \r\n    &apos;&apos;,                                    \r\n    &apos;1&apos;,                                   \r\n    &apos;100&apos;,                                 \r\n    &apos;pagi&apos;,                                \r\n    &apos;78456ce5-66fd-4c1e-9f6e-8b39a7524885&apos;                                     \r\n);&quot;,&quot;jdbcDatasource&quot;:&quot;default&quot;}}]}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
                <string>pindah_item::route1</string>
                <packageActivityPlugin>
                   <processDefId>pindah_item</processDefId>
@@ -1012,6 +1032,15 @@
                   <participantId>process7_participant1</participantId>
                   <type>user</type>
                   <value>admin;adminJSP;clark;ownerJSP</value>
+               </packageParticipant>
+            </entry>
+            <entry>
+               <string>process10::processStartWhiteList</string>
+               <packageParticipant>
+                  <processDefId>process10</processDefId>
+                  <participantId>processStartWhiteList</participantId>
+                  <type>role</type>
+                  <value>adminUser</value>
                </packageParticipant>
             </entry>
             <entry>
