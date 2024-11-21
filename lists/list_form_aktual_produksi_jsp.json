@@ -17,10 +17,10 @@
                 "className": "",
                 "properties": {}
             },
-            "label": "ID",
+            "label": "nama_produk",
             "sortable": "false",
             "datalist_type": "column",
-            "name": "id",
+            "name": "nama_produk",
             "width": "",
             "headerAlignment": "",
             "action": {
@@ -28,7 +28,7 @@
                 "properties": {}
             },
             "style": "",
-            "id": "column_0",
+            "id": "column_9",
             "alignment": ""
         },
         {
