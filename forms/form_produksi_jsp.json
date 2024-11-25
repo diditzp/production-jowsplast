@@ -430,7 +430,7 @@
                             "placeholder": "",
                             "rows": "5",
                             "cols": "20",
-                            "value": "#performer.activityDefId.id#\n#performer.activityDefId.username#\n#performer.activityDefId.firstName#\n#performer.activityDefId.lastName#\n#performer.activityDefId.email#\n#performer.activityDefId.active#\n#performer.activityDefId.timeZone#",
+                            "value": "#performer.formProduksi.id#\n#performer.formProduksi.username#\n#performer.formProduksi.firstName#\n#performer.formProduksi.lastName#\n#performer.formProduksi.email#\n#performer.formProduksi.active#\n#performer.formProduksi.timeZone#",
                             "readonlyLabel": ""
                         }
                     },
