@@ -430,7 +430,7 @@
                             "placeholder": "",
                             "rows": "5",
                             "cols": "20",
-                            "value": "#performer.formProduksi.id#\n#performer.formProduksi.username#\n#performer.formProduksi.firstName#\n#performer.formProduksi.lastName#\n#performer.formProduksi.email#\n#performer.formProduksi.active#\n#performer.formProduksi.timeZone#",
+                            "value": "#performer.formProduksi.id#\n#assignment.activityId#",
                             "readonlyLabel": ""
                         }
                     },
