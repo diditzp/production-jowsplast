@@ -416,6 +416,25 @@
                         }
                     },
                     {
+                        "className": "org.joget.apps.form.lib.TextArea",
+                        "properties": {
+                            "requiredSanitize": "",
+                            "readonly": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "",
+                            "label": "Test Hash variable",
+                            "id": "field24",
+                            "placeholder": "",
+                            "rows": "5",
+                            "cols": "20",
+                            "value": "#performer.activityDefId.id#\n#performer.activityDefId.username#\n#performer.activityDefId.firstName#\n#performer.activityDefId.lastName#\n#performer.activityDefId.email#\n#performer.activityDefId.active#\n#performer.activityDefId.timeZone#",
+                            "readonlyLabel": ""
+                        }
+                    },
+                    {
                         "className": "org.joget.plugin.enterprise.FormGrid",
                         "properties": {
                             "validateMaxRow": "",
