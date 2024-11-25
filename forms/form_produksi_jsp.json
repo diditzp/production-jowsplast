@@ -430,7 +430,7 @@
                             "placeholder": "",
                             "rows": "5",
                             "cols": "20",
-                            "value": "#form.produksi.id_produksi_botol#\n#form.produksi.nama_produk#",
+                            "value": "#form.produksi.id_produksi_botol#\n#form.produksi.nama_produk#\n#form.produksi.nama_sku#",
                             "readonlyLabel": ""
                         }
                     },
